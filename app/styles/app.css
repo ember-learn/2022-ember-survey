@@ -40,8 +40,8 @@ legend, .input-label {
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     @apply
     shadow-sm 
-    focus:ring-ember 
-    focus:border-ember
+    focus:ring-ember-500
+    focus:border-ember-500
     block 
     w-full 
     sm:text-sm 
@@ -53,4 +53,20 @@ legend, .input-label {
     mt-2 
     text-sm 
     text-gray-700;
+}
+.input-select {
+    @apply
+    mt-1 
+    block 
+    w-full 
+    pl-3 
+    pr-10 
+    py-2 
+    text-base 
+    border-gray-500 
+    focus:outline-none 
+    focus:ring-ember-500 
+    focus:border-ember-500 
+    sm:text-sm 
+    rounded-md;
 }
