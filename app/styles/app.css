@@ -39,6 +39,7 @@ legend, .input-label {
 }
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     @apply
+    caret-ember-500
     shadow-sm 
     focus:ring-ember-500
     focus:border-ember-500
@@ -69,4 +70,26 @@ legend, .input-label {
     focus:border-ember-500 
     sm:text-sm 
     rounded-md;
+}
+
+footer nav a,
+footer p a {
+    @apply
+    text-base
+    text-ember-400
+    hover:text-ember-300
+    underline-offset-4
+    decoration-2
+    hover:underline
+    focus:border-ember-500;
+}
+footer a.footer-icon-interactive {
+    @apply
+    text-ember-400 
+    hover:text-ember-500 
+    hover:bg-ember-100 
+    rounded-lg 
+    text-sm 
+    p-2.5 
+    mr-1;
 }
