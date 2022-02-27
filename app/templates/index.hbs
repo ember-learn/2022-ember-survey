@@ -1,7 +1,10 @@
 {{page-title "2022 Ember Community Survey"}}
 
 <p>This survey is for developers who use <a href="https://github.com/emberjs/ember.js">the Ember JavaScript framework</a>, either for work or personal use.
-The survey has three sections and should take approximately 15 minutes to complete.
+The survey has three sections and should take approximately 15-20 minutes to complete.</p>
+    <p>
+<strong><em>All questions are optional.</em></strong></p>
+<p>
 If you have any issues completing the survey, please <a href="mailto:melsumner@fastmail.com">email us</a> so we can help.
 </p>
 
@@ -20,11 +23,266 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   --}}
 <input type='hidden' name='form-name' value='survey-22' aria-label="leave this one alone it is just for netlify" />
 
-<h2>Part One: Ember At Work</h2>
 
-<h2>Part Two</h2>
+<h2 id="background"><a href="#background" class="text-ember text-md">&sect;</a> Your Background and Knowledge</h2>
+<p>This section is about your development background in web technologies.</p>
 
-<h2>Part Three</h2>
+<div>
+    <label
+      for='time-use'
+      class='block input-label'
+    >How long have you been using Ember?</label>
+    <select
+      id='time-use'
+      name='time-use'
+      class='mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-500 focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm rounded-md'
+    >
+      <option>Less than a year</option>
+      <option>1-3 years</option>
+      <option>5-7 years</option>
+      <option>7-10 years</option>
+    </select>
+  </div>
+
+<div>
+    <label
+      for='other-frameworks'
+      class='block input-label'
+    >With which other front-end frameworks do you have some experience?</label>
+    <div class='mt-1'>
+      <textarea
+        name='other-frameworks'
+        id='other-frameworks'
+        class='shadow-sm focus:ring-orange-500 focus:border-orange-500 block w-full sm:text-sm border-gray-500 rounded-md'
+        aria-describedby='other-frameworks-description'
+      />
+    </div>
+    <p class='mt-2 text-sm text-gray-700' id='other-frameworks-description'>Examples of other frameworks: Angular, Next, Nuxt, Backbone</p>
+  </div>
+
+<div>
+    <fieldset>
+        <legend>How would you rate your knowledge of HTML?</legend>
+        <input type="radio" id="html-none" name="know-html" /><label for="html-none">None</label>
+        <input type="radio" id="html-beginner" name="know-html" /><label for="html-beginner">Beginner</label>
+        <input type="radio" id="html-intermediate" name="know-html" /><label for="html-intermediate">Intermediate</label>
+        <input type="radio" id="html-advanced" name="know-html" /><label for="html-advanced">Advanced</label>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
+        <input type="radio" id="aria-none" name="know-aria" /><label for="aria-none">None</label>
+        <input type="radio" id="aria-beginner" name="know-aria" /><label for="aria-beginner">Beginner</label>
+        <input type="radio" id="aria-intermediate" name="know-aria" /><label for="aria-intermediate">Intermediate</label>
+        <input type="radio" id="aria-advanced" name="know-aria" /><label for="aria-advanced">Advanced</label>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>How would you rate your knowledge of CSS?</legend>
+        <input type="radio" id="css-none" name="know-css" /><label for="css-none">None</label>
+        <input type="radio" id="css-beginner" name="know-css" /><label for="css-beginner">Beginner</label>
+        <input type="radio" id="css-intermediate" name="know-css" /><label for="css-intermediate">Intermediate</label>
+        <input type="radio" id="css-advanced" name="know-css" /><label for="css-advanced">Advanced</label>
+    </fieldset>
+</div>
+
+<div>
+    <fieldset>
+        <legend>How would you rate your knowledge of JavaScript?</legend>
+        <input type="radio" id="js-none" name="know-js" /><label for="js-none">None</label>
+        <input type="radio" id="js-beginner" name="know-js" /><label for="js-beginner">Beginner</label>
+        <input type="radio" id="js-intermediate" name="know-js" /><label for="js-intermediate">Intermediate</label>
+        <input type="radio" id="js-advanced" name="know-js" /><label for="js-advanced">Advanced</label>
+    </fieldset>
+</div>
+
+
+<h2 id="env-pref"><a href="#env-pref" class="text-ember text-md">&sect;</a>Development Environment Preferences</h2>
+<p>This section is about your preferred development environment, whether at work or at home.</p>
+
+<div>
+    <label for="os-pref" class="block input-label">What operating system do you prefer?</label>
+    <input type="text" id="os-pref" name="os-pref" />
+</div>
+
+<div>
+    <label for="os-work" class="block input-label">What operating system do you most frequently use at work?</label>
+    <input type="text" id="os-work" name="os-work" />
+</div>
+
+<div>
+    <label for="os-home" class="block input-label">What operating system do you most frequently use at home?</label>
+    <input type="text" id="os-home" name="os-home" />
+</div>
+
+
+<div>
+    <label for="ide-pref" class="block input-label">What is your preferred IDE/development environment?</label>
+    <input type="text" id="ide-pref" name="ide-pref" />
+</div>
+
+<div>
+    <label for="ide-pref-why" class="block input-label">Why do you prefer it?</label>
+    <input type="text" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc" />
+    <p class="input-desc" id="ide-pref-why-desc">Example responses: "I've been using it for years", or "I feel cool when I use it"</p>
+</div>
+
+
+<h2 id="at-work"><a href="#at-work" class="text-ember text-md">&sect;</a>Using Ember At Work</h2>
+<p>This section relates to how you use Ember in at work.</p>
+
+
+
+<!-- General Information -->
+What industry are you in?
+In which industry do you work?
+
+How large is your entire company?
+
+<!-- Enterprise: Overall Software Development Profile -->
+How many developers at your company are responsible for writing front-end code?
+
+How many developers at your company are responsible for writing code in Ember?
+
+<!-- Enterprise: Ember Software Development Profile -->
+How often do you use Ember at work?
+
+Does your company intend to hire more Ember developers in the next year?
+
+<!-- Enterprise: Ember Applications Usage (absolute) -->
+How many Ember apps does your company have?
+
+<!-- NEW: Enterprise: Ember Application Usage (relative) -->
+Which choice best describes the overall distribution of web applications at your enterprise?
+Of all of the enterprises's web applications, _______ of them are Ember apps.
+- All
+- Most
+- Half
+- Some
+- Few
+- None
+
+
+<!-- Enterprise: Ember Application Versioning -->
+If there is a version of Ember you primarily work with at your enterprise, what is it?
+
+What version(s) of Ember do you regularly work with at your enterprise?
+
+If you use Ember Data in your enterprise's Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number?
+
+If you use Ember CLI in your enterprise's Ember apps, do you typically use the same version as the framework, or do you manually change it to a different version number?
+
+
+<!-- Enterprise: Ember Application Supporting Technology Stacks -->
+What testing framework do you use most frequently in your enterprise's Ember apps?
+
+Which of these server-side frameworks do you primarily in your enterprise's Ember apps?
+
+Which of these are used in the projects that you are actively working on or actively maintain for your enterprise's Ember apps?
+  - Amazon Web Services
+  - Azure
+  - GitHub Pages
+  - Heroku
+  - Netlify
+  - Vercel
+  - Self-hosted
+  - Other
+
+
+<!-- Enterprise: Ember Application End-Targets -->
+What is the target platform(s) for your enterprise's Ember apps?
+  - Fully responsive (desktop + devices)
+  - Desktop only
+  - Mobile device only
+
+Who are the target users of your enterprise's Ember apps?
+  - General public
+  - Business consumers (B2B)
+  - Internal users
+  - Other
+
+How many end users do your enterprise's Ember apps support?
+  - 1-1000
+  - 1001-100,000
+  - 100,001 - 1,000,000
+  - > 1,000,000
+
+Are you required to conform to accessibility success criteria (i.e., WCAG 2.1) in your enterprise's Ember apps?
+
+Do you internationalize your enterprise Ember apps?
+
+What is the default (human) language primarily used in your enterprise's Ember applications?
+
+<!-- Enterprise: Recommending Ember to Others -->
+On a scale of 1-5, how likely are you to recommend Ember to someone else for a new enterprise web application? 
+5 - I would strongly recommend Ember as an excellent default choice for most new enterprise applications
+4 - I would include Ember in a list of suggested technologies to consider for most new enterprise applications
+3 - I would not include Ember in a list of suggested technologies to consider for a new enterprise application by default, but I would mention it if one or more of the application's requirements seemed suited to Ember.
+2 - I would not recommend Ember for most new enterprise applications by default, and would only recommend it if all of the application's requirements were suited to Ember.
+1 - I would specifically recommend avoiding Ember for most new enterprise applications.
+
+Please elaborate on why you gave this rating.
+
+
+<h2 id="at-home"><a href="#at-home" class="text-ember text-md">&sect;</a>Personal Applications</h2>
+<p>This section relates to how you use Ember in side projects or applications for personal use.</p>
+
+<!-- TODO: Duplicate and Filter Enterprise Application Section -->
+
+
+<h2 id="this-year"><a href="#this-year" class="text-ember text-md">&sect;</a>Feedback: Current Year</h2>
+<p>
+This section is about the changes to Ember.js released in the past year and those scheduled for release in the upcoming year.
+</p>
+<!-- TODO: Link to Changelog -->
+Have you actively integrated any of the following features released within the last year into your applications? If so, which one had the most positive impact on your app or development experience?
+
+<!-- TODO: Link to RFCs -->
+Which of these Ember features planned for the next year do you think will have the most positive impact on your experience developing Ember apps? Why?
+
+If you have attended any virtual Ember events in the past year, which talk was your favorite and why?
+
+<h2 id="ember-feedback"><a href="#ember-feedback" class="text-ember text-md">&sect;</a>Feedback: General</h2>
+<p>
+This section is about your experiences using Ember, in general
+</p>
+<!-- Learning: Getting Started -->
+When you were first learning Ember, what was the most difficult thing to understand?
+When you were first learning Ember, what was the easiest thing to understand?
+
+<!-- Learning: Keeping Up -->
+Think about the last time you upgraded an Ember app. What version did you migrate from/to, and what was the hardest thing about it?
+If you were not able to upgrade, what prevented you from upgrading?
+
+<!-- NEW: Candidates for future built-ins -->
+Is there anything you immediately add or configure every time you make a new Ember application (e.g. an addon, linting rules, etc.)
+
+Is there anything you want to tell us about your experiences using Ember?
+
+<h2 id="surveys"><a href="#surveys" class="text-ember text-md">&sect;</a>About Surveys</h2>
+<p>
+This section is about this survey and other developer surveys you may have taken.</p>
+
+How did you hear about this survey?
+
+Do you participate in other developer surveys?
+
+If so, which ones?
+
+Do you have any general feedback about the experience of the completing the community survey?
+
+
+<h2 id="closing"><a href="#closing" class="text-ember text-md">&sect;</a>Closing Questions</h2>
+<p>
+This section covers items that do not fit into the previous sections.
+</p>
+
+Where in the world do you live?
+Is there anything else you'd like to tell us?
 
 <div class='pt-5'>
     <div class='flex justify-end'>

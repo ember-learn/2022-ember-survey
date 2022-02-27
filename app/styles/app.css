@@ -8,9 +8,49 @@ h1 {
 }
 h2 {
     @apply
-    text-4xl;
+    text-3xl;
 }
 h3 {
     @apply
-    text-3xl;
+    text-2xl;
+}
+form {
+    max-width: 70ch;
+}
+
+fieldset {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    align-items: center;
+}
+fieldset legend {
+    width: 100%;
+}
+fieldset input[type=radio] + label {
+    margin-left: 0.2rem;
+    margin-right: 0.75rem;
+}
+
+legend, .input-label {
+    @apply
+    font-medium
+    text-gray-800;
+}
+[type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
+    @apply
+    shadow-sm 
+    focus:ring-ember 
+    focus:border-ember
+    block 
+    w-full 
+    sm:text-sm 
+    border-gray-700 
+    rounded-md;
+}
+.input-desc {
+    @apply
+    mt-2 
+    text-sm 
+    text-gray-700;
 }
