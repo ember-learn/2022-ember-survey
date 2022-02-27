@@ -2,10 +2,10 @@
   "name": "ember-survey",
   "version": "0.0.0",
   "private": true,
-  "description": "Small description for ember-survey goes here",
+  "description": "A project to find out how folks use Ember",
   "repository": "",
   "license": "MIT",
-  "author": "",
+  "author": "Melanie Sumner <melaniersumner@gmail.com>",
   "directories": {
     "doc": "doc",
     "test": "tests"
@@ -66,5 +66,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "ember-a11y-refocus": "^2.3.0"
   }
 }
