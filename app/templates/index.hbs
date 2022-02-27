@@ -1,2 +1,41 @@
 {{page-title "2022 Ember Community Survey"}}
-{{outlet}}
+
+<p>This survey is for developers who use <a href="https://github.com/emberjs/ember.js">the Ember JavaScript framework</a>, either for work or personal use.
+The survey has three sections and should take approximately 15 minutes to complete.
+If you have any issues completing the survey, please <a href="mailto:melsumner@fastmail.com">email us</a> so we can help.
+</p>
+
+<form 
+  class='space-y-8'
+  name='survey-22'
+  {{!-- action="/success" --}}
+  method='POST'
+  data-netlify='true'
+>
+  {{!-- Because this site is statily generated with fastboot / preember, then re-hydrated with ember we need to profide this hidden form name so netlify
+        doesn't have to.
+        See:  https://www.netlify.com/blog/2017/07/20/how-to-integrate-netlifys-form-handling-in-a-react-app/?_ga=2.229357980.1617473142.1644320442-1255373435.1644320442#form-handling-with-static-site-generators
+        Without this the hidden form field that netlify gets skipped away when the ember ui re-hydrates and doesn't get passed along when the form is submitted
+        resulting in a 404.
+  --}}
+<input type='hidden' name='form-name' value='survey-22' aria-label="leave this one alone it is just for netlify" />
+
+<h2>Part One: Ember At Work</h2>
+
+<h2>Part Two</h2>
+
+<h2>Part Three</h2>
+
+<div class='pt-5'>
+    <div class='flex justify-end'>
+      {{!-- <button
+        type='reset'
+        class='bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
+      >Clear Form</button> --}}
+      <button
+        type='submit'
+        class='ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-ember hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500'
+      >Submit Survey</button>
+    </div>
+  </div>
+</form>

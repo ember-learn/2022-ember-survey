@@ -1,7 +1,11 @@
 module.exports = {
   content: ['./app/**/*.hbs'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'ember': '#db3a22',
+      },
+    },
   },
   plugins: [],
 };

@@ -7,6 +7,9 @@ const tailwind = require('tailwindcss');
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     // Add options here
+    prember: {
+      urls: ['/'],
+    },
     postcssOptions: {
       compile: {
         // track changes in template, css, scss, and tailwind config files
