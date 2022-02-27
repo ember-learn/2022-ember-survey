@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = {
   content: ['./app/**/*.hbs'],
   theme: {
@@ -18,7 +19,5 @@ module.exports = {
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/forms'),
-  ],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };
