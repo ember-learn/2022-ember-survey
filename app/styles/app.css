@@ -18,6 +18,12 @@ form {
     max-width: 70ch;
 }
 
+.form-group {
+    @apply
+    mt-4
+    mb-4;
+}
+
 fieldset {
     display: flex;
     width: 100%;
@@ -27,7 +33,8 @@ fieldset {
 fieldset legend {
     width: 100%;
 }
-fieldset input[type=radio] + label {
+fieldset input[type=radio] + label,
+fieldset input[type=checkbox] + label {
     margin-left: 0.2rem;
     margin-right: 0.75rem;
 }
@@ -39,6 +46,7 @@ legend, .input-label {
 }
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     @apply
+    mt-1
     caret-ember-500
     shadow-sm 
     focus:ring-ember-500
