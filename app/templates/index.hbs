@@ -29,96 +29,72 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <p>This section is about your development background in web technologies.</p>
 
 <div>
-    <label
-      for='time-use'
-      class='block input-label'
-    >How long have you been using Ember?</label>
-    <select
-      id='time-use'
-      name='time-use'
-      class='input-select'
-    >
-      <option>Less than 1 year</option>
-      <option>Between 1 - 3 years</option>
-      <option>Between 4 - 5 years</option>
-      <option>Between 6 - 8 years</option>
-      <option>Greater than 8 years</option>
-    </select>
-  </div>
-
-  <div>
-    <fieldset>
-      <legend>With which other front-end frameworks do you have some experience?</legend>
-          <input type="checkbox" id="angular" name="other-frameworks" value="angular" aria-label="angular">
-          <label for="angular">Angular</label>
-          <input type="checkbox" id="react" name="other-frameworks" value="react" aria-label="react">
-          <label for="react">React</label>
-          <input type="checkbox" id="svelte" name="other-frameworks" value="svelte" aria-label="svelte">
-          <label for="svelte">Svelte</label>
-          <input type="checkbox" id="vue" name="other-frameworks" value="vue" aria-label="vue">
-          <label for="vue">Vue</label>
-          <input type="checkbox" id="none" name="other-frameworks" value="none" aria-label="none">
-          <label for="none">None (Ember is my first framework)</label>
-          <input type="checkbox" id="other" name="other-frameworks" value="other" aria-label="other">
-          <label for="other">Other</label>
-    </fieldset>
-  </div>
-
-{{!--
-      <label
-        for='other-frameworks'
-        class='block input-label'
-      ></label>
-      <div class='mt-1'>
-        <textarea
-          name='other-frameworks'
-          id='other-frameworks'
-          class='shadow-sm focus:ring-ember-600 focus:border-ember-600 block w-full sm:text-sm border-gray-500 rounded-md'
-          aria-describedby='other-frameworks-description'
-        />
-      </div>
-
-      <p class='mt-2 text-sm text-gray-700' id='other-frameworks-description'>Examples of other frameworks: Angular, Next, Nuxt, Backbone</p>
---}}
+  <label for='time-use' class='block input-label'>How long have you been using Ember?</label>
+  <select id='time-use' name='time-use' class='input-select'>
+    <option>Less than 1 year</option>
+    <option>Between 1 - 3 years</option>
+    <option>Between 4 - 5 years</option>
+    <option>Between 6 - 8 years</option>
+    <option>Greater than 8 years</option>
+  </select>
+</div>
 
 <div>
-    <fieldset>
-        <legend>How would you rate your knowledge of HTML?</legend>
-        <input type="radio" id="html-none" name="know-html" /><label for="html-none">None</label>
-        <input type="radio" id="html-beginner" name="know-html" /><label for="html-beginner">Beginner</label>
-        <input type="radio" id="html-intermediate" name="know-html" /><label for="html-intermediate">Intermediate</label>
-        <input type="radio" id="html-advanced" name="know-html" /><label for="html-advanced">Advanced</label>
+  <fieldset>
+    <legend>With which other front-end frameworks do you have some experience?</legend>
+      <input type="checkbox" id="other-frameworks-angular" name="other-frameworks" value="angular">
+      <label for="other-frameworks-angular">Angular</label>
+      <input type="checkbox" id="other-frameworks-react" name="other-frameworks" value="react">
+      <label for="other-frameworks-react">React</label>
+      <input type="checkbox" id="other-frameworks-svelte" name="other-frameworks" value="svelte">
+      <label for="other-frameworks-svelte">Svelte</label>
+      <input type="checkbox" id="other-frameworks-vue" name="other-frameworks" value="vue">
+      <label for="other-frameworks-vue">Vue</label>
+      <input type="checkbox" id="other-frameworks-none" name="other-frameworks" value="none">
+      <label for="other-frameworks-none">None (Ember is my first framework)</label>
+      <input type="checkbox" id="other-frameworks-other" name="other-frameworks" value="other">
+      <label for="other-frameworks-other">Other</label>
     </fieldset>
 </div>
 
 <div>
-    <fieldset>
-        <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
-        <input type="radio" id="aria-none" name="know-aria" /><label for="aria-none">None</label>
-        <input type="radio" id="aria-beginner" name="know-aria" /><label for="aria-beginner">Beginner</label>
-        <input type="radio" id="aria-intermediate" name="know-aria" /><label for="aria-intermediate">Intermediate</label>
-        <input type="radio" id="aria-advanced" name="know-aria" /><label for="aria-advanced">Advanced</label>
-    </fieldset>
+  <fieldset>
+    <legend>How would you rate your knowledge of HTML?</legend>
+      <input type="radio" id="html-none" name="know-html" /><label for="html-none">None</label>
+      <input type="radio" id="html-beginner" name="know-html" /><label for="html-beginner">Beginner</label>
+      <input type="radio" id="html-intermediate" name="know-html" /><label for="html-intermediate">Intermediate</label>
+      <input type="radio" id="html-advanced" name="know-html" /><label for="html-advanced">Advanced</label>
+  </fieldset>
 </div>
 
 <div>
-    <fieldset>
-        <legend>How would you rate your knowledge of CSS?</legend>
-        <input type="radio" id="css-none" name="know-css" /><label for="css-none">None</label>
-        <input type="radio" id="css-beginner" name="know-css" /><label for="css-beginner">Beginner</label>
-        <input type="radio" id="css-intermediate" name="know-css" /><label for="css-intermediate">Intermediate</label>
-        <input type="radio" id="css-advanced" name="know-css" /><label for="css-advanced">Advanced</label>
-    </fieldset>
+  <fieldset>
+    <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
+      <input type="radio" id="aria-none" name="know-aria" /><label for="aria-none">None</label>
+      <input type="radio" id="aria-beginner" name="know-aria" /><label for="aria-beginner">Beginner</label>
+      <input type="radio" id="aria-intermediate" name="know-aria" /><label for="aria-intermediate">Intermediate</label>
+      <input type="radio" id="aria-advanced" name="know-aria" /><label for="aria-advanced">Advanced</label>
+  </fieldset>
 </div>
 
 <div>
-    <fieldset>
-        <legend>How would you rate your knowledge of JavaScript?</legend>
-        <input type="radio" id="js-none" name="know-js" /><label for="js-none">None</label>
-        <input type="radio" id="js-beginner" name="know-js" /><label for="js-beginner">Beginner</label>
-        <input type="radio" id="js-intermediate" name="know-js" /><label for="js-intermediate">Intermediate</label>
-        <input type="radio" id="js-advanced" name="know-js" /><label for="js-advanced">Advanced</label>
-    </fieldset>
+  <fieldset>
+    <legend>How would you rate your knowledge of CSS?</legend>
+      <input type="radio" id="css-none" name="know-css" /><label for="css-none">None</label>
+      <input type="radio" id="css-beginner" name="know-css" /><label for="css-beginner">Beginner</label>
+      <input type="radio" id="css-intermediate" name="know-css" /><label for="css-intermediate">Intermediate</label>
+      <input type="radio" id="css-advanced" name="know-css" /><label for="css-advanced">Advanced</label>
+  </fieldset>
+</div>
+
+<div>
+  <fieldset>
+    <legend>How would you rate your knowledge of JavaScript?</legend>
+      <input type="radio" id="js-none" name="know-js" /><label for="js-none">None</label>
+      <input type="radio" id="js-beginner" name="know-js" /><label for="js-beginner">Beginner</label>
+      <input type="radio" id="js-intermediate" name="know-js" /><label for="js-intermediate">Intermediate</label>
+      <input type="radio" id="js-advanced" name="know-js" /><label for="js-advanced">Advanced</label>
+  </fieldset>
 </div>
 
 
@@ -128,14 +104,14 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <div>
     <fieldset>
       <legend>What operating system do you prefer?</legend>
-          <input type="checkbox" id="macos" name="os-pref" value="macos" aria-label="macos">
-          <label for="macos">macOS</label>
-          <input type="checkbox" id="linux-unix" name="os-pref" value="linux-unix" aria-label="linux-unix">
-          <label for="Linux/Unix (other than macOS)">Linux/Unix (other than macOS)</label>
-          <input type="checkbox" id="windows" name="os-pref" value="windows" aria-label="windows">
-          <label for="windows">Windows</label>
-          <input type="checkbox" id="other" name="os-pref" value="other" aria-label="other">
-          <label for="other">Other</label>
+          <input type="checkbox" id="os-pref-mac-os" name="os-pref" value="mac-os">
+          <label for="os-pref-mac-os">macOS</label>
+          <input type="checkbox" id="os-pref-linux-unix" name="os-pref" value="linux-unix">
+          <label for="os-pref-linux-unix">Linux/Unix (other than macOS)</label>
+          <input type="checkbox" id="os-pref-windows" name="os-pref" value="windows">
+          <label for="os-pref-windows">Windows</label>
+          <input type="checkbox" id="os-pref-other" name="os-pref" value="other">
+          <label for="os-pref-other">Other</label>
     </fieldset>
 </div>
 
@@ -151,9 +127,26 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 
 <div>
-    <label for="ide-pref" class="block input-label">What is your preferred IDE/development environment?</label>
-    <input type="text" id="ide-pref" name="ide-pref" />
+  <fieldset>
+    <legend for="ide-pref" class="block input-label">What is your preferred IDE/development environment?</legend>
+      <input type="checkbox" id="ide-perf-atom" name="ide-perf" value="atom">
+      <label for="ide-perf-atom">Atom</label>
+      <input type="checkbox" id="ide-perf-emacs" name="ide-perf" value="emacs">
+      <label for="ide-perf-emacs">Emacs</label>
+      <input type="checkbox" id="ide-perf-vim" name="ide-perf" value="vim">
+      <label for="ide-perf-vim">Vim</label>
+      <input type="checkbox" id="ide-perf-visual-studio-code" name="ide-perf" value="visual-studio-code">
+      <label for="ide-perf-visual-studio-code">Visual Studio Code</label>
+      <input type="checkbox" id="ide-perf-sublime-text" name="ide-perf" value="sublime-text">
+      <label for="ide-perf-sublime-text">Sublime Text</label>
+      <input type="checkbox" id="ide-perf-jetbrains-ides" name="ide-perf" value="jetbrains-ides">
+      <label for="ide-perf-jetbrains-ides">Jetbrains IDEs</label>
+      <input type="checkbox" id="ide-perf-other" name="ide-perf" value="other">
+      <label for="ide-perf-other">Other</label>
+    </fieldset>
 </div>
+
+
 
 <div>
     <label for="ide-pref-why" class="block input-label">Why do you prefer it?</label>
