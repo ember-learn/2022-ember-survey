@@ -9,7 +9,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </p>
 </div>
 
-<form 
+<form
   class='space-y-8'
   name='survey-22'
   {{!-- action="/success" --}}
@@ -25,7 +25,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <input type='hidden' name='form-name' value='survey-22' aria-label="leave this one alone it is just for netlify" />
 
 
-<h2 id="background"><a href="#background" class="text-ember-500 text-md">&sect;</a> Your Background and Knowledge</h2>
+<h2 id="background"><a href="#background" class="text-ember-500 text-md">&sect;</a> Your Development  Background</h2>
 <p>This section is about your development background in web technologies.</p>
 
 <div>
@@ -38,28 +38,48 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
       name='time-use'
       class='input-select'
     >
-      <option>Less than a year</option>
-      <option>1-3 years</option>
-      <option>5-7 years</option>
-      <option>7-10 years</option>
+      <option>Less than 1 year</option>
+      <option>Between 1 - 3 years</option>
+      <option>Between 4 - 5 years</option>
+      <option>Between 6 - 8 years</option>
+      <option>Greater than 8 years</option>
     </select>
   </div>
 
-<div>
-    <label
-      for='other-frameworks'
-      class='block input-label'
-    >With which other front-end frameworks do you have some experience?</label>
-    <div class='mt-1'>
-      <textarea
-        name='other-frameworks'
-        id='other-frameworks'
-        class='shadow-sm focus:ring-ember-600 focus:border-ember-600 block w-full sm:text-sm border-gray-500 rounded-md'
-        aria-describedby='other-frameworks-description'
-      />
-    </div>
-    <p class='mt-2 text-sm text-gray-700' id='other-frameworks-description'>Examples of other frameworks: Angular, Next, Nuxt, Backbone</p>
+  <div>
+    <fieldset>
+      <legend>With which other front-end frameworks do you have some experience?</legend>
+          <input type="checkbox" id="angular" name="other-frameworks" value="angular" aria-label="angular">
+          <label for="angular">Angular</label>
+          <input type="checkbox" id="react" name="other-frameworks" value="react" aria-label="react">
+          <label for="react">React</label>
+          <input type="checkbox" id="svelte" name="other-frameworks" value="svelte" aria-label="svelte">
+          <label for="svelte">Svelte</label>
+          <input type="checkbox" id="vue" name="other-frameworks" value="vue" aria-label="vue">
+          <label for="vue">Vue</label>
+          <input type="checkbox" id="none" name="other-frameworks" value="none" aria-label="none">
+          <label for="none">None (Ember is my first framework)</label>
+          <input type="checkbox" id="other" name="other-frameworks" value="other" aria-label="other">
+          <label for="other">Other</label>
+    </fieldset>
   </div>
+
+{{!--
+      <label
+        for='other-frameworks'
+        class='block input-label'
+      ></label>
+      <div class='mt-1'>
+        <textarea
+          name='other-frameworks'
+          id='other-frameworks'
+          class='shadow-sm focus:ring-ember-600 focus:border-ember-600 block w-full sm:text-sm border-gray-500 rounded-md'
+          aria-describedby='other-frameworks-description'
+        />
+      </div>
+
+      <p class='mt-2 text-sm text-gray-700' id='other-frameworks-description'>Examples of other frameworks: Angular, Next, Nuxt, Backbone</p>
+--}}
 
 <div>
     <fieldset>
@@ -256,7 +276,7 @@ What is the default (human) language primarily used in your enterprise's Ember a
 
 <div>
 <!-- Enterprise: Recommending Ember to Others -->
-On a scale of 1-5, how likely are you to recommend Ember to someone else for a new enterprise web application? 
+On a scale of 1-5, how likely are you to recommend Ember to someone else for a new enterprise web application?
 5 - I would strongly recommend Ember as an excellent default choice for most new enterprise applications
 4 - I would include Ember in a list of suggested technologies to consider for most new enterprise applications
 3 - I would not include Ember in a list of suggested technologies to consider for a new enterprise application by default, but I would mention it if one or more of the application's requirements seemed suited to Ember.
