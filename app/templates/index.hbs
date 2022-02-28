@@ -28,38 +28,32 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <h2 id="background"><a href="#background" class="text-ember-500 text-md">&sect;</a> Your Development  Background</h2>
 <p>This section is about your development background in web technologies.</p>
 <div class="take-out-before-deploy">
-{{!-- How long have you been using Ember? --}}
+
 <div class="form-group">
   <label for='time-use' class='block input-label'>How long have you been using Ember?</label>
   <select id='time-use' name='time-use' class='input-select'>
-    <option>Less than 1 year</option>
-    <option>Between 1 - 3 years</option>
-    <option>Between 4 - 5 years</option>
-    <option>Between 6 - 8 years</option>
-    <option>Greater than 8 years</option>
+    <option value="less-than-one">Less than 1 year</option>
+    <option value="one-to-three">Between 1 - 3 years</option>
+    <option value="four-to-five">Between 4 - 5 years</option>
+    <option value="six-to-eight">Between 6 - 8 years</option>
+    <option value="more-than-eight">8+ years</option>
   </select>
 </div>
 
-{{!-- With which other front-end frameworks do you have some experience? --}}
 <div class="form-group">
   <fieldset>
-    <legend>With which other front-end frameworks do you have some experience?</legend>
-      <input type="checkbox" id="other-frameworks-angular" name="other-frameworks" value="angular">
+    <legend>With which of these other front-end frameworks do you have some experience?</legend>
+      <input type="checkbox" id="other-fw-angular" name="other-frameworks" value="angular">
       <label for="other-frameworks-angular">Angular</label>
-      <input type="checkbox" id="other-frameworks-react" name="other-frameworks" value="react">
+      <input type="checkbox" id="other-fw-react" name="other-frameworks" value="react">
       <label for="other-frameworks-react">React</label>
-      <input type="checkbox" id="other-frameworks-svelte" name="other-frameworks" value="svelte">
+      <input type="checkbox" id="other-fw-svelte" name="other-frameworks" value="svelte">
       <label for="other-frameworks-svelte">Svelte</label>
-      <input type="checkbox" id="other-frameworks-vue" name="other-frameworks" value="vue">
+      <input type="checkbox" id="other-fw-vue" name="other-frameworks" value="vue">
       <label for="other-frameworks-vue">Vue</label>
-      <input type="checkbox" id="other-frameworks-none" name="other-frameworks" value="none">
-      <label for="other-frameworks-none">None (Ember is my first framework)</label>
-      <input type="checkbox" id="other-frameworks-other" name="other-frameworks" value="other">
-      <label for="other-frameworks-other">Other</label>
     </fieldset>
 </div>
 
-{{!-- How would you rate your knowledge of HTML? --}}
 <div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of HTML?</legend>
@@ -70,7 +64,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </fieldset>
 </div>
 
-{{!-- How would you rate your knowledge of Accessibility (WAI-ARIA)? --}}
 <div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
@@ -81,7 +74,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </fieldset>
 </div>
 
-{{!-- How would you rate your knowledge of CSS? --}}
 <div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of CSS?</legend>
@@ -92,7 +84,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </fieldset>
 </div>
 
-{{!-- How would you rate your knowledge of JavaScript? --}}
 <div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of JavaScript?</legend>
@@ -108,7 +99,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <p>This section is about your preferred development environment, whether at work or at home.</p>
 <div class="take-out-before-deploy">
 
-{{!-- What operating system do you prefer? --}}
 <div class="form-group">
     <fieldset>
       <legend>What operating system do you prefer?</legend>
@@ -123,40 +113,36 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
     </fieldset>
 </div>
 
-{{!-- What operating system do you most frequently use at work? --}}
 <div class="form-group">
     <label for="os-work" class="block input-label">What operating system do you most frequently use at work?</label>
     <input type="text" id="os-work" name="os-work" />
 </div>
 
-{{!-- What operating system do you most frequently use at home? --}}
 <div class="form-group">
     <label for="os-home" class="block input-label">What operating system do you most frequently use at home?</label>
     <input type="text" id="os-home" name="os-home" />
 </div>
 
-{{!-- What is your preferred IDE/development environment? --}}
 <div class="form-group">
   <fieldset>
-    <legend for="ide-pref" class="block input-label">What is your preferred IDE/development environment?</legend>
-      <input type="radio" id="ide-perf-atom" name="ide-perf" value="atom">
-      <label for="ide-perf-atom">Atom</label>
-      <input type="radio" id="ide-perf-emacs" name="ide-perf" value="emacs">
-      <label for="ide-perf-emacs">Emacs</label>
-      <input type="radio" id="ide-perf-vim" name="ide-perf" value="vim">
-      <label for="ide-perf-vim">Vim</label>
-      <input type="radio" id="ide-perf-visual-studio-code" name="ide-perf" value="visual-studio-code">
-      <label for="ide-perf-visual-studio-code">Visual Studio Code</label>
-      <input type="radio" id="ide-perf-sublime-text" name="ide-perf" value="sublime-text">
-      <label for="ide-perf-sublime-text">Sublime Text</label>
-      <input type="radio" id="ide-perf-jetbrains-ides" name="ide-perf" value="jetbrains-ides">
-      <label for="ide-perf-jetbrains-ides">Jetbrains IDEs</label>
-      <input type="radio" id="ide-perf-other" name="ide-perf" value="other">
-      <label for="ide-perf-other">Other</label>
+    <legend for="ide-pref" class="block input-label">What is your preferred text editor or development environment?</legend>
+      <input type="radio" id="ide-pref-atom" name="ide-pref" value="atom">
+      <label for="ide-pref-atom">Atom</label>
+      <input type="radio" id="ide-pref-emacs" name="ide-pref" value="emacs">
+      <label for="ide-pref-emacs">Emacs</label>
+      <input type="radio" id="ide-pref-vim" name="ide-pref" value="vim">
+      <label for="ide-pref-vim">Vim</label>
+      <input type="radio" id="ide-pref-vs-code" name="ide-pref" value="vs-code">
+      <label for="ide-pref-vs-code">Visual Studio Code</label>
+      <input type="radio" id="ide-pref-sublime" name="ide-pref" value="sublime">
+      <label for="ide-pref-sublime-text">Sublime Text</label>
+      <input type="radio" id="ide-pref-jetbrains" name="ide-pref" value="jetbrains">
+      <label for="ide-pref-jetbrains-ides">Jetbrains IDEs</label>
+      <input type="radio" id="ide-pref-other" name="ide-pref" value="other">
+      <label for="ide-pref-other">Other</label>
     </fieldset>
 </div>
 
-{{!-- Why do you prefer it? --}}
 <div class="form-group">
     <label for="ide-pref-why" class="block input-label">Why do you prefer it?</label>
     <input type="text" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc" />
@@ -167,7 +153,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <h2 id="at-work"><a href="#at-work" class="text-ember-500 text-md">&sect;</a>Using Ember At Work</h2>
 <p>This section relates to how you use Ember in at work.</p>
 
-{{!-- Do you currently use Ember at your place of work? --}}
 <div class="form-group">
   <fieldset>
     <legend>Do you currently use Ember at your place of work?</legend>
@@ -176,84 +161,82 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </fieldset>
 </div>
 
-{{!-- In which industry sectors does your employer operate? --}}
 <div class="form-group">
   <fieldset>
     <legend>In which industry sectors does your employer operate?</legend>
-      <input type="checkbox" id="work-sector-agriculture" name="work-sector" value="agriculture">
-      <label for="work-sector-agriculture">
+      <input type="checkbox" id="ws-agriculture" name="work-sector" value="agriculture">
+      <label for="ws-agriculture">
         Agriculture
       </label>
-      <input type="checkbox" id="work-sector-advertising" name="work-sector" value="advertising">
-      <label for="work-sector-advertising">
+      <input type="checkbox" id="ws-advertising" name="work-sector" value="advertising">
+      <label for="ws-advertising">
         Advertising
       </label>
-      <input type="checkbox" id="work-sector-arts-entertainment" name="work-sector" value="arts-entertainment">
-      <label for="work-sector-arts-entertainment">
+      <input type="checkbox" id="ws-arts-entertainment" name="work-sector" value="arts-entertainment">
+      <label for="ws-arts-entertainment">
         Arts & Entertainment
       </label>
-      <input type="checkbox" id="work-sector-consulting" name="work-sector" value="consulting">
-      <label for="work-sector-consulting">
+      <input type="checkbox" id="ws-consulting" name="work-sector" value="consulting">
+      <label for="ws-consulting">
         Consulting
       </label>
-      <input type="checkbox" id="work-sector-education" name="work-sector" value="education">
-      <label for="work-sector-education">
+      <input type="checkbox" id="ws-education" name="work-sector" value="education">
+      <label for="ws-education">
         Education
       </label>
-      <input type="checkbox" id="work-sector-financial-services" name="work-sector" value="financial-services">
-      <label for="work-sector-financial-services">
+      <input type="checkbox" id="ws-financial-services" name="work-sector" value="financial-services">
+      <label for="ws-financial-services">
         Financial Services
       </label>
-      <input type="checkbox" id="work-sector-government" name="work-sector" value="government">
-      <label for="work-sector-government">
+      <input type="checkbox" id="ws-government" name="work-sector" value="government">
+      <label for="ws-government">
         Government
       </label>
-      <input type="checkbox" id="work-sector-health-care-social-assistance" name="work-sector"
-        value="health-care-social-assistance">
-      <label for="work-sector-health-care-social-assistance">
-        Health Care & Social Assistance
+      <input type="checkbox" id="ws-health-care" name="work-sector"
+        value="health-care">
+      <label for="ws-health-care">
+        Health Care
       </label>
-      <input type="checkbox" id="work-sector-insurance" name="work-sector" value="insurance">
-      <label for="work-sector-insurance">
+      <input type="checkbox" id="ws-insurance" name="work-sector" value="insurance">
+      <label for="ws-insurance">
         Insurance
       </label>
-      <input type="checkbox" id="work-sector-manufacturing" name="work-sector" value="manufacturing">
-      <label for="work-sector-manufacturing">
+      <input type="checkbox" id="ws-manufacturing" name="work-sector" value="manufacturing">
+      <label for="ws-manufacturing">
         Manufacturing
       </label>
-      <input type="checkbox" id="work-sector-real-estate" name="work-sector" value="real-estate">
-      <label for="work-sector-real-estate">
+      <input type="checkbox" id="ws-real-estate" name="work-sector" value="real-estate">
+      <label for="ws-real-estate">
         Real Estate
       </label>
-      <input type="checkbox" id="work-sector-retailers" name="work-sector" value="retailers">
-      <label for="work-sector-retailers">
+      <input type="checkbox" id="ws-retailers" name="work-sector" value="retailers">
+      <label for="ws-retailers">
         Retailers (Including Online)
       </label>
-      <input type="checkbox" id="work-sector-technology" name="work-sector" value="technology">
-      <label for="work-sector-technology">
+      <input type="checkbox" id="ws-technology" name="work-sector" value="technology">
+      <label for="ws-technology">
         Technology
       </label>
-      <input type="checkbox" id="work-sector-utilities" name="work-sector" value="utilities">
-      <label for="work-sector-utilities">
+      <input type="checkbox" id="ws-utilities" name="work-sector" value="utilities">
+      <label for="ws-utilities">
         Utilities (Telecom/Energy)
       </label>
-      <input type="checkbox" id="work-sector-transportation" name="work-sector" value="transportation">
-      <label for="work-sector-transportation">
+      <input type="checkbox" id="ws-transportation" name="work-sector" value="transportation">
+      <label for="ws-transportation">
         Transportation
       </label>
-      <input type="checkbox" id="work-sector-travel-hospitality-food-services" name="work-sector"
-        value="travel-hospitality-food-services">
-      <label for="work-sector-travel-hospitality-food-services">
-        Travel/Hospitality/Food Services
+      <input type="checkbox" id="ws-travel-hospitality" name="work-sector"
+        value="travel-hospitality">
+      <label for="ws-travel-hospitality">
+        Hospitality
       </label>
-      <input type="checkbox" id="work-sector-other" name="work-sector" value="other">
-      <label for="work-sector-other">
+      <input type="checkbox" id="ws-other" name="work-sector" value="other">
+      <label for="ws-other">
         Other
       </label>
   </fieldset>
 </div>
 
-{{!-- How many people are there at your entire company? --}}
 <div class="form-group">
   <fieldset>
     <legend>How many people are there at your entire company?</legend>
@@ -281,14 +264,13 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
     <label for="work-company-size-greater-than-1000">
       Greater than 1,000
     </label>
-    <input type="radio" id="work-company-size-i-dont-know" name="work-company-size" value="I don't know">
-    <label for="work-company-size-i-dont-know">
+    <input type="radio" id="work-company-size-idk" name="work-company-size" value="I don't know">
+    <label for="work-company-size-idk">
       I don't know
     </label>
   </fieldset>
 </div>
 
-{{!-- How many developers at your company are responsible for writing front-end code? --}}
 <div class="form-group">
   <fieldset>
     <legend>How many developers at your company are responsible for writing front-end code?</legend>
@@ -316,14 +298,13 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
     <label for="work-company-devs-fe-greater-than-100">
       Greater than 100
     </label>
-    <input type="radio" id="work-company-devs-fe-i-dont-know" name="work-company-devs-fe" value="I don't know">
-    <label for="work-company-devs-fe-i-dont-know">
+    <input type="radio" id="work-company-devs-fe-idk" name="work-company-devs-fe" value="I don't know">
+    <label for="work-company-devs-fe-idk">
       I don't know
     </label>
   </fieldset>
 </div>
 
-{{!-- How many developers at your company are responsible for writing code in Ember? --}}
 <div class="form-group">
   <fieldset>
     <legend>How many developers at your company are responsible for writing code in Ember?</legend>
@@ -351,14 +332,13 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
       <label for="work-company-devs-ember-greater-than-100">
         Greater than 100
       </label>
-      <input type="radio" id="work-company-devs-ember-i-dont-know" name="work-company-devs-ember" value="I don't know">
-      <label for="work-company-devs-ember-i-dont-know">
+      <input type="radio" id="work-company-devs-ember-idk" name="work-company-devs-ember" value="I don't know">
+      <label for="work-company-devs-ember-idk">
         I don't know
       </label>
   </fieldset>
 </div>
 
-{{!-- How often do you use Ember at work? --}}
 <div class="form-group">
   <fieldset>
     <legend>How often do you use Ember at work?</legend>
@@ -386,7 +366,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 
-{{!-- Does your company intend to hire more Ember developers in the next year? --}}
 <div class="form-group">
   <legend>Does your company intend to hire more Ember developers in the next year?</legend>
   <input type="radio" id="work-company-ember-hiring-plan-yes" name="work-company-ember-hiring-plan" value="Yes">
@@ -397,14 +376,13 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   <label for="work-company-ember-hiring-plan-no">
     No
   </label>
-  <input type="radio" id="work-company-ember-hiring-plan-i-dont-know" name="work-company-ember-hiring-plan"
+  <input type="radio" id="work-company-ember-hiring-plan-idk" name="work-company-ember-hiring-plan"
     value="I don't know">
-  <label for="work-company-ember-hiring-plan-i-dont-know">
+  <label for="work-company-ember-hiring-plan-idk">
     I don't know
   </label>
 </div>
 
-{{!-- How many Ember apps does your company have? --}}
 <div class="form-group">
 <fieldset>
   <legend>How many Ember apps does your company have?</legend>
@@ -432,16 +410,15 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
       <label for="work-company-apps-ember-greater-than-100">
         Greater than 100
       </label>
-      <input type="radio" id="work-company-apps-ember-i-dont-know" name="work-company-apps-ember" value="I don't know">
-      <label for="work-company-apps-ember-i-dont-know">
+      <input type="radio" id="work-company-apps-ember-idk" name="work-company-apps-ember" value="I don't know">
+      <label for="work-company-apps-ember-idk">
         I don't know
       </label>
 </fieldset>
 </div>
 
 
-{{!-- Which choice best describes the overall distribution of web applications at your company: of all of the web applications at my company, _______ of them are Ember apps. --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>Which choice best describes the overall distribution of web applications at your company: of all of the web
       applications at my company, _______ of them are Ember apps.</legend>
@@ -477,8 +454,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 </div>
 
-{{!-- If there is a version of Ember you primarily work with at your job, what is it? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>If there is a version of Ember you primarily work with at your job, what is it?</legend>
   </fieldset>
@@ -537,16 +513,15 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   <label for="work-company-apps-ember-version-primary-none">
     None / we don't use one version of Ember significantly more than others
   </label>
-  <input type="radio" id="work-company-apps-ember-version-primary-i-dont-know"
+  <input type="radio" id="work-company-apps-ember-version-primary-idk"
     name="work-company-apps-ember-version-primary" value="I don't know">
-  <label for="work-company-apps-ember-version-primary-i-dont-know">
+  <label for="work-company-apps-ember-version-primary-idk">
     I don't know
   </label>
 </div>
 
 
-{{!-- What version(s) of Ember do you regularly work with at your job? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>What version(s) of Ember do you regularly work with at your job?</legend>
   </fieldset>
@@ -600,15 +575,14 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   <label for="work-company-apps-ember-versions-used-4-x">
     4.x
   </label>
-  <input type="checkbox" id="work-company-apps-ember-versions-used-i-dont-know"
+  <input type="checkbox" id="work-company-apps-ember-versions-used-idk"
     name="work-company-apps-ember-versions-used" value="I don't know">
-  <label for="work-company-apps-ember-versions-used-i-dont-know">
+  <label for="work-company-apps-ember-versions-used-idk">
     I don't know
   </label>
 </div>
 
-{{!-- If you use Ember Data in your company's Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>If you use Ember Data in your company's Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number?</legend>
   </fieldset>
@@ -629,10 +603,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-
-
-{{!-- If you use Ember CLI in your company's Ember apps, do you typically use the same version as the framework, or do you manually change it to a different version number? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>If you use Ember CLI in your company's Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number?</legend>
   </fieldset>
@@ -653,8 +624,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- What testing framework do you use most frequently in the Ember apps you work on at your job? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>What testing framework do you use most frequently in the Ember apps you work on at your job?</legend>
   </fieldset>
@@ -680,8 +650,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- Which of these server-side frameworks do you primarily in the Ember apps you work on at your job? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>Which of these server-side frameworks do you primarily in the Ember apps you work on at your job?</legend>
   </fieldset>
@@ -730,9 +699,9 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   <label for="work-company-apps-ember-server-side-framework-primary-none">
     None
   </label>
-  <input type="radio" id="work-company-apps-ember-server-side-framework-primary-i-dont-know"
+  <input type="radio" id="work-company-apps-ember-server-side-framework-primary-idk"
     name="work-company-apps-ember-server-side-framework-primary" value="I don't know">
-  <label for="work-company-apps-ember-server-side-framework-primary-i-dont-know">
+  <label for="work-company-apps-ember-server-side-framework-primary-idk">
     I don't know
   </label>
   <input type="radio" id="work-company-apps-ember-server-side-framework-primary-other"
@@ -742,8 +711,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- Which of these are used in the projects that you are actively working on or actively maintain for the Ember apps you work on at your job? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>Which of these are used in the projects that you are actively working on or actively maintain for the Ember
       apps you work on at your job?</legend>
@@ -811,8 +779,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- What is the target platform(s) for your company's Ember apps? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>What is the target platform(s) for your company's Ember apps?</legend>
   </fieldset>
@@ -833,8 +800,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- Who are the target users of your company's Ember apps? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>Who are the target users of your company's Ember apps?</legend>
   </fieldset>
@@ -855,8 +821,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   </label>
 </div>
 
-{{!-- How many end users do your company's Ember apps support? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How many end users do your company's Ember apps support?</legend>
   </fieldset>
@@ -885,9 +850,9 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
   <label for="work-company-apps-ember-target-users-count-greater-than-1000000">
     Greater than 1,000,000
   </label>
-  <input type="radio" id="work-company-apps-ember-target-users-count-i-dont-know"
+  <input type="radio" id="work-company-apps-ember-target-users-count-idk"
     name="work-company-apps-ember-target-users-count" value="I don't know">
-  <label for="work-company-apps-ember-target-users-count-i-dont-know">
+  <label for="work-company-apps-ember-target-users-count-idk">
     I don't know
   </label>
 </div>
