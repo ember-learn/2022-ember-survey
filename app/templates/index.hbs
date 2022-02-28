@@ -126,8 +126,17 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <p>This section is about your preferred development environment, whether at work or at home.</p>
 
 <div>
-    <label for="os-pref" class="block input-label">What operating system do you prefer?</label>
-    <input type="text" id="os-pref" name="os-pref" />
+    <fieldset>
+      <legend>What operating system do you prefer?</legend>
+          <input type="checkbox" id="macos" name="os-pref" value="macos" aria-label="macos">
+          <label for="macos">macOS</label>
+          <input type="checkbox" id="linux-unix" name="os-pref" value="linux-unix" aria-label="linux-unix">
+          <label for="Linux/Unix (other than macOS)">Linux/Unix (other than macOS)</label>
+          <input type="checkbox" id="windows" name="os-pref" value="windows" aria-label="windows">
+          <label for="windows">Windows</label>
+          <input type="checkbox" id="other" name="os-pref" value="other" aria-label="other">
+          <label for="other">Other</label>
+    </fieldset>
 </div>
 
 <div>
