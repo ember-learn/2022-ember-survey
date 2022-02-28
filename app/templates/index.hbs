@@ -27,9 +27,9 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <h2 id="background"><a href="#background" class="text-ember-500 text-md">&sect;</a> Your Development  Background</h2>
 <p>This section is about your development background in web technologies.</p>
-
+<div class="take-out-before-deploy">
 {{!-- How long have you been using Ember? --}}
-<div>
+<div class="form-group">
   <label for='time-use' class='block input-label'>How long have you been using Ember?</label>
   <select id='time-use' name='time-use' class='input-select'>
     <option>Less than 1 year</option>
@@ -41,7 +41,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- With which other front-end frameworks do you have some experience? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>With which other front-end frameworks do you have some experience?</legend>
       <input type="checkbox" id="other-frameworks-angular" name="other-frameworks" value="angular">
@@ -60,7 +60,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How would you rate your knowledge of HTML? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of HTML?</legend>
       <input type="radio" id="html-none" name="know-html" /><label for="html-none">None</label>
@@ -71,7 +71,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How would you rate your knowledge of Accessibility (WAI-ARIA)? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
       <input type="radio" id="aria-none" name="know-aria" /><label for="aria-none">None</label>
@@ -82,7 +82,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How would you rate your knowledge of CSS? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of CSS?</legend>
       <input type="radio" id="css-none" name="know-css" /><label for="css-none">None</label>
@@ -93,7 +93,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How would you rate your knowledge of JavaScript? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How would you rate your knowledge of JavaScript?</legend>
       <input type="radio" id="js-none" name="know-js" /><label for="js-none">None</label>
@@ -102,13 +102,14 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
       <input type="radio" id="js-advanced" name="know-js" /><label for="js-advanced">Advanced</label>
   </fieldset>
 </div>
-
+</div>
 
 <h2 id="env-pref"><a href="#env-pref" class="text-ember-500 text-md">&sect;</a>Development Environment Preferences</h2>
 <p>This section is about your preferred development environment, whether at work or at home.</p>
+<div class="take-out-before-deploy">
 
 {{!-- What operating system do you prefer? --}}
-<div>
+<div class="form-group">
     <fieldset>
       <legend>What operating system do you prefer?</legend>
           <input type="radio" id="os-pref-mac-os" name="os-pref" value="mac-os">
@@ -123,19 +124,19 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- What operating system do you most frequently use at work? --}}
-<div>
+<div class="form-group">
     <label for="os-work" class="block input-label">What operating system do you most frequently use at work?</label>
     <input type="text" id="os-work" name="os-work" />
 </div>
 
 {{!-- What operating system do you most frequently use at home? --}}
-<div>
+<div class="form-group">
     <label for="os-home" class="block input-label">What operating system do you most frequently use at home?</label>
     <input type="text" id="os-home" name="os-home" />
 </div>
 
 {{!-- What is your preferred IDE/development environment? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend for="ide-pref" class="block input-label">What is your preferred IDE/development environment?</legend>
       <input type="radio" id="ide-perf-atom" name="ide-perf" value="atom">
@@ -156,7 +157,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- Why do you prefer it? --}}
-<div>
+<div class="form-group">
     <label for="ide-pref-why" class="block input-label">Why do you prefer it?</label>
     <input type="text" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc" />
     <p class="input-desc" id="ide-pref-why-desc">Example responses: "I've been using it for years", or "I feel cool when I use it"</p>
@@ -167,7 +168,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 <p>This section relates to how you use Ember in at work.</p>
 
 {{!-- Do you currently use Ember at your place of work? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>Do you currently use Ember at your place of work?</legend>
       <input type="radio" id="work-use-ember-yes" name="work-use-ember" /><label for="work-use-ember-yes">Yes</label>
@@ -176,7 +177,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- In which industry sectors does your employer operate? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>In which industry sectors does your employer operate?</legend>
       <input type="checkbox" id="work-sector-agriculture" name="work-sector" value="agriculture">
@@ -253,7 +254,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How many people are there at your entire company? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How many people are there at your entire company?</legend>
     <input type="radio" id="work-company-size-1-10" name="work-company-size" value="Between 1 - 10">
@@ -288,7 +289,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How many developers at your company are responsible for writing front-end code? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How many developers at your company are responsible for writing front-end code?</legend>
     <input type="radio" id="work-company-devs-fe-none" name="work-company-devs-fe" value="None">
@@ -323,7 +324,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How many developers at your company are responsible for writing code in Ember? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How many developers at your company are responsible for writing code in Ember?</legend>
       <input type="radio" id="work-company-devs-ember-none" name="work-company-devs-ember" value="None">
@@ -358,7 +359,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How often do you use Ember at work? --}}
-<div>
+<div class="form-group">
   <fieldset>
     <legend>How often do you use Ember at work?</legend>
   </fieldset>
@@ -386,7 +387,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 
 {{!-- Does your company intend to hire more Ember developers in the next year? --}}
-<div>
+<div class="form-group">
   <legend>Does your company intend to hire more Ember developers in the next year?</legend>
   <input type="radio" id="work-company-ember-hiring-plan-yes" name="work-company-ember-hiring-plan" value="Yes">
   <label for="work-company-ember-hiring-plan-yes">
@@ -404,7 +405,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 {{!-- How many Ember apps does your company have? --}}
-<div>
+<div class="form-group">
 <fieldset>
   <legend>How many Ember apps does your company have?</legend>
         <input type="radio" id="work-company-apps-ember-none" name="work-company-apps-ember" value="None">
@@ -947,6 +948,7 @@ On a scale of 1-5, how likely are you to recommend Ember to someone else for a n
 Please elaborate on why you gave this rating.
 </div>
  --}}
+</div>
 
 <h2 id="at-home"><a href="#at-home" class="text-ember-500 text-md">&sect;</a>Personal Applications</h2>
 <p>This section relates to how you use Ember in side projects or applications for personal use.</p>
@@ -954,73 +956,90 @@ Please elaborate on why you gave this rating.
 <!-- TODO: Duplicate and Filter Enterprise Application Section -->
 
 
-<h2 id="this-year"><a href="#this-year" class="text-ember-500 text-md">&sect;</a>Feedback: Current Year</h2>
+<h2 id="feedback"><a href="#feedback" class="text-ember-500 text-md">&sect;</a>Feedback</h2>
 <p>
 This section is about the changes to Ember.js released in the past year and those scheduled for release in the upcoming year.
 </p>
 
-<div>
+<div class="form-group">
 <!-- TODO: Link to Changelog -->
 Have you actively integrated any of the following features released within the last year into your applications? If so, which one had the most positive impact on your app or development experience?
 </div>
 
-<div>
+<div class="form-group">
 <!-- TODO: Link to RFCs -->
 Which of these Ember features planned for the next year do you think will have the most positive impact on your experience developing Ember apps? Why?
 </div>
 
-<div>
+<div class="form-group">
 If you have attended any virtual Ember events in the past year, which talk was your favorite and why?
 </div>
 
-<h2 id="ember-feedback"><a href="#ember-feedback" class="text-ember-500 text-md">&sect;</a>Feedback: General</h2>
+<h3 id="feedback-learning"><a href="#feedback-learning" class="text-ember-500 text-md">&sect;</a>Learning Ember</h3>
 <p>
 This section is about your experiences using Ember, in general
 </p>
 
-<div>
+<div class="form-group">
 <!-- Learning: Getting Started -->
 When you were first learning Ember, what was the most difficult thing to understand?
 </div>
 
-<div>
-When you were first learning Ember, what was the easiest thing to understand?
+<div class="form-group">
+When you were first learning Ember, what concept felt the most intuitive to you?
 </div>
 
-<div>
+<div class="form-group">
     Think about the last time you upgraded an Ember app. What version did you migrate from/to, and what was the hardest thing about it?
 </div>
 
-<div>
+<div class="form-group">
 If you were not able to upgrade, what prevented you from upgrading?
 </div>
 
 <!-- NEW: Candidates for future built-ins -->
-<div>
+<div class="form-group">
 Is there anything you immediately add or configure every time you make a new Ember application (e.g. an addon, linting rules, etc.)
 </div>
 
-<div>
+<div class="form-group">
 Is there anything you want to tell us about your experiences using Ember?
 </div>
 
-<h2 id="surveys"><a href="#surveys" class="text-ember-500 text-md">&sect;</a>About Surveys</h2>
+<h3 id="feedback-surveys"><a href="#feedback-surveys" class="text-ember-500 text-md">&sect;</a>About Surveys</h3>
 <p>
 This section is about this survey and other developer surveys you may have taken.</p>
 
-<div>
-How did you hear about this survey?
+<div class="form-group">
+    <fieldset>
+        <legend aria-describedby="survey-outreach-desc">How did you hear about this survey?</legend>
+        <input type="checkbox" name="survey-outreach" id="survey-email" value="email">
+        <label for="survey-email">Email</label>
+        
+        <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord">
+        <label for="survey-discord">Discord</label>
+
+        <input type="checkbox" name="survey-outreach" id="survey-social" value="social">
+        <label for="survey-social">Social Media</label>
+
+        <input type="checkbox" name="survey-outreach" id="survey-work" value="work">
+        <label for="survey-work">Announcement At Work</label>
+
+        <input type="checkbox" name="survey-outreach" id="survey-website" value="website">
+        <label for="survey-website">The Ember Website</label>
+    </fieldset>
+    <p class="input-desc" id="survey-outreach-desc">please select all that apply.</p>
 </div>
 
-<div>
+<div class="form-group">
 Do you participate in other developer surveys?
 </div>
 
-<div>
+<div class="form-group">
 If so, which ones?
 </div>
 
-<div>
+<div class="form-group">
 Do you have any general feedback about the experience of the completing the community survey?
 </div>
 
@@ -1029,20 +1048,16 @@ Do you have any general feedback about the experience of the completing the comm
 This section covers items that do not fit into the previous sections.
 </p>
 
-<div>
+<div class="form-group">
 Where in the world do you live?
 </div>
 
-<div>
+<div class="form-group">
 Is there anything else you'd like to tell us?
 </div>
 
 <div class='pt-5'>
     <div class='flex justify-end'>
-      {{!-- <button
-        type='reset'
-        class='bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-800 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ember-600'
-      >Clear Form</button> --}}
       <button
         type='submit'
         class='ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-ember-500 hover:bg-ember-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ember-600'
