@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'ember': {
+        ember: {
           50: '#fffdfd',
           100: '#f8d6d1',
           200: '#f1afa5',
