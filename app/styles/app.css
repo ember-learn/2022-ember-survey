@@ -18,9 +18,35 @@ h3 {
     @apply
     text-2xl;
 }
-form {
+
+aside nav a {
+    @apply
+    flex 
+    font-medium
+    hover:bg-white 
+    items-center 
+    px-3 
+    py-2 
+    rounded-md 
+    text-ember-700 
+    text-sm;
+    /* apply should not be used with the group utility...why? */
 }
 
+.prose {
+    @apply
+    text-lg;
+}
+
+.prose p a {
+    @apply
+    decoration-2
+    focus:border-ember-500
+    hover:text-ember-600
+    hover:underline
+    text-ember-500 
+    ;
+}
 .form-group {
     @apply
     mt-6
@@ -33,6 +59,7 @@ fieldset {
     flex-flow: row wrap;
     align-items: center;
 }
+
 fieldset legend {
     width: 100%;
 }
@@ -44,13 +71,13 @@ fieldset input[type=checkbox] + label {
 
 legend, .input-label {
     @apply
-    font-medium
-    text-gray-800;
+    font-bold
+    text-slate-800;
 }
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     @apply
     block 
-    border-gray-400 
+    border-slate-500 
     caret-ember-500
     focus:border-ember-500
     focus:ring-ember-500
@@ -65,7 +92,7 @@ legend, .input-label {
     @apply
     mt-2 
     text-sm 
-    text-gray-700;
+    text-slate-700;
 }
 .input-select {
     @apply
@@ -76,7 +103,7 @@ legend, .input-label {
     pr-10 
     py-2 
     text-base 
-    border-gray-500 
+    border-slate-500 
     focus:outline-none 
     focus:ring-ember-500 
     focus:border-ember-500 

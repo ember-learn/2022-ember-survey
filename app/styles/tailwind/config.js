@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        slate: {
+          400: '#8596AD',
+        },
         ember: {
           50: '#fffdfd',
           100: '#f8d6d1',
