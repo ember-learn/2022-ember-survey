@@ -1,36 +1,36 @@
-{{page-title '2022 Ember Community Survey'}}
+{{page-title "2022 Ember Community Survey"}}
 {{! template-lint-disable "no-html-comments" }}
-<div class='lg:grid lg:grid-cols-12 lg:gap-x-5'>
-  <aside class='py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3'>
-    <nav class='space-y-1' aria-label='sidebar'>
-      <a href='#background'>
+<div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
+  <aside class="py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3">
+    <nav class="space-y-1" aria-label="sidebar">
+      <a href="#background">
         Your Development Background
       </a>
-      <a href='#env-pref'>
+      <a href="#env-pref">
         Development Preferences
       </a>
-      <a href='#at-work'>
+      <a href="#at-work">
         Ember At Work
       </a>
-      <a href='#at-home'>
+      <a href="#at-home">
         Personal Applications
       </a>
-      <a href='#feedback'>
+      <a href="#feedback">
         Feedback
       </a>
-      <a href='#closing'>
+      <a href="#closing">
         Closing Questions
       </a>
     </nav>
   </aside>
-  <div class='space-y-6 sm:px-6 lg:px-0 lg:col-span-9'>
-    <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-      <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+  <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-9">
+    <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+      <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
         {{! questions go here }}
-        <div class='prose'>
-          <p class='text-slate-900'>
+        <div class="prose">
+          <p class="text-slate-900">
             This survey is for developers who use
-            <a href='https://github.com/emberjs/ember.js'>
+            <a href="https://github.com/emberjs/ember.js">
               the Ember JavaScript framework
             </a>
             , either for work or personal use. The survey should take
@@ -45,7 +45,7 @@
           </p>
           <p>
             If you have any issues completing the survey, please
-            <a href='mailto:melsumner@fastmail.com'>
+            <a href="mailto:melsumner@fastmail.com">
               email us
             </a>
             so we can help.
@@ -53,12 +53,12 @@
         </div>
       </div>
     </div>
-    <form name='survey-22' method='POST' data-netlify='true'>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+    <form name="survey-22" method="POST" data-netlify="true">
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
-            <h2 id='background'>
-              <a href='#background' class='text-ember-500 text-md'>
+            <h2 id="background">
+              <a href="#background" class="text-ember-500 text-md">
                 §
               </a>
               Your Development Background
@@ -68,54 +68,54 @@
               technologies.
             </p>
           </div>
-          <input type='hidden' name='form-name' value='survey-22'
-            aria-label='leave this one alone it is just for netlify' />
-          <div class='form-group'>
-            <label for='time-use' class='block input-label font-bold'>
+          <input type="hidden" name="form-name" value="survey-22"
+            aria-label="leave this one alone it is just for netlify" />
+          <div class="form-group">
+            <label for="time-use" class="block input-label font-bold">
               How long have you been using Ember?
             </label>
-            <select id='time-use' name='time-use' class='input-select'>
-              <option value='less-than-one'>
+            <select id="time-use" name="time-use" class="input-select">
+              <option value="less-than-one">
                 Less than 1 year
               </option>
-              <option value='one-to-three'>
+              <option value="one-to-three">
                 Between 1 - 3 years
               </option>
-              <option value='four-to-five'>
+              <option value="four-to-five">
                 Between 4 - 5 years
               </option>
-              <option value='six-to-eight'>
+              <option value="six-to-eight">
                 Between 6 - 8 years
               </option>
-              <option value='more-than-eight'>
+              <option value="more-than-eight">
                 8+ years
               </option>
             </select>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
-              <legend aria-describedby='frameworks-desc'>
+              <legend aria-describedby="frameworks-desc">
                 With which of these other front-end frameworks do you have some
                 experience?
               </legend>
-              <input type='checkbox' id='other-fw-angular' name='other-frameworks' value='angular' />
-              <label for='other-fw-angular'>
+              <input type="checkbox" id="other-fw-angular" name="other-frameworks" value="angular" />
+              <label for="other-fw-angular">
                 Angular
               </label>
-              <input type='checkbox' id='other-fw-react' name='other-frameworks' value='react' />
-              <label for='other-fw-react'>
+              <input type="checkbox" id="other-fw-react" name="other-frameworks" value="react" />
+              <label for="other-fw-react">
                 React
               </label>
-              <input type='checkbox' id='other-fw-svelte' name='other-frameworks' value='svelte' />
-              <label for='other-fw-svelte'>
+              <input type="checkbox" id="other-fw-svelte" name="other-frameworks" value="svelte" />
+              <label for="other-fw-svelte">
                 Svelte
               </label>
-              <input type='checkbox' id='other-fw-vue' name='other-frameworks' value='vue' />
-              <label for='other-fw-vue'>
+              <input type="checkbox" id="other-fw-vue" name="other-frameworks" value="vue" />
+              <label for="other-fw-vue">
                 Vue
               </label>
             </fieldset>
-            <p class='input-desc' id='frameworks-desc'>
+            <p class="input-desc" id="frameworks-desc">
               Please choose any that apply. Not all frameworks are represented
               here.
             </p>
@@ -123,105 +123,105 @@
           <h3>
             Rate your knowledge
           </h3>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 HTML
               </legend>
-              <input type='radio' id='html-none' name='know-html' />
-              <label for='html-none'>
+              <input type="radio" id="html-none" name="know-html" />
+              <label for="html-none">
                 None
               </label>
-              <input type='radio' id='html-beginner' name='know-html' />
-              <label for='html-beginner'>
+              <input type="radio" id="html-beginner" name="know-html" />
+              <label for="html-beginner">
                 Beginner
               </label>
-              <input type='radio' id='html-intermediate' name='know-html' />
-              <label for='html-intermediate'>
+              <input type="radio" id="html-intermediate" name="know-html" />
+              <label for="html-intermediate">
                 Intermediate
               </label>
-              <input type='radio' id='html-advanced' name='know-html' />
-              <label for='html-advanced'>
+              <input type="radio" id="html-advanced" name="know-html" />
+              <label for="html-advanced">
                 Advanced
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Accessibility (WAI-ARIA)
               </legend>
-              <input type='radio' id='aria-none' name='know-aria' />
-              <label for='aria-none'>
+              <input type="radio" id="aria-none" name="know-aria" />
+              <label for="aria-none">
                 None
               </label>
-              <input type='radio' id='aria-beginner' name='know-aria' />
-              <label for='aria-beginner'>
+              <input type="radio" id="aria-beginner" name="know-aria" />
+              <label for="aria-beginner">
                 Beginner
               </label>
-              <input type='radio' id='aria-intermediate' name='know-aria' />
-              <label for='aria-intermediate'>
+              <input type="radio" id="aria-intermediate" name="know-aria" />
+              <label for="aria-intermediate">
                 Intermediate
               </label>
-              <input type='radio' id='aria-advanced' name='know-aria' />
-              <label for='aria-advanced'>
+              <input type="radio" id="aria-advanced" name="know-aria" />
+              <label for="aria-advanced">
                 Advanced
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Cascading Style Sheets (CSS)
               </legend>
-              <input type='radio' id='css-none' name='know-css' />
-              <label for='css-none'>
+              <input type="radio" id="css-none" name="know-css" />
+              <label for="css-none">
                 None
               </label>
-              <input type='radio' id='css-beginner' name='know-css' />
-              <label for='css-beginner'>
+              <input type="radio" id="css-beginner" name="know-css" />
+              <label for="css-beginner">
                 Beginner
               </label>
-              <input type='radio' id='css-intermediate' name='know-css' />
-              <label for='css-intermediate'>
+              <input type="radio" id="css-intermediate" name="know-css" />
+              <label for="css-intermediate">
                 Intermediate
               </label>
-              <input type='radio' id='css-advanced' name='know-css' />
-              <label for='css-advanced'>
+              <input type="radio" id="css-advanced" name="know-css" />
+              <label for="css-advanced">
                 Advanced
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 JavaScript
               </legend>
-              <input type='radio' id='js-none' name='know-js' />
-              <label for='js-none'>
+              <input type="radio" id="js-none" name="know-js" />
+              <label for="js-none">
                 None
               </label>
-              <input type='radio' id='js-beginner' name='know-js' />
-              <label for='js-beginner'>
+              <input type="radio" id="js-beginner" name="know-js" />
+              <label for="js-beginner">
                 Beginner
               </label>
-              <input type='radio' id='js-intermediate' name='know-js' />
-              <label for='js-intermediate'>
+              <input type="radio" id="js-intermediate" name="know-js" />
+              <label for="js-intermediate">
                 Intermediate
               </label>
-              <input type='radio' id='js-advanced' name='know-js' />
-              <label for='js-advanced'>
+              <input type="radio" id="js-advanced" name="know-js" />
+              <label for="js-advanced">
                 Advanced
               </label>
             </fieldset>
           </div>
         </div>
       </div>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
-            <h2 id='env-pref'>
-              <a href='#env-pref' class='text-ember-500 text-md'>
+            <h2 id="env-pref">
+              <a href="#env-pref" class="text-ember-500 text-md">
                 §
               </a>
               Development Preferences
@@ -232,82 +232,82 @@
             </p>
           </div>
           {{! questions go here }}
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 What operating system do you prefer?
               </legend>
-              <input type='radio' id='os-pref-mac-os' name='os-pref' value='mac-os' />
-              <label for='os-pref-mac-os'>
+              <input type="radio" id="os-pref-mac-os" name="os-pref" value="mac-os" />
+              <label for="os-pref-mac-os">
                 macOS
               </label>
-              <input type='radio' id='os-pref-linux-unix' name='os-pref' value='linux-unix' />
-              <label for='os-pref-linux-unix'>
+              <input type="radio" id="os-pref-linux-unix" name="os-pref" value="linux-unix" />
+              <label for="os-pref-linux-unix">
                 Linux/Unix (other than macOS)
               </label>
-              <input type='radio' id='os-pref-windows' name='os-pref' value='windows' />
-              <label for='os-pref-windows'>
+              <input type="radio" id="os-pref-windows" name="os-pref" value="windows" />
+              <label for="os-pref-windows">
                 Windows
               </label>
-              <input type='radio' id='os-pref-other' name='os-pref' value='other' />
-              <label for='os-pref-other'>
+              <input type="radio" id="os-pref-other" name="os-pref" value="other" />
+              <label for="os-pref-other">
                 Other
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
-            <label for='os-work' class='block input-label'>
+          <div class="form-group">
+            <label for="os-work" class="block input-label">
               What operating system do you most frequently use at work?
             </label>
-            <input type='text' id='os-work' name='os-work' />
+            <input type="text" id="os-work" name="os-work" />
           </div>
-          <div class='form-group'>
-            <label for='os-home' class='block input-label'>
+          <div class="form-group">
+            <label for="os-home" class="block input-label">
               What operating system do you most frequently use at home?
             </label>
-            <input type='text' id='os-home' name='os-home' />
+            <input type="text" id="os-home" name="os-home" />
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
-              <legend for='ide-pref' class='block input-label'>
+              <legend for="ide-pref" class="block input-label">
                 What is your preferred text editor or development environment?
               </legend>
-              <input type='radio' id='ide-pref-atom' name='ide-pref' value='atom' />
-              <label for='ide-pref-atom'>
+              <input type="radio" id="ide-pref-atom" name="ide-pref" value="atom" />
+              <label for="ide-pref-atom">
                 Atom
               </label>
-              <input type='radio' id='ide-pref-emacs' name='ide-pref' value='emacs' />
-              <label for='ide-pref-emacs'>
+              <input type="radio" id="ide-pref-emacs" name="ide-pref" value="emacs" />
+              <label for="ide-pref-emacs">
                 Emacs
               </label>
-              <input type='radio' id='ide-pref-vim' name='ide-pref' value='vim' />
-              <label for='ide-pref-vim'>
+              <input type="radio" id="ide-pref-vim" name="ide-pref" value="vim" />
+              <label for="ide-pref-vim">
                 Vim
               </label>
-              <input type='radio' id='ide-pref-vs-code' name='ide-pref' value='vs-code' />
-              <label for='ide-pref-vs-code'>
+              <input type="radio" id="ide-pref-vs-code" name="ide-pref" value="vs-code" />
+              <label for="ide-pref-vs-code">
                 Visual Studio Code
               </label>
-              <input type='radio' id='ide-pref-sublime' name='ide-pref' value='sublime' />
-              <label for='ide-pref-sublime'>
+              <input type="radio" id="ide-pref-sublime" name="ide-pref" value="sublime" />
+              <label for="ide-pref-sublime">
                 Sublime Text
               </label>
-              <input type='radio' id='ide-pref-jetbrains' name='ide-pref' value='jetbrains' />
-              <label for='ide-pref-jetbrains'>
+              <input type="radio" id="ide-pref-jetbrains" name="ide-pref" value="jetbrains" />
+              <label for="ide-pref-jetbrains">
                 Jetbrains IDEs
               </label>
-              <input type='radio' id='ide-pref-other' name='ide-pref' value='other' />
-              <label for='ide-pref-other'>
+              <input type="radio" id="ide-pref-other" name="ide-pref" value="other" />
+              <label for="ide-pref-other">
                 Other
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
-            <label for='ide-pref-why' class='block input-label'>
+          <div class="form-group">
+            <label for="ide-pref-why" class="block input-label">
               Why do you prefer it?
             </label>
-            <textarea rows='4' id='ide-pref-why' name='ide-pref-why' aria-describedby='ide-pref-why-desc'></textarea>
-            <p class='input-desc' id='ide-pref-why-desc'>
+            <textarea rows="4" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc"></textarea>
+            <p class="input-desc" id="ide-pref-why-desc">
               Example responses:
               "It has good language support, syntax highlighting, and intelligent code completion for my projects",
               "It has built-in support for version control and a debugger",
@@ -315,12 +315,12 @@
           </div>
         </div>
       </div>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
             {{! next section title }}
-            <h2 id='at-work'>
-              <a href='#at-work' class='text-ember-500 text-md'>
+            <h2 id="at-work">
+              <a href="#at-work" class="text-ember-500 text-md">
                 §
               </a>
               Using Ember At Work
@@ -330,129 +330,129 @@
             </p>
           </div>
           {{! questions go here }}
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Do you currently use Ember at your place of work?
               </legend>
-              <input type='radio' id='work-use-ember-yes' name='work-use-ember' />
-              <label for='work-use-ember-yes'>
+              <input type="radio" id="work-use-ember-yes" name="work-use-ember" />
+              <label for="work-use-ember-yes">
                 Yes
               </label>
-              <input type='radio' id='work-use-ember-no' name='work-use-ember' />
-              <label for='work-use-ember-no'>
+              <input type="radio" id="work-use-ember-no" name="work-use-ember" />
+              <label for="work-use-ember-no">
                 No
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 In which industry or sector(s) does your employer operate?
               </legend>
-              <div class='grid grid-cols-2'>
-                <div class='col-span-1'>
+              <div class="grid grid-cols-2">
+                <div class="col-span-1">
                   <div>
-                    <input type='checkbox' id='ws-agriculture' name='work-sector' value='agriculture' />
-                    <label for='ws-agriculture'>
+                    <input type="checkbox" id="ws-agriculture" name="work-sector" value="agriculture" />
+                    <label for="ws-agriculture">
                       Agriculture
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-advertising' name='work-sector' value='advertising' />
-                    <label for='ws-advertising'>
+                    <input type="checkbox" id="ws-advertising" name="work-sector" value="advertising" />
+                    <label for="ws-advertising">
                       Advertising
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-arts-entertainment' name='work-sector' value='arts-entertainment' />
-                    <label for='ws-arts-entertainment'>
+                    <input type="checkbox" id="ws-arts-entertainment" name="work-sector" value="arts-entertainment" />
+                    <label for="ws-arts-entertainment">
                       Arts & Entertainment
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-consulting' name='work-sector' value='consulting' />
-                    <label for='ws-consulting'>
+                    <input type="checkbox" id="ws-consulting" name="work-sector" value="consulting" />
+                    <label for="ws-consulting">
                       Consulting
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-education' name='work-sector' value='education' />
-                    <label for='ws-education'>
+                    <input type="checkbox" id="ws-education" name="work-sector" value="education" />
+                    <label for="ws-education">
                       Education
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-financial-services' name='work-sector' value='financial-services' />
-                    <label for='ws-financial-services'>
+                    <input type="checkbox" id="ws-financial-services" name="work-sector" value="financial-services" />
+                    <label for="ws-financial-services">
                       Financial Services
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-government' name='work-sector' value='government' />
-                    <label for='ws-government'>
+                    <input type="checkbox" id="ws-government" name="work-sector" value="government" />
+                    <label for="ws-government">
                       Government
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-health-care' name='work-sector' value='health-care' />
-                    <label for='ws-health-care'>
+                    <input type="checkbox" id="ws-health-care" name="work-sector" value="health-care" />
+                    <label for="ws-health-care">
                       Health Care
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-insurance' name='work-sector' value='insurance' />
-                    <label for='ws-insurance'>
+                    <input type="checkbox" id="ws-insurance" name="work-sector" value="insurance" />
+                    <label for="ws-insurance">
                       Insurance
                     </label>
                   </div>
                 </div>
-                <div class='col-span-1'>
+                <div class="col-span-1">
                   <div>
-                    <input type='checkbox' id='ws-manufacturing' name='work-sector' value='manufacturing' />
-                    <label for='ws-manufacturing'>
+                    <input type="checkbox" id="ws-manufacturing" name="work-sector" value="manufacturing" />
+                    <label for="ws-manufacturing">
                       Manufacturing
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-real-estate' name='work-sector' value='real-estate' />
-                    <label for='ws-real-estate'>
+                    <input type="checkbox" id="ws-real-estate" name="work-sector" value="real-estate" />
+                    <label for="ws-real-estate">
                       Real Estate
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-retailers' name='work-sector' value='retailers' />
-                    <label for='ws-retailers'>
+                    <input type="checkbox" id="ws-retailers" name="work-sector" value="retailers" />
+                    <label for="ws-retailers">
                       Retailers (Including Online)
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-technology' name='work-sector' value='technology' />
-                    <label for='ws-technology'>
+                    <input type="checkbox" id="ws-technology" name="work-sector" value="technology" />
+                    <label for="ws-technology">
                       Technology
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-utilities' name='work-sector' value='utilities' />
-                    <label for='ws-utilities'>
+                    <input type="checkbox" id="ws-utilities" name="work-sector" value="utilities" />
+                    <label for="ws-utilities">
                       Utilities (Telecom/Energy)
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-transportation' name='work-sector' value='transportation' />
-                    <label for='ws-transportation'>
+                    <input type="checkbox" id="ws-transportation" name="work-sector" value="transportation" />
+                    <label for="ws-transportation">
                       Transportation
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-hospitality' name='work-sector' value='hospitality' />
-                    <label for='ws-hospitality'>
+                    <input type="checkbox" id="ws-hospitality" name="work-sector" value="hospitality" />
+                    <label for="ws-hospitality">
                       Hospitality
                     </label>
                   </div>
                   <div>
-                    <input type='checkbox' id='ws-other' name='work-sector' value='other' />
-                    <label for='ws-other'>
+                    <input type="checkbox" id="ws-other" name="work-sector" value="other" />
+                    <label for="ws-other">
                       Other
                     </label>
                   </div>
@@ -460,213 +460,213 @@
               </div>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How many people are there at your entire company?
               </legend>
-              <input type='radio' id='work-company-size-1-10' name='work-company-size' value='Between 1 - 10' />
-              <label for='work-company-size-1-10'>
+              <input type="radio" id="work-company-size-1-10" name="work-company-size" value="Between 1 - 10" />
+              <label for="work-company-size-1-10">
                 Between 1 - 10
               </label>
-              <input type='radio' id='work-company-size-11-20' name='work-company-size' value='Between 11 - 20' />
-              <label for='work-company-size-11-20'>
+              <input type="radio" id="work-company-size-11-20" name="work-company-size" value="Between 11 - 20" />
+              <label for="work-company-size-11-20">
                 Between 11 - 20
               </label>
-              <input type='radio' id='work-company-size-21-50' name='work-company-size' value='Between 21 - 50' />
-              <label for='work-company-size-21-50'>
+              <input type="radio" id="work-company-size-21-50" name="work-company-size" value="Between 21 - 50" />
+              <label for="work-company-size-21-50">
                 Between 21 - 50
               </label>
-              <input type='radio' id='work-company-size-51-100' name='work-company-size' value='Between 51 - 100' />
-              <label for='work-company-size-51-100'>
+              <input type="radio" id="work-company-size-51-100" name="work-company-size" value="Between 51 - 100" />
+              <label for="work-company-size-51-100">
                 Between 51 - 100
               </label>
-              <input type='radio' id='work-company-size-101-1000' name='work-company-size'
-                value='Between 101 - 1,000' />
-              <label for='work-company-size-101-1000'>
+              <input type="radio" id="work-company-size-101-1000" name="work-company-size"
+                value="Between 101 - 1,000" />
+              <label for="work-company-size-101-1000">
                 Between 101 - 1,000
               </label>
-              <input type='radio' id='work-company-size-greater-than-1000' name='work-company-size'
-                value='Greater than 1,000' />
-              <label for='work-company-size-greater-than-1000'>
+              <input type="radio" id="work-company-size-greater-than-1000" name="work-company-size"
+                value="Greater than 1,000" />
+              <label for="work-company-size-greater-than-1000">
                 Greater than 1,000
               </label>
-              <input type='radio' id='work-company-size-idk' name='work-company-size' value="I don't know" />
-              <label for='work-company-size-idk'>
+              <input type="radio" id="work-company-size-idk" name="work-company-size" value="I don't know" />
+              <label for="work-company-size-idk">
                 I don't know
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How many developers at your company are responsible for writing
                 front-end code?
               </legend>
-              <input type='radio' id='work-company-devs-fe-none' name='work-company-devs-fe' value='None' />
-              <label for='work-company-devs-fe-none'>
+              <input type="radio" id="work-company-devs-fe-none" name="work-company-devs-fe" value="None" />
+              <label for="work-company-devs-fe-none">
                 None
               </label>
-              <input type='radio' id='work-company-devs-fe-1-10' name='work-company-devs-fe' value='Between 1 - 10' />
-              <label for='work-company-devs-fe-1-10'>
+              <input type="radio" id="work-company-devs-fe-1-10" name="work-company-devs-fe" value="Between 1 - 10" />
+              <label for="work-company-devs-fe-1-10">
                 Between 1 - 10
               </label>
-              <input type='radio' id='work-company-devs-fe-11-20' name='work-company-devs-fe' value='Between 11 - 20' />
-              <label for='work-company-devs-fe-11-20'>
+              <input type="radio" id="work-company-devs-fe-11-20" name="work-company-devs-fe" value="Between 11 - 20" />
+              <label for="work-company-devs-fe-11-20">
                 Between 11 - 20
               </label>
-              <input type='radio' id='work-company-devs-fe-21-50' name='work-company-devs-fe' value='Between 21 - 50' />
-              <label for='work-company-devs-fe-21-50'>
+              <input type="radio" id="work-company-devs-fe-21-50" name="work-company-devs-fe" value="Between 21 - 50" />
+              <label for="work-company-devs-fe-21-50">
                 Between 21 - 50
               </label>
-              <input type='radio' id='work-company-devs-fe-51-100' name='work-company-devs-fe'
-                value='Between 51 - 100' />
-              <label for='work-company-devs-fe-51-100'>
+              <input type="radio" id="work-company-devs-fe-51-100" name="work-company-devs-fe"
+                value="Between 51 - 100" />
+              <label for="work-company-devs-fe-51-100">
                 Between 51 - 100
               </label>
-              <input type='radio' id='work-company-devs-fe-greater-than-100' name='work-company-devs-fe'
-                value='Greater than 100' />
-              <label for='work-company-devs-fe-greater-than-100'>
+              <input type="radio" id="work-company-devs-fe-greater-than-100" name="work-company-devs-fe"
+                value="Greater than 100" />
+              <label for="work-company-devs-fe-greater-than-100">
                 Greater than 100
               </label>
-              <input type='radio' id='work-company-devs-fe-idk' name='work-company-devs-fe' value="I don't know" />
-              <label for='work-company-devs-fe-idk'>
+              <input type="radio" id="work-company-devs-fe-idk" name="work-company-devs-fe" value="I don't know" />
+              <label for="work-company-devs-fe-idk">
                 I don't know
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How many developers at your company are responsible for writing
                 code in Ember?
               </legend>
-              <input type='radio' id='work-company-devs-ember-none' name='work-company-devs-ember' value='None' />
-              <label for='work-company-devs-ember-none'>
+              <input type="radio" id="work-company-devs-ember-none" name="work-company-devs-ember" value="None" />
+              <label for="work-company-devs-ember-none">
                 None
               </label>
-              <input type='radio' id='work-company-devs-ember-1-10' name='work-company-devs-ember'
-                value='Between 1 - 10' />
-              <label for='work-company-devs-ember-1-10'>
+              <input type="radio" id="work-company-devs-ember-1-10" name="work-company-devs-ember"
+                value="Between 1 - 10" />
+              <label for="work-company-devs-ember-1-10">
                 Between 1 - 10
               </label>
-              <input type='radio' id='work-company-devs-ember-11-20' name='work-company-devs-ember'
-                value='Between 11 - 20' />
-              <label for='work-company-devs-ember-11-20'>
+              <input type="radio" id="work-company-devs-ember-11-20" name="work-company-devs-ember"
+                value="Between 11 - 20" />
+              <label for="work-company-devs-ember-11-20">
                 Between 11 - 20
               </label>
-              <input type='radio' id='work-company-devs-ember-21-50' name='work-company-devs-ember'
-                value='Between 21 - 50' />
-              <label for='work-company-devs-ember-21-50'>
+              <input type="radio" id="work-company-devs-ember-21-50" name="work-company-devs-ember"
+                value="Between 21 - 50" />
+              <label for="work-company-devs-ember-21-50">
                 Between 21 - 50
               </label>
-              <input type='radio' id='work-company-devs-ember-51-100' name='work-company-devs-ember'
-                value='Between 51 - 100' />
-              <label for='work-company-devs-ember-51-100'>
+              <input type="radio" id="work-company-devs-ember-51-100" name="work-company-devs-ember"
+                value="Between 51 - 100" />
+              <label for="work-company-devs-ember-51-100">
                 Between 51 - 100
               </label>
-              <input type='radio' id='work-company-devs-ember-greater-than-100' name='work-company-devs-ember'
-                value='Greater than 100' />
-              <label for='work-company-devs-ember-greater-than-100'>
+              <input type="radio" id="work-company-devs-ember-greater-than-100" name="work-company-devs-ember"
+                value="Greater than 100" />
+              <label for="work-company-devs-ember-greater-than-100">
                 Greater than 100
               </label>
-              <input type='radio' id='work-company-devs-ember-idk' name='work-company-devs-ember'
+              <input type="radio" id="work-company-devs-ember-idk" name="work-company-devs-ember"
                 value="I don't know" />
-              <label for='work-company-devs-ember-idk'>
+              <label for="work-company-devs-ember-idk">
                 I don't know
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How often do you use Ember at work?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-ember-usage-frequency-all-of-the-time'
-              name='work-company-ember-usage-frequency' value='All of the time' />
-            <label for='work-company-ember-usage-frequency-all-of-the-time'>
+            <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
+              name="work-company-ember-usage-frequency" value="All of the time" />
+            <label for="work-company-ember-usage-frequency-all-of-the-time">
               All of the time
             </label>
-            <input type='radio' id='work-company-ember-usage-frequency-most-of-the-time'
-              name='work-company-ember-usage-frequency' value='Most of the time' />
-            <label for='work-company-ember-usage-frequency-most-of-the-time'>
+            <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
+              name="work-company-ember-usage-frequency" value="Most of the time" />
+            <label for="work-company-ember-usage-frequency-most-of-the-time">
               Most of the time
             </label>
-            <input type='radio' id='work-company-ember-usage-frequency-some-of-the-time'
-              name='work-company-ember-usage-frequency' value='Some of the time' />
-            <label for='work-company-ember-usage-frequency-some-of-the-time'>
+            <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
+              name="work-company-ember-usage-frequency" value="Some of the time" />
+            <label for="work-company-ember-usage-frequency-some-of-the-time">
               Some of the time
             </label>
-            <input type='radio' id='work-company-ember-usage-frequency-never' name='work-company-ember-usage-frequency'
-              value='Never' />
-            <label for='work-company-ember-usage-frequency-never'>
+            <input type="radio" id="work-company-ember-usage-frequency-never" name="work-company-ember-usage-frequency"
+              value="Never" />
+            <label for="work-company-ember-usage-frequency-never">
               Never
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <legend>
               Does your company intend to hire more Ember developers in the next
               year?
             </legend>
-            <input type='radio' id='work-company-ember-hiring-plan-yes' name='work-company-ember-hiring-plan'
-              value='Yes' />
-            <label for='work-company-ember-hiring-plan-yes'>
+            <input type="radio" id="work-company-ember-hiring-plan-yes" name="work-company-ember-hiring-plan"
+              value="Yes" />
+            <label for="work-company-ember-hiring-plan-yes">
               Yes
             </label>
-            <input type='radio' id='work-company-ember-hiring-plan-no' name='work-company-ember-hiring-plan'
-              value='No' />
-            <label for='work-company-ember-hiring-plan-no'>
+            <input type="radio" id="work-company-ember-hiring-plan-no" name="work-company-ember-hiring-plan"
+              value="No" />
+            <label for="work-company-ember-hiring-plan-no">
               No
             </label>
-            <input type='radio' id='work-company-ember-hiring-plan-idk' name='work-company-ember-hiring-plan'
+            <input type="radio" id="work-company-ember-hiring-plan-idk" name="work-company-ember-hiring-plan"
               value="I don't know" />
-            <label for='work-company-ember-hiring-plan-idk'>
+            <label for="work-company-ember-hiring-plan-idk">
               I don't know
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How many Ember apps does your company have?
               </legend>
-              <input type='radio' id='work-company-apps-ember-none' name='work-company-apps-ember' value='None' />
-              <label for='work-company-apps-ember-none'>
+              <input type="radio" id="work-company-apps-ember-none" name="work-company-apps-ember" value="None" />
+              <label for="work-company-apps-ember-none">
                 None
               </label>
-              <input type='radio' id='work-company-apps-ember-1-10' name='work-company-apps-ember'
-                value='Between 1 - 10' />
-              <label for='work-company-apps-ember-1-10'>
+              <input type="radio" id="work-company-apps-ember-1-10" name="work-company-apps-ember"
+                value="Between 1 - 10" />
+              <label for="work-company-apps-ember-1-10">
                 Between 1 - 10
               </label>
-              <input type='radio' id='work-company-apps-ember-11-20' name='work-company-apps-ember'
-                value='Between 11 - 20' />
-              <label for='work-company-apps-ember-11-20'>
+              <input type="radio" id="work-company-apps-ember-11-20" name="work-company-apps-ember"
+                value="Between 11 - 20" />
+              <label for="work-company-apps-ember-11-20">
                 Between 11 - 20
               </label>
-              <input type='radio' id='work-company-apps-ember-21-50' name='work-company-apps-ember'
-                value='Between 21 - 50' />
-              <label for='work-company-apps-ember-21-50'>
+              <input type="radio" id="work-company-apps-ember-21-50" name="work-company-apps-ember"
+                value="Between 21 - 50" />
+              <label for="work-company-apps-ember-21-50">
                 Between 21 - 50
               </label>
-              <input type='radio' id='work-company-apps-ember-51-100' name='work-company-apps-ember'
-                value='Between 51 - 100' />
-              <label for='work-company-apps-ember-51-100'>
+              <input type="radio" id="work-company-apps-ember-51-100" name="work-company-apps-ember"
+                value="Between 51 - 100" />
+              <label for="work-company-apps-ember-51-100">
                 Between 51 - 100
               </label>
-              <input type='radio' id='work-company-apps-ember-greater-than-100' name='work-company-apps-ember'
-                value='Greater than 100' />
-              <label for='work-company-apps-ember-greater-than-100'>
+              <input type="radio" id="work-company-apps-ember-greater-than-100" name="work-company-apps-ember"
+                value="Greater than 100" />
+              <label for="work-company-apps-ember-greater-than-100">
                 Greater than 100
               </label>
-              <input type='radio' id='work-company-apps-ember-idk' name='work-company-apps-ember'
+              <input type="radio" id="work-company-apps-ember-idk" name="work-company-apps-ember"
                 value="I don't know" />
-              <label for='work-company-apps-ember-idk'>
+              <label for="work-company-apps-ember-idk">
                 I don't know
               </label>
             </fieldset>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Which choice best describes the overall distribution of web
@@ -674,170 +674,170 @@
                 my company, _______ of them are Ember apps.
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-proportion-all' name='work-company-apps-ember-proportion'
-              value='All' />
-            <label for='work-company-apps-ember-proportion-all'>
+            <input type="radio" id="work-company-apps-ember-proportion-all" name="work-company-apps-ember-proportion"
+              value="All" />
+            <label for="work-company-apps-ember-proportion-all">
               All
             </label>
-            <input type='radio' id='work-company-apps-ember-proportion-most' name='work-company-apps-ember-proportion'
-              value='Most' />
-            <label for='work-company-apps-ember-proportion-most'>
+            <input type="radio" id="work-company-apps-ember-proportion-most" name="work-company-apps-ember-proportion"
+              value="Most" />
+            <label for="work-company-apps-ember-proportion-most">
               Most
             </label>
-            <input type='radio' id='work-company-apps-ember-proportion-half' name='work-company-apps-ember-proportion'
-              value='Half' />
-            <label for='work-company-apps-ember-proportion-half'>
+            <input type="radio" id="work-company-apps-ember-proportion-half" name="work-company-apps-ember-proportion"
+              value="Half" />
+            <label for="work-company-apps-ember-proportion-half">
               Half
             </label>
-            <input type='radio' id='work-company-apps-ember-proportion-some' name='work-company-apps-ember-proportion'
-              value='Some' />
-            <label for='work-company-apps-ember-proportion-some'>
+            <input type="radio" id="work-company-apps-ember-proportion-some" name="work-company-apps-ember-proportion"
+              value="Some" />
+            <label for="work-company-apps-ember-proportion-some">
               Some
             </label>
-            <input type='radio' id='work-company-apps-ember-proportion-few' name='work-company-apps-ember-proportion'
-              value='Few' />
-            <label for='work-company-apps-ember-proportion-few'>
+            <input type="radio" id="work-company-apps-ember-proportion-few" name="work-company-apps-ember-proportion"
+              value="Few" />
+            <label for="work-company-apps-ember-proportion-few">
               Few
             </label>
-            <input type='radio' id='work-company-apps-ember-proportion-none' name='work-company-apps-ember-proportion'
-              value='None' />
-            <label for='work-company-apps-ember-proportion-none'>
+            <input type="radio" id="work-company-apps-ember-proportion-none" name="work-company-apps-ember-proportion"
+              value="None" />
+            <label for="work-company-apps-ember-proportion-none">
               None
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 If there is a version of Ember you primarily work with at your
                 job, what is it?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-version-primary-1-x'
-              name='work-company-apps-ember-version-primary' value='1.x' />
-            <label for='work-company-apps-ember-version-primary-1-x'>
+            <input type="radio" id="work-company-apps-ember-version-primary-1-x"
+              name="work-company-apps-ember-version-primary" value="1.x" />
+            <label for="work-company-apps-ember-version-primary-1-x">
               1.x
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-2-x'
-              name='work-company-apps-ember-version-primary' value='2.x' />
-            <label for='work-company-apps-ember-version-primary-2-x'>
+            <input type="radio" id="work-company-apps-ember-version-primary-2-x"
+              name="work-company-apps-ember-version-primary" value="2.x" />
+            <label for="work-company-apps-ember-version-primary-2-x">
               2.x
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-0-3-4'
-              name='work-company-apps-ember-version-primary' value='3.0 - 3.4' />
-            <label for='work-company-apps-ember-version-primary-3-0-3-4'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-0-3-4"
+              name="work-company-apps-ember-version-primary" value="3.0 - 3.4" />
+            <label for="work-company-apps-ember-version-primary-3-0-3-4">
               3.0 - 3.4
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-5-3-8'
-              name='work-company-apps-ember-version-primary' value='3.5 - 3.8' />
-            <label for='work-company-apps-ember-version-primary-3-5-3-8'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-5-3-8"
+              name="work-company-apps-ember-version-primary" value="3.5 - 3.8" />
+            <label for="work-company-apps-ember-version-primary-3-5-3-8">
               3.5 - 3.8
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-9-3-12'
-              name='work-company-apps-ember-version-primary' value='3.9 - 3.12' />
-            <label for='work-company-apps-ember-version-primary-3-9-3-12'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-9-3-12"
+              name="work-company-apps-ember-version-primary" value="3.9 - 3.12" />
+            <label for="work-company-apps-ember-version-primary-3-9-3-12">
               3.9 - 3.12
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-13-3-16'
-              name='work-company-apps-ember-version-primary' value='3.13 - 3.16' />
-            <label for='work-company-apps-ember-version-primary-3-13-3-16'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-13-3-16"
+              name="work-company-apps-ember-version-primary" value="3.13 - 3.16" />
+            <label for="work-company-apps-ember-version-primary-3-13-3-16">
               3.13 - 3.16
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-17-3-20'
-              name='work-company-apps-ember-version-primary' value='3.17 - 3.20' />
-            <label for='work-company-apps-ember-version-primary-3-17-3-20'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-17-3-20"
+              name="work-company-apps-ember-version-primary" value="3.17 - 3.20" />
+            <label for="work-company-apps-ember-version-primary-3-17-3-20">
               3.17 - 3.20
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-21-3-24'
-              name='work-company-apps-ember-version-primary' value='3.21 - 3.24' />
-            <label for='work-company-apps-ember-version-primary-3-21-3-24'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-21-3-24"
+              name="work-company-apps-ember-version-primary" value="3.21 - 3.24" />
+            <label for="work-company-apps-ember-version-primary-3-21-3-24">
               3.21 - 3.24
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-3-25-3-28'
-              name='work-company-apps-ember-version-primary' value='3.25 - 3.28' />
-            <label for='work-company-apps-ember-version-primary-3-25-3-28'>
+            <input type="radio" id="work-company-apps-ember-version-primary-3-25-3-28"
+              name="work-company-apps-ember-version-primary" value="3.25 - 3.28" />
+            <label for="work-company-apps-ember-version-primary-3-25-3-28">
               3.25 - 3.28
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-4-x'
-              name='work-company-apps-ember-version-primary' value='4.x' />
-            <label for='work-company-apps-ember-version-primary-4-x'>
+            <input type="radio" id="work-company-apps-ember-version-primary-4-x"
+              name="work-company-apps-ember-version-primary" value="4.x" />
+            <label for="work-company-apps-ember-version-primary-4-x">
               4.x
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-none'
-              name='work-company-apps-ember-version-primary'
+            <input type="radio" id="work-company-apps-ember-version-primary-none"
+              name="work-company-apps-ember-version-primary"
               value="None / we don't use one version of Ember significantly more than others" />
-            <label for='work-company-apps-ember-version-primary-none'>
+            <label for="work-company-apps-ember-version-primary-none">
               None / we don't use one version of Ember significantly more than
               others
             </label>
-            <input type='radio' id='work-company-apps-ember-version-primary-idk'
-              name='work-company-apps-ember-version-primary' value="I don't know" />
-            <label for='work-company-apps-ember-version-primary-idk'>
+            <input type="radio" id="work-company-apps-ember-version-primary-idk"
+              name="work-company-apps-ember-version-primary" value="I don't know" />
+            <label for="work-company-apps-ember-version-primary-idk">
               I don't know
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 What version(s) of Ember do you regularly work with at your job?
               </legend>
             </fieldset>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-1-x'
-              name='work-company-apps-ember-versions-used' value='1.x' />
-            <label for='work-company-apps-ember-versions-used-1-x'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-1-x"
+              name="work-company-apps-ember-versions-used" value="1.x" />
+            <label for="work-company-apps-ember-versions-used-1-x">
               1.x
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-2-x'
-              name='work-company-apps-ember-versions-used' value='2.x' />
-            <label for='work-company-apps-ember-versions-used-2-x'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-2-x"
+              name="work-company-apps-ember-versions-used" value="2.x" />
+            <label for="work-company-apps-ember-versions-used-2-x">
               2.x
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-0-3-4'
-              name='work-company-apps-ember-versions-used' value='3.0 - 3.4' />
-            <label for='work-company-apps-ember-versions-used-3-0-3-4'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-0-3-4"
+              name="work-company-apps-ember-versions-used" value="3.0 - 3.4" />
+            <label for="work-company-apps-ember-versions-used-3-0-3-4">
               3.0 - 3.4
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-5-3-8'
-              name='work-company-apps-ember-versions-used' value='3.5 - 3.8' />
-            <label for='work-company-apps-ember-versions-used-3-5-3-8'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-5-3-8"
+              name="work-company-apps-ember-versions-used" value="3.5 - 3.8" />
+            <label for="work-company-apps-ember-versions-used-3-5-3-8">
               3.5 - 3.8
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-9-3-12'
-              name='work-company-apps-ember-versions-used' value='3.9 - 3.12' />
-            <label for='work-company-apps-ember-versions-used-3-9-3-12'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-9-3-12"
+              name="work-company-apps-ember-versions-used" value="3.9 - 3.12" />
+            <label for="work-company-apps-ember-versions-used-3-9-3-12">
               3.9 - 3.12
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-13-3-16'
-              name='work-company-apps-ember-versions-used' value='3.13 - 3.16' />
-            <label for='work-company-apps-ember-versions-used-3-13-3-16'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-13-3-16"
+              name="work-company-apps-ember-versions-used" value="3.13 - 3.16" />
+            <label for="work-company-apps-ember-versions-used-3-13-3-16">
               3.13 - 3.16
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-17-3-20'
-              name='work-company-apps-ember-versions-used' value='3.17 - 3.20' />
-            <label for='work-company-apps-ember-versions-used-3-17-3-20'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-17-3-20"
+              name="work-company-apps-ember-versions-used" value="3.17 - 3.20" />
+            <label for="work-company-apps-ember-versions-used-3-17-3-20">
               3.17 - 3.20
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-21-3-24'
-              name='work-company-apps-ember-versions-used' value='3.21 - 3.24' />
-            <label for='work-company-apps-ember-versions-used-3-21-3-24'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-21-3-24"
+              name="work-company-apps-ember-versions-used" value="3.21 - 3.24" />
+            <label for="work-company-apps-ember-versions-used-3-21-3-24">
               3.21 - 3.24
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-3-25-3-28'
-              name='work-company-apps-ember-versions-used' value='3.25 - 3.28' />
-            <label for='work-company-apps-ember-versions-used-3-25-3-28'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-3-25-3-28"
+              name="work-company-apps-ember-versions-used" value="3.25 - 3.28" />
+            <label for="work-company-apps-ember-versions-used-3-25-3-28">
               3.25 - 3.28
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-4-x'
-              name='work-company-apps-ember-versions-used' value='4.x' />
-            <label for='work-company-apps-ember-versions-used-4-x'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-4-x"
+              name="work-company-apps-ember-versions-used" value="4.x" />
+            <label for="work-company-apps-ember-versions-used-4-x">
               4.x
             </label>
-            <input type='checkbox' id='work-company-apps-ember-versions-used-idk'
-              name='work-company-apps-ember-versions-used' value="I don't know" />
-            <label for='work-company-apps-ember-versions-used-idk'>
+            <input type="checkbox" id="work-company-apps-ember-versions-used-idk"
+              name="work-company-apps-ember-versions-used" value="I don't know" />
+            <label for="work-company-apps-ember-versions-used-idk">
               I don't know
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 If you use Ember Data in your company's Ember apps, do you
@@ -845,23 +845,23 @@
                 manually change it to a different version number?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-data-version-same'
-              name='work-company-apps-ember-data-version' value='It stays the same' />
-            <label for='work-company-apps-ember-data-version-same'>
+            <input type="radio" id="work-company-apps-ember-data-version-same"
+              name="work-company-apps-ember-data-version" value="It stays the same" />
+            <label for="work-company-apps-ember-data-version-same">
               It stays the same
             </label>
-            <input type='radio' id='work-company-apps-ember-data-version-different'
-              name='work-company-apps-ember-data-version' value='We change it to something else' />
-            <label for='work-company-apps-ember-data-version-different'>
+            <input type="radio" id="work-company-apps-ember-data-version-different"
+              name="work-company-apps-ember-data-version" value="We change it to something else" />
+            <label for="work-company-apps-ember-data-version-different">
               We change it to something else
             </label>
-            <input type='radio' id='work-company-apps-ember-data-version-none'
-              name='work-company-apps-ember-data-version' value="We don't use ember-data" />
-            <label for='work-company-apps-ember-data-version-none'>
+            <input type="radio" id="work-company-apps-ember-data-version-none"
+              name="work-company-apps-ember-data-version" value="We don't use ember-data" />
+            <label for="work-company-apps-ember-data-version-none">
               We don't use ember-data
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 If you use Ember CLI in your company's Ember apps, do you
@@ -869,116 +869,116 @@
                 manually change it to a different version number?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-cli-version-same' name='work-company-apps-ember-cli-version'
-              value='It stays the same' />
-            <label for='work-company-apps-ember-cli-version-same'>
+            <input type="radio" id="work-company-apps-ember-cli-version-same" name="work-company-apps-ember-cli-version"
+              value="It stays the same" />
+            <label for="work-company-apps-ember-cli-version-same">
               It stays the same
             </label>
-            <input type='radio' id='work-company-apps-ember-cli-version-different'
-              name='work-company-apps-ember-cli-version' value='We change it to something else' />
-            <label for='work-company-apps-ember-cli-version-different'>
+            <input type="radio" id="work-company-apps-ember-cli-version-different"
+              name="work-company-apps-ember-cli-version" value="We change it to something else" />
+            <label for="work-company-apps-ember-cli-version-different">
               We change it to something else
             </label>
-            <input type='radio' id='work-company-apps-ember-cli-version-none' name='work-company-apps-ember-cli-version'
+            <input type="radio" id="work-company-apps-ember-cli-version-none" name="work-company-apps-ember-cli-version"
               value="We don't use ember-cli" />
-            <label for='work-company-apps-ember-cli-version-none'>
+            <label for="work-company-apps-ember-cli-version-none">
               We don't use ember-cli
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 What testing framework do you use most frequently in the Ember
                 apps you work on at your job?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-testing-framework-primary-mocha'
-              name='work-company-apps-ember-testing-framework-primary'
-              value='Mocha (via ember-mocha or ember-cli-mocha)' />
-            <label for='work-company-apps-ember-testing-framework-primary-mocha'>
+            <input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
+              name="work-company-apps-ember-testing-framework-primary"
+              value="Mocha (via ember-mocha or ember-cli-mocha)" />
+            <label for="work-company-apps-ember-testing-framework-primary-mocha">
               Mocha (via ember-mocha or ember-cli-mocha)
             </label>
-            <input type='radio' id='work-company-apps-ember-testing-framework-primary-qunit'
-              name='work-company-apps-ember-testing-framework-primary'
-              value='QUnit (via ember-quinit or ember-cli-qunit)' />
-            <label for='work-company-apps-ember-testing-framework-primary-qunit'>
+            <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
+              name="work-company-apps-ember-testing-framework-primary"
+              value="QUnit (via ember-quinit or ember-cli-qunit)" />
+            <label for="work-company-apps-ember-testing-framework-primary-qunit">
               QUnit (via ember-quinit or ember-cli-qunit)
             </label>
-            <input type='radio' id='work-company-apps-ember-testing-framework-primary-none'
-              name='work-company-apps-ember-testing-framework-primary' value='I don’t write tests' />
-            <label for='work-company-apps-ember-testing-framework-none'>
+            <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
+              name="work-company-apps-ember-testing-framework-primary" value="I don’t write tests" />
+            <label for="work-company-apps-ember-testing-framework-none">
               I don’t write tests
             </label>
-            <input type='radio' id='work-company-apps-ember-testing-framework-primary-other'
-              name='work-company-apps-ember-testing-framework-primary' value='Other' />
-            <label for='work-company-apps-ember-testing-framework-primary-other'>
+            <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
+              name="work-company-apps-ember-testing-framework-primary" value="Other" />
+            <label for="work-company-apps-ember-testing-framework-primary-other">
               Other
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Which of these server-side frameworks do you primarily in the
                 Ember apps you work on at your job?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-rails'
-              name='work-company-apps-ember-server-side-framework-primary' value='Rails' />
-            <label for='work-company-apps-ember-server-side-framework-primary-rails'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-rails"
+              name="work-company-apps-ember-server-side-framework-primary" value="Rails" />
+            <label for="work-company-apps-ember-server-side-framework-primary-rails">
               Rails
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-express'
-              name='work-company-apps-ember-server-side-framework-primary' value='Express' />
-            <label for='work-company-apps-ember-server-side-framework-primary-express'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-express"
+              name="work-company-apps-ember-server-side-framework-primary" value="Express" />
+            <label for="work-company-apps-ember-server-side-framework-primary-express">
               Express
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-spring-java'
-              name='work-company-apps-ember-server-side-framework-primary' value='Spring / Java' />
-            <label for='work-company-apps-ember-server-side-framework-primary-spring-java'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-spring-java"
+              name="work-company-apps-ember-server-side-framework-primary" value="Spring / Java" />
+            <label for="work-company-apps-ember-server-side-framework-primary-spring-java">
               Spring / Java
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-php'
-              name='work-company-apps-ember-server-side-framework-primary' value='PHP' />
-            <label for='work-company-apps-ember-server-side-framework-primary-php'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-php"
+              name="work-company-apps-ember-server-side-framework-primary" value="PHP" />
+            <label for="work-company-apps-ember-server-side-framework-primary-php">
               PHP
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-elixir'
-              name='work-company-apps-ember-server-side-framework-primary' value='Elixir' />
-            <label for='work-company-apps-ember-server-side-framework-primary-elixir'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-elixir"
+              name="work-company-apps-ember-server-side-framework-primary" value="Elixir" />
+            <label for="work-company-apps-ember-server-side-framework-primary-elixir">
               Elixir
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-dot-net'
-              name='work-company-apps-ember-server-side-framework-primary' value='.NET' />
-            <label for='work-company-apps-ember-server-side-framework-primary-dot-net'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-dot-net"
+              name="work-company-apps-ember-server-side-framework-primary" value=".NET" />
+            <label for="work-company-apps-ember-server-side-framework-primary-dot-net">
               .NET
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-django'
-              name='work-company-apps-ember-server-side-framework-primary' value='Django' />
-            <label for='work-company-apps-ember-server-side-framework-primary-django'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-django"
+              name="work-company-apps-ember-server-side-framework-primary" value="Django" />
+            <label for="work-company-apps-ember-server-side-framework-primary-django">
               Django
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-custom'
-              name='work-company-apps-ember-server-side-framework-primary' value='Custom' />
-            <label for='work-company-apps-ember-server-side-framework-primary-custom'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-custom"
+              name="work-company-apps-ember-server-side-framework-primary" value="Custom" />
+            <label for="work-company-apps-ember-server-side-framework-primary-custom">
               Custom
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-none'
-              name='work-company-apps-ember-server-side-framework-primary' value='None' />
-            <label for='work-company-apps-ember-server-side-framework-primary-none'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-none"
+              name="work-company-apps-ember-server-side-framework-primary" value="None" />
+            <label for="work-company-apps-ember-server-side-framework-primary-none">
               None
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-idk'
-              name='work-company-apps-ember-server-side-framework-primary' value="I don't know" />
-            <label for='work-company-apps-ember-server-side-framework-primary-idk'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-idk"
+              name="work-company-apps-ember-server-side-framework-primary" value="I don't know" />
+            <label for="work-company-apps-ember-server-side-framework-primary-idk">
               I don't know
             </label>
-            <input type='radio' id='work-company-apps-ember-server-side-framework-primary-other'
-              name='work-company-apps-ember-server-side-framework-primary' value='Other' />
-            <label for='work-company-apps-ember-server-side-framework-primary-other'>
+            <input type="radio" id="work-company-apps-ember-server-side-framework-primary-other"
+              name="work-company-apps-ember-server-side-framework-primary" value="Other" />
+            <label for="work-company-apps-ember-server-side-framework-primary-other">
               Other
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Which of these are used in the projects that you are actively
@@ -986,156 +986,156 @@
                 at your job?
               </legend>
             </fieldset>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-aws'
-              name='work-company-apps-ember-deployments-used' value='Amazon Web Services' />
-            <label for='work-company-apps-ember-deployments-used-aws'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-aws"
+              name="work-company-apps-ember-deployments-used" value="Amazon Web Services" />
+            <label for="work-company-apps-ember-deployments-used-aws">
               Amazon Web Services
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-azure'
-              name='work-company-apps-ember-deployments-used' value='Azure' />
-            <label for='work-company-apps-ember-deployments-used-azure'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-azure"
+              name="work-company-apps-ember-deployments-used" value="Azure" />
+            <label for="work-company-apps-ember-deployments-used-azure">
               Azure
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-circle-ci'
-              name='work-company-apps-ember-deployments-used' value='Circle CI' />
-            <label for='work-company-apps-ember-deployments-used-circle-ci'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-circle-ci"
+              name="work-company-apps-ember-deployments-used" value="Circle CI" />
+            <label for="work-company-apps-ember-deployments-used-circle-ci">
               Circle CI
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-docker'
-              name='work-company-apps-ember-deployments-used' value='Docker' />
-            <label for='work-company-apps-ember-deployments-used-docker'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-docker"
+              name="work-company-apps-ember-deployments-used" value="Docker" />
+            <label for="work-company-apps-ember-deployments-used-docker">
               Docker
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-ember-cli-deploy'
-              name='work-company-apps-ember-deployments-used' value='Ember CLI Deploy' />
-            <label for='work-company-apps-ember-deployments-used-ember-cli-deploy'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-ember-cli-deploy"
+              name="work-company-apps-ember-deployments-used" value="Ember CLI Deploy" />
+            <label for="work-company-apps-ember-deployments-used-ember-cli-deploy">
               Ember CLI Deploy
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-github-pages'
-              name='work-company-apps-ember-deployments-used' value='GitHub Pages' />
-            <label for='work-company-apps-ember-deployments-used-github-pages'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-github-pages"
+              name="work-company-apps-ember-deployments-used" value="GitHub Pages" />
+            <label for="work-company-apps-ember-deployments-used-github-pages">
               GitHub Pages
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-heroku'
-              name='work-company-apps-ember-deployments-used' value='Heroku' />
-            <label for='work-company-apps-ember-deployments-used-heroku'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-heroku"
+              name="work-company-apps-ember-deployments-used" value="Heroku" />
+            <label for="work-company-apps-ember-deployments-used-heroku">
               Heroku
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-netlify'
-              name='work-company-apps-ember-deployments-used' value='Netlify' />
-            <label for='work-company-apps-ember-deployments-used-netlify'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-netlify"
+              name="work-company-apps-ember-deployments-used" value="Netlify" />
+            <label for="work-company-apps-ember-deployments-used-netlify">
               Netlify
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-self-hosted'
-              name='work-company-apps-ember-deployments-used' value='Self-hosted' />
-            <label for='work-company-apps-ember-deployments-used-self-hosted'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-self-hosted"
+              name="work-company-apps-ember-deployments-used" value="Self-hosted" />
+            <label for="work-company-apps-ember-deployments-used-self-hosted">
               Self-hosted
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-travis-ci'
-              name='work-company-apps-ember-deployments-used' value='Travis CI' />
-            <label for='work-company-apps-ember-deployments-used-travis-ci'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-travis-ci"
+              name="work-company-apps-ember-deployments-used" value="Travis CI" />
+            <label for="work-company-apps-ember-deployments-used-travis-ci">
               Travis CI
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-vercel'
-              name='work-company-apps-ember-deployments-used' value='Vercel' />
-            <label for='work-company-apps-ember-deployments-used-vercel'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-vercel"
+              name="work-company-apps-ember-deployments-used" value="Vercel" />
+            <label for="work-company-apps-ember-deployments-used-vercel">
               Vercel
             </label>
-            <input type='checkbox' id='work-company-apps-ember-deployments-used-other'
-              name='work-company-apps-ember-deployments-used' value='Other' />
-            <label for='work-company-apps-ember-deployments-used-other'>
+            <input type="checkbox" id="work-company-apps-ember-deployments-used-other"
+              name="work-company-apps-ember-deployments-used" value="Other" />
+            <label for="work-company-apps-ember-deployments-used-other">
               Other
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 What is the target platform(s) for your company's Ember apps?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-target-platforms-desktop-only'
-              name='work-company-apps-ember-target-platforms' value='Desktop only' />
-            <label for='work-company-apps-ember-target-platforms-desktop-only'>
+            <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
+              name="work-company-apps-ember-target-platforms" value="Desktop only" />
+            <label for="work-company-apps-ember-target-platforms-desktop-only">
               Desktop only
             </label>
-            <input type='radio' id='work-company-apps-ember-target-platforms-responsive'
-              name='work-company-apps-ember-target-platforms' value='Fully responsive (desktop + devices)' />
-            <label for='work-company-apps-ember-target-platforms-responsive'>
+            <input type="radio" id="work-company-apps-ember-target-platforms-responsive"
+              name="work-company-apps-ember-target-platforms" value="Fully responsive (desktop + devices)" />
+            <label for="work-company-apps-ember-target-platforms-responsive">
               Fully responsive (desktop + devices)
             </label>
-            <input type='radio' id='work-company-apps-ember-target-platforms-mobile-only'
-              name='work-company-apps-ember-target-platforms' value='Mobile device only' />
-            <label for='work-company-apps-ember-target-platforms-mobile-only'>
+            <input type="radio" id="work-company-apps-ember-target-platforms-mobile-only"
+              name="work-company-apps-ember-target-platforms" value="Mobile device only" />
+            <label for="work-company-apps-ember-target-platforms-mobile-only">
               Mobile device only
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 Who are the target users of your company's Ember apps?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-target-users-b2c'
-              name='work-company-apps-ember-target-users' value='General public (B2C)' />
-            <label for='work-company-apps-ember-target-users-b2c'>
+            <input type="radio" id="work-company-apps-ember-target-users-b2c"
+              name="work-company-apps-ember-target-users" value="General public (B2C)" />
+            <label for="work-company-apps-ember-target-users-b2c">
               General public (B2C)
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-internal'
-              name='work-company-apps-ember-target-users' value='Internal users' />
-            <label for='work-company-apps-ember-target-users-internal'>
+            <input type="radio" id="work-company-apps-ember-target-users-internal"
+              name="work-company-apps-ember-target-users" value="Internal users" />
+            <label for="work-company-apps-ember-target-users-internal">
               Internal users
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-b2b'
-              name='work-company-apps-ember-target-users' value='Business consumers (B2B)' />
-            <label for='work-company-apps-ember-target-users-b2b'>
+            <input type="radio" id="work-company-apps-ember-target-users-b2b"
+              name="work-company-apps-ember-target-users" value="Business consumers (B2B)" />
+            <label for="work-company-apps-ember-target-users-b2b">
               Business consumers (B2B)
             </label>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
               <legend>
                 How many end users do your company's Ember apps support?
               </legend>
             </fieldset>
-            <input type='radio' id='work-company-apps-ember-target-users-count-1-1000'
-              name='work-company-apps-ember-target-users-count' value='Between 1 - 1,000' />
-            <label for='work-company-apps-ember-target-users-count-1-1000'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-1-1000"
+              name="work-company-apps-ember-target-users-count" value="Between 1 - 1,000" />
+            <label for="work-company-apps-ember-target-users-count-1-1000">
               Between 1 - 1,000
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-count-1001-10000'
-              name='work-company-apps-ember-target-users-count' value='Between 1,001 - 10,000' />
-            <label for='work-company-apps-ember-target-users-count-1001-10000'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-1001-10000"
+              name="work-company-apps-ember-target-users-count" value="Between 1,001 - 10,000" />
+            <label for="work-company-apps-ember-target-users-count-1001-10000">
               Between 1,001 - 10,000
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-count-100001-100000'
-              name='work-company-apps-ember-target-users-count' value='Between 10,001 - 100,000' />
-            <label for='work-company-apps-ember-target-users-count-100001-100000'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-100001-100000"
+              name="work-company-apps-ember-target-users-count" value="Between 10,001 - 100,000" />
+            <label for="work-company-apps-ember-target-users-count-100001-100000">
               Between 10,001 - 100,000
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-count-100001-1000000'
-              name='work-company-apps-ember-target-users-count' value='Between 100,001 - 1,000,000' />
-            <label for='work-company-apps-ember-target-users-count-100001-1000000'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-100001-1000000"
+              name="work-company-apps-ember-target-users-count" value="Between 100,001 - 1,000,000" />
+            <label for="work-company-apps-ember-target-users-count-100001-1000000">
               Between 100,001 - 1,000,000
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-count-greater-than-1000000'
-              name='work-company-apps-ember-target-users-count' value='Greater than 1,000,000' />
-            <label for='work-company-apps-ember-target-users-count-greater-than-1000000'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-greater-than-1000000"
+              name="work-company-apps-ember-target-users-count" value="Greater than 1,000,000" />
+            <label for="work-company-apps-ember-target-users-count-greater-than-1000000">
               Greater than 1,000,000
             </label>
-            <input type='radio' id='work-company-apps-ember-target-users-count-idk'
-              name='work-company-apps-ember-target-users-count' value="I don't know" />
-            <label for='work-company-apps-ember-target-users-count-idk'>
+            <input type="radio" id="work-company-apps-ember-target-users-count-idk"
+              name="work-company-apps-ember-target-users-count" value="I don't know" />
+            <label for="work-company-apps-ember-target-users-count-idk">
               I don't know
             </label>
           </div>
         </div>
       </div>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
             {{! next section title }}
-            <h2 id='at-home'>
-              <a href='#at-home' class='text-ember-500 text-md'>
+            <h2 id="at-home">
+              <a href="#at-home" class="text-ember-500 text-md">
                 §
               </a>
               Personal Applications
@@ -1148,12 +1148,12 @@
           {{! questions go here }}
         </div>
       </div>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
             {{! next section title }}
-            <h2 id='feedback'>
-              <a href='#feedback' class='text-ember-500 text-md'>
+            <h2 id="feedback">
+              <a href="#feedback" class="text-ember-500 text-md">
                 §
               </a>
               Feedback
@@ -1164,24 +1164,24 @@
             </p>
           </div>
           {{! questions go here }}
-          <div class='form-group'>
+          <div class="form-group">
             <!-- TODO: Link to Changelog -->
             Have you actively integrated any of the following features released
             within the last year into your applications? If so, which one had
             the most positive impact on your app or development experience?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             <!-- TODO: Link to RFCs -->
             Which of these Ember features planned for the next year do you think
             will have the most positive impact on your experience developing
             Ember apps? Why?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             If you have attended any virtual Ember events in the past year,
             which talk was your favorite and why?
           </div>
-          <h3 id='feedback-learning'>
-            <a href='#feedback-learning' class='text-ember-500 text-md'>
+          <h3 id="feedback-learning">
+            <a href="#feedback-learning" class="text-ember-500 text-md">
               §
             </a>
             Learning Ember
@@ -1189,33 +1189,33 @@
           <p>
             This section is about your experiences using Ember, in general
           </p>
-          <div class='form-group'>
+          <div class="form-group">
             <!-- Learning: Getting Started -->
             When you were first learning Ember, what was the most difficult
             thing to understand?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             When you were first learning Ember, what concept felt the most
             intuitive to you?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             Think about the last time you upgraded an Ember app. What version
             did you migrate from/to, and what was the hardest thing about it?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             If you were not able to upgrade, what prevented you from upgrading?
           </div>
           <!-- NEW: Candidates for future built-ins -->
-          <div class='form-group'>
+          <div class="form-group">
             Is there anything you immediately add or configure every time you
             make a new Ember application (e.g. an addon, linting rules, etc.)
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             Is there anything you want to tell us about your experiences using
             Ember?
           </div>
-          <h3 id='feedback-surveys'>
-            <a href='#feedback-surveys' class='text-ember-500 text-md'>
+          <h3 id="feedback-surveys">
+            <a href="#feedback-surveys" class="text-ember-500 text-md">
               §
             </a>
             About Surveys
@@ -1224,54 +1224,54 @@
             This section is about this survey and other developer surveys you
             may have taken.
           </p>
-          <div class='form-group'>
+          <div class="form-group">
             <fieldset>
-              <legend aria-describedby='survey-outreach-desc'>
+              <legend aria-describedby="survey-outreach-desc">
                 How did you hear about this survey?
               </legend>
-              <input type='checkbox' name='survey-outreach' id='survey-email' value='email' />
-              <label for='survey-email'>
+              <input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
+              <label for="survey-email">
                 Email
               </label>
-              <input type='checkbox' name='survey-outreach' id='survey-discord' value='discord' />
-              <label for='survey-discord'>
+              <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord" />
+              <label for="survey-discord">
                 Discord
               </label>
-              <input type='checkbox' name='survey-outreach' id='survey-social' value='social' />
-              <label for='survey-social'>
+              <input type="checkbox" name="survey-outreach" id="survey-social" value="social" />
+              <label for="survey-social">
                 Social Media
               </label>
-              <input type='checkbox' name='survey-outreach' id='survey-work' value='work' />
-              <label for='survey-work'>
+              <input type="checkbox" name="survey-outreach" id="survey-work" value="work" />
+              <label for="survey-work">
                 Announcement At Work
               </label>
-              <input type='checkbox' name='survey-outreach' id='survey-website' value='website' />
-              <label for='survey-website'>
+              <input type="checkbox" name="survey-outreach" id="survey-website" value="website" />
+              <label for="survey-website">
                 The Ember Website
               </label>
             </fieldset>
-            <p class='input-desc' id='survey-outreach-desc'>
+            <p class="input-desc" id="survey-outreach-desc">
               please select all that apply.
             </p>
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             Do you participate in other developer surveys?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             If so, which ones?
           </div>
-          <div class='form-group'>
+          <div class="form-group">
             Do you have any general feedback about the experience of the
             completing the community survey?
           </div>
         </div>
       </div>
-      <div class='shadow sm:rounded-md sm:overflow-hidden mb-8'>
-        <div class='bg-white py-6 px-4 space-y-6 sm:p-6'>
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
           <div>
             {{! next section title }}
-            <h2 id='closing'>
-              <a href='#closing' class='text-ember-500 text-md'>
+            <h2 id="closing">
+              <a href="#closing" class="text-ember-500 text-md">
                 §
               </a>
               Closing Questions
@@ -1282,16 +1282,16 @@
             </p>
           </div>
           {{! questions go here }}
-          <div class='form-group'>
+          <div class="form-group">
             Where in the world do you live?
           </div>
-          <div class='form-group'>
-            Is there anything else you'd like to tell us?
+          <div class="form-group">
+            Is there anything else you"d like to tell us?
           </div>
-          <div class='pt-5'>
-            <div class='flex justify-end'>
-              <button type='submit'
-                class='ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-ember-500 hover:bg-ember-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ember-600'>
+          <div class="pt-5">
+            <div class="flex justify-end">
+              <button type="submit"
+                class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-ember-500 hover:bg-ember-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ember-600">
                 Submit Survey
               </button>
             </div>
