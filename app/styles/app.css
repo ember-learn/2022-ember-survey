@@ -8,19 +8,27 @@ h1 {
 }
 h2 {
     @apply
+    mt-8
     text-3xl;
+}
+h2 + p {
+    @apply
+    mt-0;
 }
 h3 {
     @apply
     text-2xl;
 }
 form {
-    max-width: 70ch;
+    max-width: 75ch;
+    @apply
+    my-0
+    mx-auto;
 }
 
 .form-group {
     @apply
-    mt-4
+    mt-6
     mb-4;
 }
 
@@ -46,16 +54,17 @@ legend, .input-label {
 }
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
     @apply
-    mt-1
-    caret-ember-500
-    shadow-sm 
-    focus:ring-ember-500
-    focus:border-ember-500
     block 
-    w-full 
+    border-gray-400 
+    caret-ember-500
+    focus:border-ember-500
+    focus:ring-ember-500
+    mt-1
+    rounded-md
+    shadow-md 
     sm:text-sm 
-    border-gray-700 
-    rounded-md;
+    w-full 
+    ;
 }
 .input-desc {
     @apply

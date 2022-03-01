@@ -2,7 +2,7 @@
 {{! template-lint-disable "no-html-comments" --}}
 <div class="prose">
 <p>This survey is for developers who use <a href="https://github.com/emberjs/ember.js">the Ember JavaScript framework</a>, either for work or personal use.
-The survey should take approximately 15-20 minutes to complete.</p>
+The survey should take approximately 20 minutes to complete.</p>
     <p>
 <strong><em>All questions are optional.</em></strong></p>
 <p>
@@ -11,7 +11,6 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 </div>
 
 <form
-  class='space-y-8'
   name='survey-22'
   {{!-- action="/success" --}}
   method='POST'
@@ -28,6 +27,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <h2 id="background"><a href="#background" class="text-ember-500 text-md">&sect;</a> Your Development  Background</h2>
 <p>This section is about your development background in web technologies.</p>
+
 <div class="take-out-before-deploy">
 
 <div class="form-group">
@@ -43,7 +43,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
   <fieldset>
-    <legend>With which of these other front-end frameworks do you have some experience?</legend>
+    <legend aria-describedby="frameworks-desc">With which of these other front-end frameworks do you have some experience?</legend>
       <input type="checkbox" id="other-fw-angular" name="other-frameworks" value="angular">
       <label for="other-frameworks-angular">Angular</label>
       <input type="checkbox" id="other-fw-react" name="other-frameworks" value="react">
@@ -53,11 +53,13 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
       <input type="checkbox" id="other-fw-vue" name="other-frameworks" value="vue">
       <label for="other-frameworks-vue">Vue</label>
     </fieldset>
+    <p class="input-desc" id="frameworks-desc">Please choose any that apply. Not all frameworks are represented here.</p>
 </div>
 
+<h3>Rate your knowledge</h3>
 <div class="form-group">
   <fieldset>
-    <legend>How would you rate your knowledge of HTML?</legend>
+    <legend>HTML</legend>
       <input type="radio" id="html-none" name="know-html" /><label for="html-none">None</label>
       <input type="radio" id="html-beginner" name="know-html" /><label for="html-beginner">Beginner</label>
       <input type="radio" id="html-intermediate" name="know-html" /><label for="html-intermediate">Intermediate</label>
@@ -67,7 +69,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
   <fieldset>
-    <legend>How would you rate your knowledge of Accessibility (WAI-ARIA)?</legend>
+    <legend>Accessibility (WAI-ARIA)</legend>
       <input type="radio" id="aria-none" name="know-aria" /><label for="aria-none">None</label>
       <input type="radio" id="aria-beginner" name="know-aria" /><label for="aria-beginner">Beginner</label>
       <input type="radio" id="aria-intermediate" name="know-aria" /><label for="aria-intermediate">Intermediate</label>
@@ -77,7 +79,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
   <fieldset>
-    <legend>How would you rate your knowledge of CSS?</legend>
+    <legend>Cascading Style Sheets (CSS)</legend>
       <input type="radio" id="css-none" name="know-css" /><label for="css-none">None</label>
       <input type="radio" id="css-beginner" name="know-css" /><label for="css-beginner">Beginner</label>
       <input type="radio" id="css-intermediate" name="know-css" /><label for="css-intermediate">Intermediate</label>
@@ -87,7 +89,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
   <fieldset>
-    <legend>How would you rate your knowledge of JavaScript?</legend>
+    <legend>JavaScript</legend>
       <input type="radio" id="js-none" name="know-js" /><label for="js-none">None</label>
       <input type="radio" id="js-beginner" name="know-js" /><label for="js-beginner">Beginner</label>
       <input type="radio" id="js-intermediate" name="know-js" /><label for="js-intermediate">Intermediate</label>
@@ -146,7 +148,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
     <label for="ide-pref-why" class="block input-label">Why do you prefer it?</label>
-    <input type="text" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc" />
+    <textarea rows="4" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc" />
     <p class="input-desc" id="ide-pref-why-desc">Example responses: "I've been using it for years", or "I feel cool when I use it"</p>
 </div>
 
@@ -164,7 +166,7 @@ If you have any issues completing the survey, please <a href="mailto:melsumner@f
 
 <div class="form-group">
   <fieldset>
-    <legend>In which industry sectors does your employer operate?</legend>
+    <legend>In which industry sector(s) does your employer operate?</legend>
       <input type="checkbox" id="ws-agriculture" name="work-sector" value="agriculture">
       <label for="ws-agriculture">
         Agriculture
