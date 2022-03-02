@@ -1114,22 +1114,775 @@
             </div>
           </div>
         </div>
-        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
-          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
-            <div>
-              {{! next section title }}
-              <h2 id="at-home">
-                <a href="#at-home" class="text-ember-500 text-md">
-                  §
-                </a>
-                Personal Applications
-              </h2>
-              <p>
-                This section relates to how you use Ember in side projects or
-                applications for personal use.
-              </p>
-            </div>
-            {{! questions go here }}
+      </div>
+      {{!-- Personal Applications --}}
+      <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+        <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+          <div>
+            {{! Personal Applications }}
+            <h2 id="at-home">
+              <a href="#at-home" class="text-ember-500 text-md">
+                §
+              </a>
+              Personal Applications
+            </h2>
+            <p>
+              This section relates to how you use Ember in side projects or
+              applications for personal use.
+            </p>
+          </div>
+          {{!-- Do you currently use Ember in side projects or applications for personal use? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Do you currently use Ember in side projects or applications for personal use?
+              </legend>
+              <input type="radio" id="personal-use-ember-yes" name="personal-use-ember" />
+              <label for="personal-use-ember-yes">
+                Yes
+              </label>
+              <input type="radio" id="personal-use-ember-no" name="personal-use-ember" />
+              <label for="personal-use-ember-no">
+                No
+              </label>
+            </fieldset>
+          </div>
+        {{!--  --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                In which industry or sector(s) does your employer operate?
+              </legend>
+              <div class="grid grid-cols-2">
+                <div class="col-span-1">
+                  <div>
+                    <input type="checkbox" id="personal-sector-agriculture" name="personal-sector" value="agriculture" />
+                    <label for="personal-sector-agriculture">
+                      Agriculture
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-advertising" name="personal-sector" value="advertising" />
+                    <label for="personal-sector-advertising">
+                      Advertising
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-arts-entertainment" name="personal-sector" value="arts-entertainment" />
+                    <label for="personal-sector-arts-entertainment">
+                      Arts & Entertainment
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-consulting" name="personal-sector" value="consulting" />
+                    <label for="personal-sector-consulting">
+                      Consulting
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-education" name="personal-sector" value="education" />
+                    <label for="personal-sector-education">
+                      Education
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-financial-services" name="personal-sector" value="financial-services" />
+                    <label for="personal-sector-financial-services">
+                      Financial Services
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-government" name="personal-sector" value="government" />
+                    <label for="personal-sector-government">
+                      Government
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-health-care" name="personal-sector" value="health-care" />
+                    <label for="personal-sector-health-care">
+                      Health Care
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-insurance" name="personal-sector" value="insurance" />
+                    <label for="personal-sector-insurance">
+                      Insurance
+                    </label>
+                  </div>
+                </div>
+                <div class="col-span-1">
+                  <div>
+                    <input type="checkbox" id="personal-sector-manufacturing" name="personal-sector" value="manufacturing" />
+                    <label for="personal-sector-manufacturing">
+                      Manufacturing
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-real-estate" name="personal-sector" value="real-estate" />
+                    <label for="personal-sector-real-estate">
+                      Real Estate
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-retailers" name="personal-sector" value="retailers" />
+                    <label for="personal-sector-retailers">
+                      Retailers (Including Online)
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-technology" name="personal-sector" value="technology" />
+                    <label for="personal-sector-technology">
+                      Technology
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-utilities" name="personal-sector" value="utilities" />
+                    <label for="personal-sector-utilities">
+                      Utilities (Telecom/Energy)
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-transportation" name="personal-sector" value="transportation" />
+                    <label for="personal-sector-transportation">
+                      Transportation
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-hospitality" name="personal-sector" value="hospitality" />
+                    <label for="personal-sector-hospitality">
+                      Hospitality
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="personal-sector-other" name="personal-sector" value="other" />
+                    <label for="personal-sector-other">
+                      Other
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          {{!-- How many collaborators do you work with on your personal Ember applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                How many collaborators do you work with on your personal Ember applications?
+              </legend>
+              <input type="radio" id="personal-devs-ember-none" name="personal-devs-ember" value="None" />
+              <label for="personal-devs-ember-none">
+                None
+              </label>
+              <input type="radio" id="personal-devs-ember-1-10" name="personal-devs-ember"
+                value="Between 1 - 10" />
+              <label for="personal-devs-ember-1-10">
+                Between 1 - 10
+              </label>
+              <input type="radio" id="personal-devs-ember-11-20" name="personal-devs-ember"
+                value="Between 11 - 20" />
+              <label for="personal-devs-ember-11-20">
+                Between 11 - 20
+              </label>
+              <input type="radio" id="personal-devs-ember-21-50" name="personal-devs-ember"
+                value="Between 21 - 50" />
+              <label for="personal-devs-ember-21-50">
+                Between 21 - 50
+              </label>
+              <input type="radio" id="personal-devs-ember-51-100" name="personal-devs-ember"
+                value="Between 51 - 100" />
+              <label for="personal-devs-ember-51-100">
+                Between 51 - 100
+              </label>
+              <input type="radio" id="personal-devs-ember-greater-than-100" name="personal-devs-ember"
+                value="Greater than 100" />
+              <label for="personal-devs-ember-greater-than-100">
+                Greater than 100
+              </label>
+              <input type="radio" id="personal-devs-ember-idk" name="personal-devs-ember"
+                value="I don't know" />
+              <label for="personal-devs-ember-idk">
+                I don't know
+              </label>
+            </fieldset>
+          </div>
+          {{!-- How often do you work on your personal Ember applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                How often do you work on your personal Ember applications?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-ember-usage-frequency-all-of-the-time"
+              name="personal-ember-usage-frequency" value="All of the time" />
+            <label for="personal-ember-usage-frequency-all-of-the-time">
+              All of the time
+            </label>
+            <input type="radio" id="personal-ember-usage-frequency-most-of-the-time"
+              name="personal-ember-usage-frequency" value="Most of the time" />
+            <label for="personal-ember-usage-frequency-most-of-the-time">
+              Most of the time
+            </label>
+            <input type="radio" id="personal-ember-usage-frequency-some-of-the-time"
+              name="personal-ember-usage-frequency" value="Some of the time" />
+            <label for="personal-ember-usage-frequency-some-of-the-time">
+              Some of the time
+            </label>
+            <input type="radio" id="personal-ember-usage-frequency-never" name="personal-ember-usage-frequency"
+              value="Never" />
+            <label for="personal-ember-usage-frequency-never">
+              Never
+            </label>
+          </div>
+          {{!-- How many personal Ember applications do you maintain / work on regularly? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                How many personal Ember apps do you maintain / work on regularly?
+              </legend>
+              <input type="radio" id="personal-apps-ember-none" name="personal-apps-ember" value="None" />
+              <label for="personal-apps-ember-none">
+                None
+              </label>
+              <input type="radio" id="personal-apps-ember-1-10" name="personal-apps-ember"
+                value="Between 1 - 10" />
+              <label for="personal-apps-ember-1-10">
+                Between 1 - 10
+              </label>
+              <input type="radio" id="personal-apps-ember-11-20" name="personal-apps-ember"
+                value="Between 11 - 20" />
+              <label for="personal-apps-ember-11-20">
+                Between 11 - 20
+              </label>
+              <input type="radio" id="personal-apps-ember-greater-than-20" name="personal-apps-ember"
+                value="Greater than 20" />
+              <label for="personal-apps-ember-greater-than-20">
+                Greater than 20
+              </label>
+              <input type="radio" id="personal-apps-ember-idk" name="personal-apps-ember"
+                value="I don't know" />
+              <label for="personal-apps-ember-idk">
+                I don't know
+              </label>
+            </fieldset>
+          </div>
+          {{!-- Which choice best describes the overall distribution of your personal applications: of all of the personal applications I work on regularly, _______ of them are Ember apps. --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Which choice best describes the overall distribution of your personal applications: of all of the personal applications I work on regularly, _______ of them are Ember apps.
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-proportion-all" name="personal-apps-ember-proportion"
+              value="All" />
+            <label for="personal-apps-ember-proportion-all">
+              All
+            </label>
+            <input type="radio" id="personal-apps-ember-proportion-most" name="personal-apps-ember-proportion"
+              value="Most" />
+            <label for="personal-apps-ember-proportion-most">
+              Most
+            </label>
+            <input type="radio" id="personal-apps-ember-proportion-half" name="personal-apps-ember-proportion"
+              value="Half" />
+            <label for="personal-apps-ember-proportion-half">
+              Half
+            </label>
+            <input type="radio" id="personal-apps-ember-proportion-some" name="personal-apps-ember-proportion"
+              value="Some" />
+            <label for="personal-apps-ember-proportion-some">
+              Some
+            </label>
+            <input type="radio" id="personal-apps-ember-proportion-none" name="personal-apps-ember-proportion"
+              value="None" />
+            <label for="personal-apps-ember-proportion-none">
+              None
+            </label>
+          </div>
+          {{!-- If you have actively chosen a version of Ember to be the primary one used in youur personal applications, what is it? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                If you have actively chosen a version of Ember to be the primary one used in youur personal applications, what is it?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-version-primary-1-x"
+              name="personal-apps-ember-version-primary" value="1.x" />
+            <label for="personal-apps-ember-version-primary-1-x">
+              1.x
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-2-x"
+              name="personal-apps-ember-version-primary" value="2.x" />
+            <label for="personal-apps-ember-version-primary-2-x">
+              2.x
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-0-3-4"
+              name="personal-apps-ember-version-primary" value="3.0 - 3.4" />
+            <label for="personal-apps-ember-version-primary-3-0-3-4">
+              3.0 - 3.4
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-5-3-8"
+              name="personal-apps-ember-version-primary" value="3.5 - 3.8" />
+            <label for="personal-apps-ember-version-primary-3-5-3-8">
+              3.5 - 3.8
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-9-3-12"
+              name="personal-apps-ember-version-primary" value="3.9 - 3.12" />
+            <label for="personal-apps-ember-version-primary-3-9-3-12">
+              3.9 - 3.12
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-13-3-16"
+              name="personal-apps-ember-version-primary" value="3.13 - 3.16" />
+            <label for="personal-apps-ember-version-primary-3-13-3-16">
+              3.13 - 3.16
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-17-3-20"
+              name="personal-apps-ember-version-primary" value="3.17 - 3.20" />
+            <label for="personal-apps-ember-version-primary-3-17-3-20">
+              3.17 - 3.20
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-21-3-24"
+              name="personal-apps-ember-version-primary" value="3.21 - 3.24" />
+            <label for="personal-apps-ember-version-primary-3-21-3-24">
+              3.21 - 3.24
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-3-25-3-28"
+              name="personal-apps-ember-version-primary" value="3.25 - 3.28" />
+            <label for="personal-apps-ember-version-primary-3-25-3-28">
+              3.25 - 3.28
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-4-x"
+              name="personal-apps-ember-version-primary" value="4.x" />
+            <label for="personal-apps-ember-version-primary-4-x">
+              4.x
+            </label>
+            <input type="radio" id="personal-apps-ember-version-primary-none"
+              name="personal-apps-ember-version-primary"
+              value="None / I don't use one version of Ember significantly more than others" />
+            <label for="personal-apps-ember-version-primary-none">
+              None / I don't use one version of Ember significantly more than
+              thers / I use whatever version is on the machine at the time I create the new project
+            </label>
+          </div>
+          {{!-- What version(s) of Ember do you regularly work with in your personal applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                What version(s) of Ember do you regularly work with in your personal applications?
+              </legend>
+            </fieldset>
+            <input type="checkbox" id="personal-apps-ember-versions-used-1-x"
+              name="personal-apps-ember-versions-used" value="1.x" />
+            <label for="personal-apps-ember-versions-used-1-x">
+              1.x
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-2-x"
+              name="personal-apps-ember-versions-used" value="2.x" />
+            <label for="personal-apps-ember-versions-used-2-x">
+              2.x
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-0-3-4"
+              name="personal-apps-ember-versions-used" value="3.0 - 3.4" />
+            <label for="personal-apps-ember-versions-used-3-0-3-4">
+              3.0 - 3.4
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-5-3-8"
+              name="personal-apps-ember-versions-used" value="3.5 - 3.8" />
+            <label for="personal-apps-ember-versions-used-3-5-3-8">
+              3.5 - 3.8
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-9-3-12"
+              name="personal-apps-ember-versions-used" value="3.9 - 3.12" />
+            <label for="personal-apps-ember-versions-used-3-9-3-12">
+              3.9 - 3.12
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-13-3-16"
+              name="personal-apps-ember-versions-used" value="3.13 - 3.16" />
+            <label for="personal-apps-ember-versions-used-3-13-3-16">
+              3.13 - 3.16
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-17-3-20"
+              name="personal-apps-ember-versions-used" value="3.17 - 3.20" />
+            <label for="personal-apps-ember-versions-used-3-17-3-20">
+              3.17 - 3.20
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-21-3-24"
+              name="personal-apps-ember-versions-used" value="3.21 - 3.24" />
+            <label for="personal-apps-ember-versions-used-3-21-3-24">
+              3.21 - 3.24
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-3-25-3-28"
+              name="personal-apps-ember-versions-used" value="3.25 - 3.28" />
+            <label for="personal-apps-ember-versions-used-3-25-3-28">
+              3.25 - 3.28
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-4-x"
+              name="personal-apps-ember-versions-used" value="4.x" />
+            <label for="personal-apps-ember-versions-used-4-x">
+              4.x
+            </label>
+            <input type="checkbox" id="personal-apps-ember-versions-used-idk"
+              name="personal-apps-ember-versions-used" value="I don't know" />
+            <label for="personal-apps-ember-versions-used-idk">
+              I don't know
+            </label>
+          </div>
+          {{!-- Do you use Ember Data in your personal applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Do you use Ember Data in your personal applications?
+              </legend>
+              <input type="radio" id="personal-use-ember-data-yes" name="personal-use-ember-data" />
+              <label for="personal-use-ember-data-yes">
+                Yes
+              </label>
+              <input type="radio" id="personal-use-ember-data-no" name="personal-use-ember-data" />
+              <label for="personal-use-ember-data-no">
+                No
+              </label>
+            </fieldset>
+          </div>
+          {{!-- If you use Ember Data in your personal Ember applications, do you typically use the same version as the framework or do you manually change it to a different version number? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                If you use Ember Data in your personal Ember applications, do you
+                typically use the same version as the framework or do you
+                manually change it to a different version number?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-data-version-same"
+              name="personal-apps-ember-data-version" value="It stays the same" />
+            <label for="personal-apps-ember-data-version-same">
+              It stays the same
+            </label>
+            <input type="radio" id="personal-apps-ember-data-version-different"
+              name="personal-apps-ember-data-version" value="I change it to something else" />
+            <label for="personal-apps-ember-data-version-different">
+              I change it to something else
+            </label>
+            <input type="radio" id="personal-apps-ember-data-version-none"
+              name="personal-apps-ember-data-version" value="I don't use ember-data" />
+            <label for="personal-apps-ember-data-version-none">
+              I don't use ember-data
+            </label>
+          </div>
+          {{!-- Do you use Ember CLI in your personal applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Do you use Ember CLI in your personal applications?
+              </legend>
+              <input type="radio" id="personal-use-ember-data-yes" name="personal-use-ember-data" />
+              <label for="personal-use-ember-data-yes">
+                Yes
+              </label>
+              <input type="radio" id="personal-use-ember-data-no" name="personal-use-ember-data" />
+              <label for="personal-use-ember-data-no">
+                No
+              </label>
+            </fieldset>
+          </div>
+          {{!-- If you use Ember CLI in your personal Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                If you use Ember CLI in your personal Ember apps, do you typically use the same version as the framework or do you manually change it to a different version number?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-cli-version-same" name="personal-apps-ember-cli-version"
+              value="It stays the same" />
+            <label for="personal-apps-ember-cli-version-same">
+              It stays the same
+            </label>
+            <input type="radio" id="personal-apps-ember-cli-version-different"
+              name="personal-apps-ember-cli-version" value="I change it to something else" />
+            <label for="personal-apps-ember-cli-version-different">
+              I change it to something else
+            </label>
+            <input type="radio" id="personal-apps-ember-cli-version-none" name="personal-apps-ember-cli-version"
+              value="I don't use ember-cli" />
+            <label for="personal-apps-ember-cli-version-none">
+              I don't use ember-cli
+            </label>
+          </div>
+          {{!-- What testing framework do you primarily use in your personal Ember applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                What testing framework do you primarily use in your personal Ember applications?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-testing-framework-primary-mocha"
+              name="personal-apps-ember-testing-framework-primary"
+              value="Mocha (via ember-mocha or ember-cli-mocha)" />
+            <label for="personal-apps-ember-testing-framework-primary-mocha">
+              Mocha (via ember-mocha or ember-cli-mocha)
+            </label>
+            <input type="radio" id="personal-apps-ember-testing-framework-primary-qunit"
+              name="personal-apps-ember-testing-framework-primary"
+              value="QUnit (via ember-quinit or ember-cli-qunit)" />
+            <label for="personal-apps-ember-testing-framework-primary-qunit">
+              QUnit (via ember-quinit or ember-cli-qunit)
+            </label>
+            <input type="radio" id="personal-apps-ember-testing-framework-primary-none"
+              name="personal-apps-ember-testing-framework-primary" value="I don’t write tests" />
+            <label for="personal-apps-ember-testing-framework-none">
+              I don’t write tests
+            </label>
+            <input type="radio" id="personal-apps-ember-testing-framework-primary-other"
+              name="personal-apps-ember-testing-framework-primary" value="Other" />
+            <label for="personal-apps-ember-testing-framework-primary-other">
+              Other
+            </label>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Which of these server-side frameworks do you primarily in your personal Ember applications?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-rails"
+              name="personal-apps-ember-server-side-framework-primary" value="Rails" />
+            <label for="personal-apps-ember-server-side-framework-primary-rails">
+              Rails
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-express"
+              name="personal-apps-ember-server-side-framework-primary" value="Express" />
+            <label for="personal-apps-ember-server-side-framework-primary-express">
+              Express
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-spring-java"
+              name="personal-apps-ember-server-side-framework-primary" value="Spring / Java" />
+            <label for="personal-apps-ember-server-side-framework-primary-spring-java">
+              Spring / Java
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-php"
+              name="personal-apps-ember-server-side-framework-primary" value="PHP" />
+            <label for="personal-apps-ember-server-side-framework-primary-php">
+              PHP
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-elixir"
+              name="personal-apps-ember-server-side-framework-primary" value="Elixir" />
+            <label for="personal-apps-ember-server-side-framework-primary-elixir">
+              Elixir
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-dot-net"
+              name="personal-apps-ember-server-side-framework-primary" value=".NET" />
+            <label for="personal-apps-ember-server-side-framework-primary-dot-net">
+              .NET
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-django"
+              name="personal-apps-ember-server-side-framework-primary" value="Django" />
+            <label for="personal-apps-ember-server-side-framework-primary-django">
+              Django
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-custom"
+              name="personal-apps-ember-server-side-framework-primary" value="Custom" />
+            <label for="personal-apps-ember-server-side-framework-primary-custom">
+              Custom
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-none"
+              name="personal-apps-ember-server-side-framework-primary" value="None" />
+            <label for="personal-apps-ember-server-side-framework-primary-none">
+              None
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-idk"
+              name="personal-apps-ember-server-side-framework-primary" value="I don't know" />
+            <label for="personal-apps-ember-server-side-framework-primary-idk">
+              I don't know
+            </label>
+            <input type="radio" id="personal-apps-ember-server-side-framework-primary-other"
+              name="personal-apps-ember-server-side-framework-primary" value="Other" />
+            <label for="personal-apps-ember-server-side-framework-primary-other">
+              Other
+            </label>
+          </div>
+          {{!-- Which of these are used in the projects that you are actively working on or actively maintain for your personal Ember applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Which of these are used in the projects that you are actively
+                working on or actively maintain for your personal Ember applications?
+              </legend>
+            </fieldset>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-aws"
+              name="personal-apps-ember-deployments-used" value="Amazon Web Services" />
+            <label for="personal-apps-ember-deployments-used-aws">
+              Amazon Web Services
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-azure"
+              name="personal-apps-ember-deployments-used" value="Azure" />
+            <label for="personal-apps-ember-deployments-used-azure">
+              Azure
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-circle-ci"
+              name="personal-apps-ember-deployments-used" value="Circle CI" />
+            <label for="personal-apps-ember-deployments-used-circle-ci">
+              Circle CI
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-docker"
+              name="personal-apps-ember-deployments-used" value="Docker" />
+            <label for="personal-apps-ember-deployments-used-docker">
+              Docker
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-ember-cli-deploy"
+              name="personal-apps-ember-deployments-used" value="Ember CLI Deploy" />
+            <label for="personal-apps-ember-deployments-used-ember-cli-deploy">
+              Ember CLI Deploy
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-github-pages"
+              name="personal-apps-ember-deployments-used" value="GitHub Pages" />
+            <label for="personal-apps-ember-deployments-used-github-pages">
+              GitHub Pages
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-heroku"
+              name="personal-apps-ember-deployments-used" value="Heroku" />
+            <label for="personal-apps-ember-deployments-used-heroku">
+              Heroku
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-netlify"
+              name="personal-apps-ember-deployments-used" value="Netlify" />
+            <label for="personal-apps-ember-deployments-used-netlify">
+              Netlify
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-self-hosted"
+              name="personal-apps-ember-deployments-used" value="Self-hosted" />
+            <label for="personal-apps-ember-deployments-used-self-hosted">
+              Self-hosted
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-travis-ci"
+              name="personal-apps-ember-deployments-used" value="Travis CI" />
+            <label for="personal-apps-ember-deployments-used-travis-ci">
+              Travis CI
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-vercel"
+              name="personal-apps-ember-deployments-used" value="Vercel" />
+            <label for="personal-apps-ember-deployments-used-vercel">
+              Vercel
+            </label>
+            <input type="checkbox" id="personal-apps-ember-deployments-used-other"
+              name="personal-apps-ember-deployments-used" value="Other" />
+            <label for="personal-apps-ember-deployments-used-other">
+              Other
+            </label>
+          </div>
+          {{!-- Which of these Static Site Generators are used in your personal Ember applications? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+               If you use a Static Site Generator for personal projects, which one do you primarily use?
+              </legend>
+              {{!-- 11ty, Jekyll, Metalsmith, Hugo, Empress --}}
+              <input type="radio" id="personal-apps-ember-site-generators-used-eleventy"
+                name="personal-apps-ember-site-generators-used" value="Eleventy" />
+              <label for="personal-apps-ember-site-generators-used-eleventy">
+              Eleventy
+            </label>
+            <input type="radio" id="personal-apps-ember-site-generators-used-jekyll"
+                name="personal-apps-ember-site-generators-used" value="Jekyll" />
+              <label for="personal-apps-ember-site-generators-used-jekyll">
+              Jekyll
+            </label>
+            <input type="radio" id="personal-apps-ember-site-generators-used-metalsmith"
+              name="personal-apps-ember-site-generators-used" value="Metalsmith" />
+            <label for="personal-apps-ember-site-generators-used-metalsmith">
+              Metalsmith
+            </label>
+            <input type="radio" id="personal-apps-ember-site-generators-used-empress-blog"
+              name="personal-apps-ember-site-generators-used" value="empress-blog" />
+            <label for="personal-apps-ember-site-generators-used-empress-blog">
+              empress-blog
+            </label>
+            </fieldset>
+          </div>
+          {{!-- What is the target platform(s) for your personal Ember apps? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                What is the target platform(s) for your personal Ember apps?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-target-platforms-desktop-only"
+              name="personal-apps-ember-target-platforms" value="Desktop only" />
+            <label for="personal-apps-ember-target-platforms-desktop-only">
+              Desktop only
+            </label>
+            <input type="radio" id="personal-apps-ember-target-platforms-responsive"
+              name="personal-apps-ember-target-platforms" value="Fully responsive (desktop + devices)" />
+            <label for="personal-apps-ember-target-platforms-responsive">
+              Fully responsive (desktop + devices)
+            </label>
+            <input type="radio" id="personal-apps-ember-target-platforms-mobile-only"
+              name="personal-apps-ember-target-platforms" value="Mobile device only" />
+            <label for="personal-apps-ember-target-platforms-mobile-only">
+              Mobile device only
+            </label>
+          </div>
+          {{!-- Who are the end users of your personal Ember apps? --}}
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                Who are the end users of your personal Ember apps?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-end-users-i2i"
+              name="personal-apps-ember-end-users" value="Only me" />
+            <label for="personal-apps-ember-end-users-i2i">
+              Only me
+            </label>
+            <input type="radio" id="personal-apps-ember-end-users-internal"
+              name="personal-apps-ember-end-users" value="Only people I know or have granted access to" />
+            <label for="personal-apps-ember-end-users-internal">
+              Only people I know or have granted access to
+            </label>
+            <input type="radio" id="personal-apps-ember-end-users-i2c"
+              name="personal-apps-ember-end-users" value="General public" />
+            <label for="personal-apps-ember-end-users-i2c">
+              General public
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-i2b"
+              name="personal-apps-ember-target-users" value="Business consumers" />
+            <label for="personal-apps-ember-target-users-i2b">
+              Business consumers, voluntary donors, or any potential sources of additional income)
+            </label>
+          </div>
+          <div class="form-group">
+            <fieldset>
+              <legend>
+                How many end users do your personal Ember apps support?
+              </legend>
+            </fieldset>
+            <input type="radio" id="personal-apps-ember-target-users-count-1-1000"
+              name="personal-apps-ember-target-users-count" value="Between 1 - 1,000" />
+            <label for="personal-apps-ember-target-users-count-1-1000">
+              Between 1 - 1,000
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-count-1001-10000"
+              name="personal-apps-ember-target-users-count" value="Between 1,001 - 10,000" />
+            <label for="personal-apps-ember-target-users-count-1001-10000">
+              Between 1,001 - 10,000
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-count-100001-100000"
+              name="personal-apps-ember-target-users-count" value="Between 10,001 - 100,000" />
+            <label for="personal-apps-ember-target-users-count-100001-100000">
+              Between 10,001 - 100,000
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-count-100001-1000000"
+              name="personal-apps-ember-target-users-count" value="Between 100,001 - 1,000,000" />
+            <label for="personal-apps-ember-target-users-count-100001-1000000">
+              Between 100,001 - 1,000,000
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-count-greater-than-1000000"
+              name="personal-apps-ember-target-users-count" value="Greater than 1,000,000" />
+            <label for="personal-apps-ember-target-users-count-greater-than-1000000">
+              Greater than 1,000,000
+            </label>
+            <input type="radio" id="personal-apps-ember-target-users-count-idk"
+              name="personal-apps-ember-target-users-count" value="I don't know" />
+            <label for="personal-apps-ember-target-users-count-idk">
+              I don't know
+            </label>
           </div>
         </div>
         <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
@@ -1201,7 +1954,7 @@
                     <input type="checkbox" name="fb-new-feat" id="feat-in-ele" value="in-element-helper" />
                     <label for="feat-in-ele">The <code>in-element</code> helper</label>
                   </li>
-                </ul>  
+                </ul>
              </fieldset>
             </div>
             <div class="form-group">
