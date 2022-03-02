@@ -18,7 +18,10 @@ h3 {
     @apply
     text-2xl;
 }
-
+h3 + .form-group {
+    @apply
+    mt-1 !important;
+}
 aside nav a {
     @apply
     flex 
@@ -87,6 +90,11 @@ legend, .input-label {
     sm:text-sm 
     w-full 
     ;
+}
+[type="checkbox"],
+[type="radio"] {
+    @apply
+    accent-ember-500;
 }
 .input-desc {
     @apply
