@@ -1029,7 +1029,7 @@
                                 typically use the same version as the framework or do you
                                 manually change it to a different version number?
                             </legend>
-                        </fieldset>
+                        
                         <input type="radio" id="work-company-apps-ember-cli-version-same"
                             name="work-company-apps-ember-cli-version" value="It stays the same" />
                         <label for="work-company-apps-ember-cli-version-same">
@@ -1045,6 +1045,7 @@
                         <label for="work-company-apps-ember-cli-version-none">
                             We don't use ember-cli
                         </label>
+                        </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
@@ -1052,7 +1053,7 @@
                                 What testing framework do you use most frequently in the Ember
                                 apps you work on at your job?
                             </legend>
-                        </fieldset>
+                        
                         <input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
                             name="work-company-apps-ember-testing-framework-primary"
                             value="Mocha (via ember-mocha or ember-cli-mocha)" />
@@ -1075,6 +1076,7 @@
                         <label for="work-company-apps-ember-testing-framework-primary-other">
                             Other
                         </label>
+                        </fieldset>
                     </div>
                     <div class="form-group">
                         <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily use in your Ember apps at work?</label>
@@ -1111,9 +1113,8 @@
                     <div class="form-group">
                         <fieldset>
                             <legend>
-                                What is the target platform(s) for your company's Ember apps?
+                                What are the target platform(s) for your company's Ember apps?
                             </legend>
-                        </fieldset>
                         <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
                             name="work-company-apps-ember-target-platforms" value="Desktop only" />
                         <label for="work-company-apps-ember-target-platforms-desktop-only">
@@ -1130,65 +1131,42 @@
                         <label for="work-company-apps-ember-target-platforms-mobile-only">
                             Mobile device only
                         </label>
+                         </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
                             <legend>
                                 Who are the target users of your company's Ember apps?
                             </legend>
+
+                            <input type="radio" id="work-company-apps-ember-target-users-b2c"
+                                name="work-company-apps-ember-target-users" value="General public (B2C)" />
+                            <label for="work-company-apps-ember-target-users-b2c">
+                                General public (B2C)
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-target-users-internal"
+                                name="work-company-apps-ember-target-users" value="Internal users" />
+                            <label for="work-company-apps-ember-target-users-internal">
+                                Internal users
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-target-users-b2b"
+                                name="work-company-apps-ember-target-users" value="Business consumers (B2B)" />
+                            <label for="work-company-apps-ember-target-users-b2b">
+                                Business consumers (B2B)
+                            </label>
                         </fieldset>
-                        <input type="radio" id="work-company-apps-ember-target-users-b2c"
-                            name="work-company-apps-ember-target-users" value="General public (B2C)" />
-                        <label for="work-company-apps-ember-target-users-b2c">
-                            General public (B2C)
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-internal"
-                            name="work-company-apps-ember-target-users" value="Internal users" />
-                        <label for="work-company-apps-ember-target-users-internal">
-                            Internal users
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-b2b"
-                            name="work-company-apps-ember-target-users" value="Business consumers (B2B)" />
-                        <label for="work-company-apps-ember-target-users-b2b">
-                            Business consumers (B2B)
-                        </label>
                     </div>
                     <div class="form-group">
-                        <fieldset>
-                            <legend>
-                                How many end users do your company's Ember apps support?
-                            </legend>
-                        </fieldset>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-1-1000"
-                            name="work-company-apps-ember-target-users-count" value="Between 1 - 1,000" />
-                        <label for="work-company-apps-ember-target-users-count-1-1000">
-                            Between 1 - 1,000
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-1001-10000"
-                            name="work-company-apps-ember-target-users-count" value="Between 1,001 - 10,000" />
-                        <label for="work-company-apps-ember-target-users-count-1001-10000">
-                            Between 1,001 - 10,000
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-100001-100000"
-                            name="work-company-apps-ember-target-users-count" value="Between 10,001 - 100,000" />
-                        <label for="work-company-apps-ember-target-users-count-100001-100000">
-                            Between 10,001 - 100,000
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-100001-1000000"
-                            name="work-company-apps-ember-target-users-count" value="Between 100,001 - 1,000,000" />
-                        <label for="work-company-apps-ember-target-users-count-100001-1000000">
-                            Between 100,001 - 1,000,000
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-greater-than-1000000"
-                            name="work-company-apps-ember-target-users-count" value="Greater than 1,000,000" />
-                        <label for="work-company-apps-ember-target-users-count-greater-than-1000000">
-                            Greater than 1,000,000
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-users-count-idk"
-                            name="work-company-apps-ember-target-users-count" value="I don't know" />
-                        <label for="work-company-apps-ember-target-users-count-idk">
-                            I don't know
-                        </label>
+                        <label for="work-app-users" class="input-label">How many end users do your company's Ember apps support?</label>
+                        <select id="work-app-users" class="input-select">
+                            <option value="">select one</option>
+                            <option value="Between 1 - 1,000">1 - 1,000</option>
+                            <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
+                            <option value="Between 10,001 - 100,000">10,001 - 100,000</option>
+                            <option value="Between 100,001 - 1,000,000">100,001 - 1,000,000</option>
+                            <option value="Greater than 1,000,000">More than 1,000,000</option>
+                            <option value="I don't know">I don't know</option>
+                        </select>
                     </div>
                 </div>
             </div>
