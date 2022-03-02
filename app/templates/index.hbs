@@ -75,20 +75,22 @@
                             How long have you been using Ember?
                         </label>
                         <select id="time-use" name="time-use" class="input-select">
+                            <option value="">select one</option>
+                            <option value="not-yet">I haven't used Ember yet</option>
                             <option value="less-than-one">
                                 Less than 1 year
                             </option>
                             <option value="one-to-three">
                                 Between 1 - 3 years
                             </option>
-                            <option value="four-to-five">
-                                Between 4 - 5 years
+                            <option value="four-to-six">
+                                Between 4 - 6 years
                             </option>
-                            <option value="six-to-eight">
-                                Between 6 - 8 years
+                            <option value="seven-to-nine">
+                                Between 7 - 9 years
                             </option>
-                            <option value="more-than-eight">
-                                8+ years
+                            <option value="more-than-ten">
+                                10+ years
                             </option>
                         </select>
                     </div>
@@ -979,35 +981,45 @@
                                 What testing framework do you use most frequently in the Ember
                                 apps you work on at your job?
                             </legend>
+                            <ul>
+                                <li><input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
+                                        name="work-company-apps-ember-testing-framework-primary"
+                                        value="Mocha (via ember-mocha or ember-cli-mocha)" />
+                                    <label for="work-company-apps-ember-testing-framework-primary-mocha">
+                                        Mocha (via ember-mocha or ember-cli-mocha)
+                                    </label>
 
-                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
-                                name="work-company-apps-ember-testing-framework-primary"
-                                value="Mocha (via ember-mocha or ember-cli-mocha)" />
-                            <label for="work-company-apps-ember-testing-framework-primary-mocha">
-                                Mocha (via ember-mocha or ember-cli-mocha)
-                            </label>
-                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
-                                name="work-company-apps-ember-testing-framework-primary"
-                                value="QUnit (via ember-quinit or ember-cli-qunit)" />
-                            <label for="work-company-apps-ember-testing-framework-primary-qunit">
-                                QUnit (via ember-quinit or ember-cli-qunit)
-                            </label>
-                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
-                                name="work-company-apps-ember-testing-framework-primary" value="I don’t write tests" />
-                            <label for="work-company-apps-ember-testing-framework-none">
-                                I don’t write tests
-                            </label>
-                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
-                                name="work-company-apps-ember-testing-framework-primary" value="Other" />
-                            <label for="work-company-apps-ember-testing-framework-primary-other">
-                                Other
-                            </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
+                                        name="work-company-apps-ember-testing-framework-primary"
+                                        value="QUnit (via ember-quinit or ember-cli-qunit)" />
+                                    <label for="work-company-apps-ember-testing-framework-primary-qunit">
+                                        QUnit (via ember-quinit or ember-cli-qunit)
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
+                                        name="work-company-apps-ember-testing-framework-primary"
+                                        value="I dont write tests" />
+                                    <label for="work-company-apps-ember-testing-framework-none">
+                                        I don't write tests
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
+                                        name="work-company-apps-ember-testing-framework-primary" value="Other" />
+                                    <label for="work-company-apps-ember-testing-framework-primary-other">
+                                        Other
+                                    </label>
+                                </li>
+                            </ul>
                         </fieldset>
                     </div>
                     <div class="form-group">
                         <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily
                             use in your Ember apps at work?</label>
-                        <select class="input-select">
+                        <select name="server-side-framework-work" id="work-ssf" class="input-select">
                             <option value="">select one</option>
                             <option value="rails">Rails</option>
                             <option value="express">Express</option>
@@ -1024,7 +1036,7 @@
                     </div>
                     <div class="form-group">
                         <label for="deploy-work" class="input-label">Where do you primarily deploy your apps?</label>
-                        <select class="input-select">
+                        <select name="deploy-work" id="deploy-work" class="input-select">
                             <option value="">select one</option>
                             <option value="aws">Amazon Web Services (AWS)</option>
                             <option value="azure">Azure</option>
@@ -1086,7 +1098,7 @@
                     <div class="form-group">
                         <label for="work-app-users" class="input-label">How many end users do your company's Ember apps
                             support?</label>
-                        <select id="work-app-users" class="input-select">
+                        <select name="work-app-users" id="work-app-users" class="input-select">
                             <option value="">select one</option>
                             <option value="Between 1 - 1,000">1 - 1,000</option>
                             <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
@@ -1149,7 +1161,7 @@
                         which talk was your favorite and why?
                     </div>
                     <h3 id="feedback-learning">
-                        <a href="#feedback-learning" class="text-ember-500 text-md">
+                        <a href="#feedback-learning" class="text-ember-500">
                             §
                         </a>
                         Learning Ember
@@ -1183,7 +1195,7 @@
                         Ember?
                     </div>
                     <h3 id="feedback-surveys">
-                        <a href="#feedback-surveys" class="text-ember-500 text-md">
+                        <a href="#feedback-surveys" class="text-ember-500">
                             §
                         </a>
                         About Surveys
