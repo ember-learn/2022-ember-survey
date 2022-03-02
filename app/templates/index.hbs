@@ -103,7 +103,7 @@
                 How long have you been using Ember?
               </label>
               <select id="time-use" name="time-use" class="input-select">
-                <option value="">select one</option>
+                <option value="">--please select one--</option>
                 <option value="not-yet">I haven't used Ember yet</option>
                 <option value="less-than-one">
                   Less than 1 year
@@ -604,7 +604,7 @@
               <label for="work-all-size" class="input-label">How many people are there at your entire
                 company?</label>
               <select name="work-all-size" id="work-all-size">
-                <option value="">select one</option>
+                <option value="">--please select one--</option>
                 <option value="Between 1 - 10">1 - 10</option>
                 <option value="Between 11 - 20">11 - 20</option>
                 <option value="Between 21 - 50">21 - 50</option>
@@ -826,7 +826,7 @@
                 job, what is it?
               </label>
               <select class="input-select" id="select-work-ember-version">
-                <option value="blank">select one</option>
+                <option value="blank">--please select one--</option>
                 <option value="1.x">1.x</option>
                 <option value="2.x">2.x</option>
                 <option value="3.0 - 3.4">3.0 - 3.4</option>
@@ -1025,7 +1025,7 @@
               <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily
                 use in your Ember apps at work?</label>
               <select name="server-side-framework-work" id="work-ssf" class="input-select">
-                <option value="">select one</option>
+                <option value="">--please select one--</option>
                 <option value="rails">Rails</option>
                 <option value="express">Express</option>
                 <option value="Spring / Java">Spring / Java</option>
@@ -1042,7 +1042,7 @@
             <div class="form-group">
               <label for="deploy-work" class="input-label">Where do you primarily deploy your apps?</label>
               <select name="deploy-work" id="deploy-work" class="input-select">
-                <option value="">select one</option>
+                <option value="">--please select one--</option>
                 <option value="aws">Amazon Web Services (AWS)</option>
                 <option value="azure">Azure</option>
                 <option value="digital-ocean">Digital Ocean</option>
@@ -1103,7 +1103,7 @@
               <label for="work-app-users" class="input-label">How many end users do your company's Ember apps
                 support?</label>
               <select name="work-app-users" id="work-app-users" class="input-select">
-                <option value="">select one</option>
+                <option value="">--please select one--</option>
                 <option value="Between 1 - 1,000">1 - 1,000</option>
                 <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
                 <option value="Between 10,001 - 100,000">10,001 - 100,000</option>
@@ -1141,65 +1141,81 @@
                 </a>
                 Feedback About Ember
               </h2>
-              <p>
+              {{!-- <p>
                 This section contains questions that relate to the changes made to Ember.js in the past
                 year, changes that are planned for future releases, and your experience learning Ember.
-              </p>
+              </p> --}}
             </div>
 
             <div class="form-group">
               <fieldset>
               <legend aria-describedby="fb-new-feat-desc">Have you integrated any of the features released
-                within the last year into your applications?</legend>
-                <p class="w-full mt-0 mb-2 text-sm text-slate-700">Please select any that apply.</p>
+                since Octane into your applications?</legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700">
+                  Please select any that apply.
+                  Not sure what they are? 
+                  See the <a href="https://blog.emberjs.com/tag/releases" target="_blank" rel="noopener noreferrer external" class="text-ember-500 underline focus:border-ember-500 outline-ember-500">Release Blogs</a> (opens in a new window) for more information.
+                </p>
                 <ul>
                   <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-serv-exp" value="service-export" />
-                    <label for="feat-serv-exp"><code>@service</code> export (replacing <code>inject</code>)</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-refresh-router" value="refresh-router"/>
-                    <label for="feat-refresh-router">The refresh method added to the router service</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-cached-dec" value="cached-decorator"/>
-                    <label for="feat-cached-dec">The <code>@cached</code> decorator</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-cust-model" value="custom-model-class"/>
-                    <label for="feat-cust-model">Ability to define a custom model class</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-cont-help" value="contextual-helpers" />
-                    <label for="feat-cont-help">Contextual helpers and/or modifiers</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-strict-mode" value="strict-mode" />
-                    <label for="feat-strict-mode">Template strict mode</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-nblocks" value="named-blocks" />
-                    <label for="feat-nblocks">Named blocks</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-invokeHelper" value="invokeHelper" />
-                    <label for="feat-invokeHelper"><code>invokeHelper</code></label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-hman" value="helper-manager" />
-                    <label for="feat-hman">The helper manager</label>
-                  </li>
-                  <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-dest-api" value="destroyable-api" />
-                    <label for="feat-dest-api"><code>@ember/destroyable</code> API</label>
+                    <input type="checkbox" name="fb-new-feat" id="feat-in-ele" value="in-element-helper" />
+                    <label for="feat-in-ele">The <code>in-element</code> helper (v3.20)</label>
                   </li>
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-lang" value="lang-flag" />
-                    <label for="feat-lang">The <code>--lang</code> flag for new apps</label>
+                    <label for="feat-lang">The <code>--lang</code> flag for new apps (v3.21)</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-new-feat" id="feat-in-ele" value="in-element-helper" />
-                    <label for="feat-in-ele">The <code>in-element</code> helper</label>
+                    <input type="checkbox" name="fb-new-feat" id="feat-dest-api" value="destroyable-api" />
+                    <label for="feat-dest-api"><code>@ember/destroyable</code> API (v3.22)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-hman" value="helper-manager" />
+                    <label for="feat-hman">The helper manager (v3.23)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-invokeHelper" value="invokeHelper" />
+                    <label for="feat-invokeHelper"><code>invokeHelper</code> from JS Helper Invocation API (v3.23)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-page-title" value="page-title" />
+                    <label for="feat-page-title">`page-title` by default in templates (v.3.24)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-nblocks" value="named-blocks" />
+                    <label for="feat-nblocks">Named blocks (v.3.25)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-strict-mode" value="strict-mode" />
+                    <label for="feat-strict-mode">Template strict mode (v.3.25)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-embr-flag" value="embroider-flag"/>
+                    <label for="feat-embr-flag">The <code>--embroider</code> flag for new apps (ember-cli v.3.27)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cont-help" value="contextual-helpers" />
+                    <label for="feat-cont-help">Contextual helpers and/or modifiers (v3.27)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-project-root" value="project-root"/>
+                    <label for="feat-project-root">Ability run ember serve from outside of a project's root directory (ember-cli v.3.28)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cust-model" value="custom-model-class"/>
+                    <label for="feat-cust-model">Ability to define a custom model class (ember-data v.3.28)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cached-dec" value="cached-decorator"/>
+                    <label for="feat-cached-dec">The <code>@cached</code> decorator for memoizing the result of a getter based on autotracking (v4.1)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-refresh-router" value="refresh-router"/>
+                    <label for="feat-refresh-router">Method for refreshing all currently active routes (v4.1)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-serv-exp" value="service-export" />
+                    <label for="feat-serv-exp"><code>@service</code> export (replacing <code>inject</code>) (v4.1)</label>
                   </li>
                 </ul>  
              </fieldset>
@@ -1208,27 +1224,28 @@
               <label for="fb-feature-impact" class="input-label">If yes, which had the most positive impact on your app or development
                 experience?</label>
             <select id="fb-feature-impact" name="new-features" class="input-select">
-                <option value="">select one</option>
-                <option value="">using the service export instead of inject</option>
-                <option value="">the refresh method added to the router service</option>
-                <option value="">the @cached decorator</option>
-                <option value="">ability to define a custom model class</option>
-                <option value="">contextual helpers and/or modifiers</option>
-                <option value="">template strict mode</option>
-                <option value="">named blocks</option>
-                <option value="">invokeHelper</option>
-                <option value="">helper manager</option>
-                <option value="">@ember/destroyable API</option>
-                <option value="">ember new --lang flag</option>
+                <option value="">--please select one--</option>
                 <option value="">in-element helper</option>
+                <option value="">ember new --lang flag</option>
+                <option value=""><code>@ember/destroyable</code> API (v3.22)</option>
+                <option value="">The helper manager (v3.23)</option>
+                <option value=""><code>invokeHelper</code> from JS Helper Invocation API (v3.23)</option>
+                <option value="">Named blocks (v.3.25)</option>
+                <option value="">Contextual helpers and/or modifiers (v3.27)</option>
+                <option value="">Ability run ember serve from outside of a project's root directory (ember-cli v.3.28)</option>
+                <option value="">Ability to define a custom model class (ember-data v.3.28)</option>
+                <option value="">The <code>@cached</code> decorator for memoizing the result of a getter based on autotracking (v4.1)</option>
+                <option value="">Method for refreshing all currently active routes (v4.1)</option>
+                <option value=""><code>@service</code> export (replacing <code>inject</code>) (v4.1)</option>
+
               </select>
             </div>
 
           <div class="form-group">
             <!-- TODO: Link to RFCs -->
-            Which of these Ember features planned for the next year do you think
-            will have the most positive impact on your experience developing
-            Ember apps? Why?
+            {{!-- Which of these future Ember features do you think
+            will have the most positive impact on your developer experience? Why? --}}
+            
           </div>
           <div class="form-group">
             If you have attended any virtual Ember events in the past year,
@@ -1340,7 +1357,7 @@
               <input type="text" name="global-loc" id="global-loc" />
             </div>
             <div class="form-group">
-              <label for="feedback-other">Is there anything else youdd like to tell us?</label>
+              <label for="feedback-other">Is there anything else you would like to tell us?</label>
               <textarea rows="4" id="feedback-other"/>
             </div>
             <div class="pt-5">
