@@ -2,7 +2,7 @@
 {{! template-lint-disable "no-html-comments" }}
 <div class="lg:grid lg:grid-cols-12 lg:gap-x-5">
   <aside class="py-6 px-2 sm:px-6 lg:py-0 lg:px-0 lg:col-span-3">
-    <nav class="space-y-1" aria-label="sidebar">
+    <nav class="space-y-1" aria-label="sidebar: form sections navigation">
       <a href="#background" class="focus:border-ember-500 outline-ember-500">
         Your Development Background
       </a>
@@ -55,7 +55,6 @@
     <div class="space-y-6 sm:px-6 lg:px-0 lg:col-span-9">
       <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
         <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
-          {{! questions go here }}
           <div class="prose">
             <p class="text-slate-900">
               This survey is for developers who use
@@ -1136,142 +1135,213 @@
         <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
           <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
             <div>
-              {{! next section title }}
               <h2 id="feedback">
                 <a href="#feedback" class="text-ember-500 text-md">
                   §
                 </a>
-                Feedback
+                Feedback About Ember
               </h2>
               <p>
-                This section is about the changes to Ember.js released in the past
-                year and those scheduled for release in the upcoming year.
+                This section contains questions that relate to the changes made to Ember.js in the past
+                year, changes that are planned for future releases, and your experience learning Ember.
               </p>
             </div>
-            {{! questions go here }}
-            <div class="form-group">
-              <!-- TODO: Link to Changelog -->
-              Have you actively integrated any of the following features released
-              within the last year into your applications? If so, which one had
-              the most positive impact on your app or development experience?
-            </div>
-            <div class="form-group">
-              <!-- TODO: Link to RFCs -->
-              Which of these Ember features planned for the next year do you think
-              will have the most positive impact on your experience developing
-              Ember apps? Why?
-            </div>
-            <div class="form-group">
-              If you have attended any virtual Ember events in the past year,
-              which talk was your favorite and why?
-            </div>
-            <h3 id="feedback-learning">
-              <a href="#feedback-learning" class="text-ember-500">
-                §
-              </a>
-              Learning Ember
-            </h3>
-            <p>
-              This section is about your experiences using Ember, in general
-            </p>
-            <div class="form-group">
-              <!-- Learning: Getting Started -->
-              When you were first learning Ember, what was the most difficult
-              thing to understand?
-            </div>
-            <div class="form-group">
-              When you were first learning Ember, what concept felt the most
-              intuitive to you?
-            </div>
-            <div class="form-group">
-              Think about the last time you upgraded an Ember app. What version
-              did you migrate from/to, and what was the hardest thing about it?
-            </div>
-            <div class="form-group">
-              If you were not able to upgrade, what prevented you from upgrading?
-            </div>
-            <!-- NEW: Candidates for future built-ins -->
-            <div class="form-group">
-              Is there anything you immediately add or configure every time you
-              make a new Ember application (e.g. an addon, linting rules, etc.)
-            </div>
-            <div class="form-group">
-              Is there anything you want to tell us about your experiences using
-              Ember?
-            </div>
-            <h3 id="feedback-surveys">
-              <a href="#feedback-surveys" class="text-ember-500">
-                §
-              </a>
-              About Surveys
-            </h3>
-            <p>
-              This section is about this survey and other developer surveys you
-              may have taken.
-            </p>
+
             <div class="form-group">
               <fieldset>
-                <legend aria-describedby="survey-outreach-desc">
-                  How did you hear about this survey?
-                </legend>
-                <input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
-                <label for="survey-email">
-                  Email
-                </label>
-                <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord" />
-                <label for="survey-discord">
-                  Discord
-                </label>
-                <input type="checkbox" name="survey-outreach" id="survey-social" value="social" />
-                <label for="survey-social">
-                  Social Media
-                </label>
-                <input type="checkbox" name="survey-outreach" id="survey-work" value="work" />
-                <label for="survey-work">
-                  Announcement At Work
-                </label>
-                <input type="checkbox" name="survey-outreach" id="survey-website" value="website" />
-                <label for="survey-website">
-                  The Ember Website
-                </label>
-              </fieldset>
-              <p class="input-desc" id="survey-outreach-desc">
-                please select all that apply.
-              </p>
+              <legend aria-describedby="fb-new-feat-desc">Have you integrated any of the features released
+                within the last year into your applications?</legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700">Please select any that apply.</p>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-serv-exp" value="service-export" />
+                    <label for="feat-serv-exp"><code>@service</code> export (replacing <code>inject</code>)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-refresh-router" value="refresh-router"/>
+                    <label for="feat-refresh-router">The refresh method added to the router service</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cached-dec" value="cached-decorator"/>
+                    <label for="feat-cached-dec">The <code>@cached</code> decorator</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cust-model" value="custom-model-class"/>
+                    <label for="feat-cust-model">Ability to define a custom model class</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cont-help" value="contextual-helpers" />
+                    <label for="feat-cont-help">Contextual helpers and/or modifiers</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-strict-mode" value="strict-mode" />
+                    <label for="feat-strict-mode">Template strict mode</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-nblocks" value="named-blocks" />
+                    <label for="feat-nblocks">Named blocks</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-invokeHelper" value="invokeHelper" />
+                    <label for="feat-invokeHelper"><code>invokeHelper</code></label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-hman" value="helper-manager" />
+                    <label for="feat-hman">The helper manager</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-dest-api" value="destroyable-api" />
+                    <label for="feat-dest-api"><code>@ember/destroyable</code> API</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-lang" value="lang-flag" />
+                    <label for="feat-lang">The <code>--lang</code> flag for new apps</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-in-ele" value="in-element-helper" />
+                    <label for="feat-in-ele">The <code>in-element</code> helper</label>
+                  </li>
+                </ul>  
+             </fieldset>
             </div>
             <div class="form-group">
-              Do you participate in other developer surveys?
+              <label for="fb-feature-impact" class="input-label">If yes, which had the most positive impact on your app or development
+                experience?</label>
+            <select id="fb-feature-impact" name="new-features" class="input-select">
+                <option value="">select one</option>
+                <option value="">using the service export instead of inject</option>
+                <option value="">the refresh method added to the router service</option>
+                <option value="">the @cached decorator</option>
+                <option value="">ability to define a custom model class</option>
+                <option value="">contextual helpers and/or modifiers</option>
+                <option value="">template strict mode</option>
+                <option value="">named blocks</option>
+                <option value="">invokeHelper</option>
+                <option value="">helper manager</option>
+                <option value="">@ember/destroyable API</option>
+                <option value="">ember new --lang flag</option>
+                <option value="">in-element helper</option>
+              </select>
             </div>
-            <div class="form-group">
-              If so, which ones?
-            </div>
-            <div class="form-group">
-              Do you have any general feedback about the experience of the
-              completing the community survey?
-            </div>
+
+          <div class="form-group">
+            <!-- TODO: Link to RFCs -->
+            Which of these Ember features planned for the next year do you think
+            will have the most positive impact on your experience developing
+            Ember apps? Why?
+          </div>
+          <div class="form-group">
+            If you have attended any virtual Ember events in the past year,
+            which talk was your favorite and why?
+          </div>
+          <h3 id="feedback-learning">
+            <a href="#feedback-learning" class="text-ember-500">
+              §
+            </a>
+            Learning Ember
+          </h3>
+          <p>
+            This section is about your experiences using Ember, in general
+          </p>
+          <div class="form-group">
+            <!-- Learning: Getting Started -->
+            When you were first learning Ember, what was the most difficult
+            thing to understand?
+          </div>
+          <div class="form-group">
+            When you were first learning Ember, what concept felt the most
+            intuitive to you?
+          </div>
+          <div class="form-group">
+            Think about the last time you upgraded an Ember app. What version
+            did you migrate from/to, and what was the hardest thing about it?
+          </div>
+          <div class="form-group">
+            If you were not able to upgrade, what prevented you from upgrading?
+          </div>
+          <!-- NEW: Candidates for future built-ins -->
+          <div class="form-group">
+            Is there anything you immediately add or configure every time you
+            make a new Ember application (e.g. an addon, linting rules, etc.)
+          </div>
+          <div class="form-group">
+            Is there anything you want to tell us about your experiences using
+            Ember?
+          </div>
+          <h3 id="feedback-surveys">
+            <a href="#feedback-surveys" class="text-ember-500">
+              §
+            </a>
+            About Surveys
+          </h3>
+          <p>
+            This section is about this survey and other developer surveys you
+            may have taken.
+          </p>
+          <div class="form-group">
+            <fieldset>
+              <legend aria-describedby="survey-outreach-desc">
+                How did you hear about this survey?
+              </legend>
+              <input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
+              <label for="survey-email">
+                Email
+              </label>
+              <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord" />
+              <label for="survey-discord">
+                Discord
+              </label>
+              <input type="checkbox" name="survey-outreach" id="survey-social" value="social" />
+              <label for="survey-social">
+                Social Media
+              </label>
+              <input type="checkbox" name="survey-outreach" id="survey-work" value="work" />
+              <label for="survey-work">
+                Announcement At Work
+              </label>
+              <input type="checkbox" name="survey-outreach" id="survey-website" value="website" />
+              <label for="survey-website">
+                The Ember Website
+              </label>
+            </fieldset>
+            <p class="input-desc" id="survey-outreach-desc">
+              please select all that apply.
+            </p>
+          </div>
+          <div class="form-group">
+            Do you participate in other developer surveys?
+          </div>
+          <div class="form-group">
+            If so, which ones?
+          </div>
+          <div class="form-group">
+            Do you have any general feedback about the experience of the
+            completing the community survey?
           </div>
         </div>
+        </div>
+
         <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
           <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
             <div>
-              {{! next section title }}
               <h2 id="closing">
                 <a href="#closing" class="text-ember-500 text-md">
                   §
                 </a>
-                Closing Questions
+                In Closing...
               </h2>
-              <p>
+              {{!-- <p>
                 This section covers items that do not fit into the previous
                 sections.
-              </p>
-            </div>
-            {{! questions go here }}
-            <div class="form-group">
-              Where in the world do you live?
+              </p> --}}
             </div>
             <div class="form-group">
-              Is there anything else you"d like to tell us?
+              <label for="global-loc">Where in the world do you live?</label>
+              <input type="text" name="global-loc" id="global-loc" />
+            </div>
+            <div class="form-group">
+              <label for="feedback-other">Is there anything else youdd like to tell us?</label>
+              <textarea rows="4" id="feedback-other"/>
             </div>
             <div class="pt-5">
               <div class="flex justify-end">
