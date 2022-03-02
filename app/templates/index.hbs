@@ -426,9 +426,7 @@
                             aria-describedby="ide-pref-why-desc"></textarea>
                         <p class="input-desc" id="ide-pref-why-desc">
                             Example responses:
-                            "It has good language support, syntax highlighting, and intelligent code completion for my
-                            projects",
-                            "It has built-in support for version control and a debugger",
+                            "It has useful language support, syntax highlighting, and intelligent code completion"
                         </p>
                     </div>
                 </div>
@@ -436,7 +434,6 @@
             <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
                 <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
                     <div>
-                        {{! next section title }}
                         <h2 id="at-work">
                             <a href="#at-work" class="text-ember-500 text-md">
                                 §
@@ -591,46 +588,18 @@
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <fieldset>
-                            <legend>
-                                How many people are there at your entire company?
-                            </legend>
-                            <input type="radio" id="work-company-size-1-10" name="work-company-size"
-                                value="Between 1 - 10" />
-                            <label for="work-company-size-1-10">
-                                Between 1 - 10
-                            </label>
-                            <input type="radio" id="work-company-size-11-20" name="work-company-size"
-                                value="Between 11 - 20" />
-                            <label for="work-company-size-11-20">
-                                Between 11 - 20
-                            </label>
-                            <input type="radio" id="work-company-size-21-50" name="work-company-size"
-                                value="Between 21 - 50" />
-                            <label for="work-company-size-21-50">
-                                Between 21 - 50
-                            </label>
-                            <input type="radio" id="work-company-size-51-100" name="work-company-size"
-                                value="Between 51 - 100" />
-                            <label for="work-company-size-51-100">
-                                Between 51 - 100
-                            </label>
-                            <input type="radio" id="work-company-size-101-1000" name="work-company-size"
-                                value="Between 101 - 1,000" />
-                            <label for="work-company-size-101-1000">
-                                Between 101 - 1,000
-                            </label>
-                            <input type="radio" id="work-company-size-greater-than-1000" name="work-company-size"
-                                value="Greater than 1,000" />
-                            <label for="work-company-size-greater-than-1000">
-                                Greater than 1,000
-                            </label>
-                            <input type="radio" id="work-company-size-idk" name="work-company-size"
-                                value="I don't know" />
-                            <label for="work-company-size-idk">
-                                I don't know
-                            </label>
-                        </fieldset>
+                        <label for="work-all-size" class="input-label">How many people are there at your entire
+                            company?</label>
+                        <select name="work-all-size" id="work-all-size">
+                            <option value="">select one</option>
+                            <option value="Between 1 - 10">1 - 10</option>
+                            <option value="Between 11 - 20">11 - 20</option>
+                            <option value="Between 21 - 50">21 - 50</option>
+                            <option value="Between 51 - 100">51 - 100</option>
+                            <option value="Between 101 - 1,000">101 - 1,000</option>
+                            <option value="Greater than 1,000">More than 1,000</option>
+                            <option value="I don't know">I don't know</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <fieldset>
@@ -815,37 +784,33 @@
                                 applications at your company: of all of the web applications at
                                 my company, _______ of them are Ember apps.
                             </legend>
+
+                            <input type="radio" id="work-company-apps-ember-proportion-all"
+                                name="work-company-apps-ember-proportion" value="All" />
+                            <label for="work-company-apps-ember-proportion-all">
+                                All
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-proportion-most"
+                                name="work-company-apps-ember-proportion" value="Most" />
+                            <label for="work-company-apps-ember-proportion-most">
+                                Most
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-proportion-half"
+                                name="work-company-apps-ember-proportion" value="Half" />
+                            <label for="work-company-apps-ember-proportion-half">
+                                Half
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-proportion-some"
+                                name="work-company-apps-ember-proportion" value="Some" />
+                            <label for="work-company-apps-ember-proportion-some">
+                                Some
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-proportion-none"
+                                name="work-company-apps-ember-proportion" value="None" />
+                            <label for="work-company-apps-ember-proportion-none">
+                                None
+                            </label>
                         </fieldset>
-                        <input type="radio" id="work-company-apps-ember-proportion-all"
-                            name="work-company-apps-ember-proportion" value="All" />
-                        <label for="work-company-apps-ember-proportion-all">
-                            All
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-proportion-most"
-                            name="work-company-apps-ember-proportion" value="Most" />
-                        <label for="work-company-apps-ember-proportion-most">
-                            Most
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-proportion-half"
-                            name="work-company-apps-ember-proportion" value="Half" />
-                        <label for="work-company-apps-ember-proportion-half">
-                            Half
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-proportion-some"
-                            name="work-company-apps-ember-proportion" value="Some" />
-                        <label for="work-company-apps-ember-proportion-some">
-                            Some
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-proportion-few"
-                            name="work-company-apps-ember-proportion" value="Few" />
-                        <label for="work-company-apps-ember-proportion-few">
-                            Few
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-proportion-none"
-                            name="work-company-apps-ember-proportion" value="None" />
-                        <label for="work-company-apps-ember-proportion-none">
-                            None
-                        </label>
                     </div>
                     <div class="form-group">
                         <label for="select-work-ember-version" class="input-label">
@@ -990,22 +955,22 @@
                                 typically use the same version as the framework or do you
                                 manually change it to a different version number?
                             </legend>
-                        
-                        <input type="radio" id="work-company-apps-ember-cli-version-same"
-                            name="work-company-apps-ember-cli-version" value="It stays the same" />
-                        <label for="work-company-apps-ember-cli-version-same">
-                            It stays the same
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-cli-version-different"
-                            name="work-company-apps-ember-cli-version" value="We change it to something else" />
-                        <label for="work-company-apps-ember-cli-version-different">
-                            We change it to something else
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-cli-version-none"
-                            name="work-company-apps-ember-cli-version" value="We don't use ember-cli" />
-                        <label for="work-company-apps-ember-cli-version-none">
-                            We don't use ember-cli
-                        </label>
+
+                            <input type="radio" id="work-company-apps-ember-cli-version-same"
+                                name="work-company-apps-ember-cli-version" value="It stays the same" />
+                            <label for="work-company-apps-ember-cli-version-same">
+                                It stays the same
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-cli-version-different"
+                                name="work-company-apps-ember-cli-version" value="We change it to something else" />
+                            <label for="work-company-apps-ember-cli-version-different">
+                                We change it to something else
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-cli-version-none"
+                                name="work-company-apps-ember-cli-version" value="We don't use ember-cli" />
+                            <label for="work-company-apps-ember-cli-version-none">
+                                We don't use ember-cli
+                            </label>
                         </fieldset>
                     </div>
                     <div class="form-group">
@@ -1014,33 +979,34 @@
                                 What testing framework do you use most frequently in the Ember
                                 apps you work on at your job?
                             </legend>
-                        
-                        <input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
-                            name="work-company-apps-ember-testing-framework-primary"
-                            value="Mocha (via ember-mocha or ember-cli-mocha)" />
-                        <label for="work-company-apps-ember-testing-framework-primary-mocha">
-                            Mocha (via ember-mocha or ember-cli-mocha)
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
-                            name="work-company-apps-ember-testing-framework-primary"
-                            value="QUnit (via ember-quinit or ember-cli-qunit)" />
-                        <label for="work-company-apps-ember-testing-framework-primary-qunit">
-                            QUnit (via ember-quinit or ember-cli-qunit)
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
-                            name="work-company-apps-ember-testing-framework-primary" value="I don’t write tests" />
-                        <label for="work-company-apps-ember-testing-framework-none">
-                            I don’t write tests
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
-                            name="work-company-apps-ember-testing-framework-primary" value="Other" />
-                        <label for="work-company-apps-ember-testing-framework-primary-other">
-                            Other
-                        </label>
+
+                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
+                                name="work-company-apps-ember-testing-framework-primary"
+                                value="Mocha (via ember-mocha or ember-cli-mocha)" />
+                            <label for="work-company-apps-ember-testing-framework-primary-mocha">
+                                Mocha (via ember-mocha or ember-cli-mocha)
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
+                                name="work-company-apps-ember-testing-framework-primary"
+                                value="QUnit (via ember-quinit or ember-cli-qunit)" />
+                            <label for="work-company-apps-ember-testing-framework-primary-qunit">
+                                QUnit (via ember-quinit or ember-cli-qunit)
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
+                                name="work-company-apps-ember-testing-framework-primary" value="I don’t write tests" />
+                            <label for="work-company-apps-ember-testing-framework-none">
+                                I don’t write tests
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
+                                name="work-company-apps-ember-testing-framework-primary" value="Other" />
+                            <label for="work-company-apps-ember-testing-framework-primary-other">
+                                Other
+                            </label>
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily use in your Ember apps at work?</label>
+                        <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily
+                            use in your Ember apps at work?</label>
                         <select class="input-select">
                             <option value="">select one</option>
                             <option value="rails">Rails</option>
@@ -1076,23 +1042,23 @@
                             <legend>
                                 What are the target platform(s) for your company's Ember apps?
                             </legend>
-                        <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
-                            name="work-company-apps-ember-target-platforms" value="Desktop only" />
-                        <label for="work-company-apps-ember-target-platforms-desktop-only">
-                            Desktop only
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-platforms-responsive"
-                            name="work-company-apps-ember-target-platforms"
-                            value="Fully responsive (desktop + devices)" />
-                        <label for="work-company-apps-ember-target-platforms-responsive">
-                            Fully responsive (desktop + devices)
-                        </label>
-                        <input type="radio" id="work-company-apps-ember-target-platforms-mobile-only"
-                            name="work-company-apps-ember-target-platforms" value="Mobile device only" />
-                        <label for="work-company-apps-ember-target-platforms-mobile-only">
-                            Mobile device only
-                        </label>
-                         </fieldset>
+                            <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
+                                name="work-company-apps-ember-target-platforms" value="Desktop only" />
+                            <label for="work-company-apps-ember-target-platforms-desktop-only">
+                                Desktop only
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-target-platforms-responsive"
+                                name="work-company-apps-ember-target-platforms"
+                                value="Fully responsive (desktop + devices)" />
+                            <label for="work-company-apps-ember-target-platforms-responsive">
+                                Fully responsive (desktop + devices)
+                            </label>
+                            <input type="radio" id="work-company-apps-ember-target-platforms-mobile-only"
+                                name="work-company-apps-ember-target-platforms" value="Mobile device only" />
+                            <label for="work-company-apps-ember-target-platforms-mobile-only">
+                                Mobile device only
+                            </label>
+                        </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
@@ -1118,7 +1084,8 @@
                         </fieldset>
                     </div>
                     <div class="form-group">
-                        <label for="work-app-users" class="input-label">How many end users do your company's Ember apps support?</label>
+                        <label for="work-app-users" class="input-label">How many end users do your company's Ember apps
+                            support?</label>
                         <select id="work-app-users" class="input-select">
                             <option value="">select one</option>
                             <option value="Between 1 - 1,000">1 - 1,000</option>
