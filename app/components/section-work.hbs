@@ -15,7 +15,7 @@
             {{! questions go here }}
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   Do you currently use Ember at your place of work?
                 </legend>
                 <input type="radio" id="work-use-ember-yes" name="work-use-ember" />
@@ -30,7 +30,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   In which industry or sector(s) does your employer operate?
                 </legend>
                 <div class="grid grid-cols-2">
@@ -159,7 +159,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   How many developers at your company are responsible for writing
                   front-end code?
                 </legend>
@@ -199,7 +199,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   How many developers at your company are responsible for writing
                   code in Ember?
                 </legend>
@@ -241,7 +241,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   How often do you use Ember at work?
                 </legend>
               </fieldset>
@@ -267,7 +267,8 @@
               </label>
             </div>
             <div class="form-group">
-              <legend>
+              <fieldset>
+              <legend class="input-label">
                 Does your company intend to hire more Ember developers in the next
                 year?
               </legend>
@@ -286,10 +287,11 @@
               <label for="work-company-ember-hiring-plan-idk">
                 I don't know
               </label>
+              </fieldset>
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   How many Ember apps does your company have?
                 </legend>
                 <input type="radio" id="work-company-apps-ember-none" name="work-company-apps-ember" value="None" />
@@ -330,7 +332,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   Which choice best describes the overall distribution of web
                   applications at your company: of all of the web applications at
                   my company, _______ of them are Ember apps.
@@ -386,7 +388,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   What version(s) of Ember do you regularly work with at your job?
                 </legend>
                 <ul>
@@ -477,7 +479,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   If you use Ember Data in your company's Ember apps, do you
                   typically use the same version as the framework or do you
                   manually change it to a different version number?
@@ -501,7 +503,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   If you use Ember CLI in your company's Ember apps, do you
                   typically use the same version as the framework or do you
                   manually change it to a different version number?
@@ -526,38 +528,38 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   What testing framework do you use most frequently in the Ember
                   apps you work on at your job?
                 </legend>
                 <ul>
-                  <li><input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
-                      name="work-company-apps-ember-testing-framework-primary"
+                  <li><input type="radio" id="work-test-fw-mocha"
+                      name="work-test-fw"
                       value="Mocha (via ember-mocha or ember-cli-mocha)" />
-                    <label for="work-company-apps-ember-testing-framework-primary-mocha">
+                    <label for="work-test-fw-mocha">
                       Mocha (via ember-mocha or ember-cli-mocha)
                     </label>
 
                   </li>
                   <li>
-                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
-                      name="work-company-apps-ember-testing-framework-primary"
+                    <input type="radio" id="work-test-fw-qunit"
+                      name="work-test-fw"
                       value="QUnit (via ember-quinit or ember-cli-qunit)" />
-                    <label for="work-company-apps-ember-testing-framework-primary-qunit">
+                    <label for="work-test-fw-qunit">
                       QUnit (via ember-quinit or ember-cli-qunit)
                     </label>
                   </li>
                   <li>
-                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
-                      name="work-company-apps-ember-testing-framework-primary" value="I dont write tests" />
-                    <label for="work-company-apps-ember-testing-framework-none">
+                    <input type="radio" id="work-test-fw-none"
+                      name="work-test-fw" value="I dont write tests" />
+                    <label for="work-test-fw-none">
                       I don't write tests
                     </label>
                   </li>
                   <li>
-                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
-                      name="work-company-apps-ember-testing-framework-primary" value="Other" />
-                    <label for="work-company-apps-ember-testing-framework-primary-other">
+                    <input type="radio" id="work-test-fw-other"
+                      name="work-test-fw" value="Other" />
+                    <label for="work-test-fw-other">
                       Other
                     </label>
                   </li>
@@ -599,7 +601,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   What are the target platform(s) for your company's Ember apps?
                 </legend>
                 <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
@@ -621,7 +623,7 @@
             </div>
             <div class="form-group">
               <fieldset>
-                <legend>
+                <legend class="input-label">
                   Who are the target users of your company's Ember apps?
                 </legend>
 
