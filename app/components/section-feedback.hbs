@@ -4,7 +4,7 @@
             <div>
               <h2 id="feedback">
                 <a href="#feedback" class="text-ember-500 text-md">§</a>
-                Ember In General
+                Ember Feedback
               </h2>
               {{!-- <p>
                 This section contains questions that relate to the changes made to Ember.js in the past
@@ -119,96 +119,98 @@
             </div>
 
 
-            {{!-- <div class="form-group">
-              <!-- TODO: Link to RFCs -->
-              Which of these Ember features planned for the next year do you think
-              will have the most positive impact on your experience developing
-              Ember apps? Why?
-            </div> --}}
-            {{!-- <div class="form-group">
-              If you have attended any virtual Ember events in the past year,
-              which talk was your favorite and why?
-            </div> --}}
-            <h3 id="feedback-learning">
-              <a href="#feedback-learning" class="text-ember-500">
-                §
-              </a>
-              Learning Ember
-            </h3>
-            <p>
-              This section is about your experiences using Ember, in general
-            </p>
             <div class="form-group">
-              <label for="feedback-learning-start-most-difficult" class="block input-label">
-                When you were first learning Ember, what was the most difficult
-                thing to understand?
-              </label>
-              <textarea rows="4" id="feedback-learning-start-most-difficult"
-                name="feedback-learning-start-most-difficult" aria-describedby="feedback-learning-start-most-difficult">
-          </textarea>
-              <p class="input-desc" id="feedback-learning-start-most-difficult-desc">
-                Example responses:
-              </p>
+              <fieldset>
+                <legend aria-describedby="future-feat-desc">Which of the future/planned Ember features do you think will have a positive impact on your development experience?</legend>
+                <p id="future-feat-desc" class="w-full mt-0 mb-2 text-sm text-slate-700">
+                  Future plans for Ember are captured in <a href="https://github.com/emberjs/rfcs/pulls" target="_blank"
+                    rel="noopener noreferrer external"
+                    class="text-ember-500 underline focus:border-ember-500 outline-ember-500">RFC documents</a> (link opens in a new window). Not all RFCs are listed here, but please select any that apply.
+                </p>
+                <ul>
+                  {{!-- 
+                  <li>
+                    <input type="checkbox" id="ffeat-**" name="ffeat-**" />
+                    <label for="ffeat-**">### (RFC #)</label>
+                  </li>
+                  --}}
+                  {{!-- <li>
+                    <input type="checkbox" id="ffeat-sp-args" name="ffeat-sp-args" />
+                    <label for="ffeat-sp-args">Spreadable Arguments (RFC #593)</label>
+                  </li> --}}
+                  <li>
+                    <input type="checkbox" id="ffeat-dc-api" name="ffeat-dc-api" />
+                    <label for="ffeat-dc-api">Logging and Debugging Context API (RFC #753)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-dmm" name="ffeat-dmm" />
+                    <label for="ffeat-dmm">Default Modifier Manager (RFC #757)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-aispec" name="ffeat-aispec" />
+                    <label for="ffeat-aispec">Asset Import Spec (RFC #763)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-fctc" name="ffeat-sfc" />
+                    <label for="ffeat-fctc">First-Class Component Templates (RFC #779)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-cookbook" name="ffeat-cookbook" />
+                    <label for="ffeat-cookbook">Add Ember Cookbook (RFC #786)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-ts" name="ffeat-ts" />
+                    <label for="ffeat-ts">TypeScript Adoption Plan (RFC #800)</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
             <div class="form-group">
-              <label for="feedback-learning-start-most-intuitive" class="block input-label">
+              <label for="fb-ember-talks" class="input-label">If you have attended any virtual Ember events in the past year,
+              what talk was your favorite? Why?</label>
+              <textarea rows="2" id="fb-ember-talks" name="fb-ember-talks" />
+            </div>
+            <div class="form-group">
+              <label for="fb-learn-start-diff" class="block input-label">
+                When you were first learning Ember, what was the most difficult
+                concept to understand?
+              </label>
+              <input type="text" id="fb-learn-start-diff" name="fb-learn-start-diff" />
+            </div>
+            <div class="form-group">
+              <label for="fb-learn-start-intuit" class="block input-label">
                 When you were first learning Ember, what concept felt the most
                 intuitive to you?
               </label>
-              <textarea rows="4" id="feedback-learning-start-most-intuitive"
-                name="feedback-learning-start-most-intuitive" aria-describedby="feedback-learning-start-most-intuitive">
-          </textarea>
-              <p class="input-desc" id="feedback-learning-start-most-intuitive-desc">
-                Example responses:
-              </p>
+              <input type="text" id="fb-learn-start-intuit" name="fb-learn-start-intuit" />
             </div>
             <div class="form-group">
-              <label for="feedback-learning-upgrade-most-difficult" class="block input-label">
+              <label for="fb-upgrade-diff" class="block input-label">
                 Think about the last time you upgraded an Ember app. What version
-                did you migrate from/to, and what was the hardest thing about it?
+                did you migrate from/to? How easy/difficult was it? If it was difficult, what was difficult about it?
               </label>
-              <textarea rows="4" id="feedback-learning-upgrade-most-difficult"
-                name="feedback-learning-upgrade-most-difficult"
-                aria-describedby="feedback-learning-upgrade-most-difficult">
-          </textarea>
-              <p class="input-desc" id="feedback-learning-upgrade-most-difficult-desc">
-                Example responses:
-              </p>
+              <textarea rows="4" id="fb-upgrade-diff"
+                name="fb-learn-upgrade-diff" />
             </div>
             <div class="form-group">
-              <label for="feedback-learning-upgrade-blocker" class="block input-label">
+              <label for="fb-upgrade-blocker" class="block input-label">
                 If you were not able to upgrade, what prevented you from upgrading?
               </label>
-              <textarea rows="4" id="feedback-learning-upgrade-blocker" name="feedback-learning-upgrade-blocker"
-                aria-describedby="feedback-learning-upgrade-blocker">
-          </textarea>
-              <p class="input-desc" id="feedback-learning-upgrade-blocker-desc">
-                Example responses:
-              </p>
+              <textarea rows="2" id="fb-upgrade-blocker" name="fb-upgrade-blocker" />
             </div>
             <div class="form-group">
-              <label for="feedback-custom-defaults" class="block input-label">
+              <label for="fb-cust-defaults" class="block input-label">
                 Is there anything you immediately add or configure every time you
-                make a new Ember application (e.g. an addon, linting rules, etc.)
+                make a new Ember application (i.e. install a specific addon, add custom linting rules, etc.)
               </label>
-              <textarea rows="4" id="feedback-custom-defaults" name="feedback-custom-defaults"
-                aria-describedby="feedback-custom-defaults">
-          </textarea>
-              <p class="input-desc" id="feedback-custom-defaults-desc">
-                Example responses:
-              </p>
+              <textarea rows="2" id="fb-cust-defaults" name="fb-cust-defaults" />
             </div>
             <div class="form-group">
-              <label for="feedback-general-ember-experience" class="block input-label">
-                Is there anything you want to tell us about your experiences using
+              <label for="fb-gen-ember-exp" class="block input-label">
+                Is there anything else you want to tell us about your experiences using
                 Ember?
               </label>
-              <textarea rows="4" id="feedback-general-ember-experience" name="feedback-general-ember-experience"
-                aria-describedby="feedback-general-ember-experience">
-          </textarea>
-              <p class="input-desc" id="feedback-general-ember-experience-desc">
-                Example responses:
-              </p>
+              <textarea rows="4" id="fb-gen-ember-exp" name="fb-gen-ember-exp" />
             </div>
 
           </div>
