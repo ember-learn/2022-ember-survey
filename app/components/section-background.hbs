@@ -1,0 +1,277 @@
+        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+            <div>
+              <h2 id="background">
+                <a href="#background" class="text-ember-500 text-md">
+                  §
+                </a>
+                Your Development Background
+              </h2>
+              <p>
+                This section is about your development background in web
+                technologies.
+              </p>
+            </div>
+            <input type="hidden" name="form-name" value="survey-22"
+              aria-label="leave this one alone it is just for netlify" />
+            <div class="form-group">
+              <label for="time-use" class="block input-label font-bold">
+                How long have you been using Ember?
+              </label>
+              <select id="time-use" name="time-use" class="input-select">
+                <option value="">--please select one--</option>
+                <option value="not-yet">I haven't used Ember yet</option>
+                <option value="less-than-one">
+                  Less than 1 year
+                </option>
+                <option value="one-to-three">
+                  Between 1 - 3 years
+                </option>
+                <option value="four-to-six">
+                  Between 4 - 6 years
+                </option>
+                <option value="seven-to-nine">
+                  Between 7 - 9 years
+                </option>
+                <option value="more-than-ten">
+                  10+ years
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend aria-describedby="frameworks-desc">
+                  Do you have experience with any of these front-end frameworks?
+                </legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="frameworks-desc">
+                  Not all frameworks are represented here; they may also not fit with your interpretation of what a framework is; for the purpose of this survey, please choose any that apply.
+                </p>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="other-fw-angular" name="other-frameworks" value="angular" />
+                    <label for="other-fw-angular">
+                      Angular
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-fw-astro" name="other-frameworks" value="astro" />
+                    <label for="other-fw-astro">
+                      Astro
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-fw-ember" name="other-frameworks" value="ember" />
+                    <label for="other-fw-ember">
+                      Ember
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-fw-next" name="other-frameworks" value="next" />
+                    <label for="other-fw-next">
+                      Next
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-fw-nuxt" name="other-frameworks" value="nuxt" />
+                    <label for="other-fw-nuxt">
+                      Nuxt
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-fw-svelte" name="other-frameworks" value="svelte" />
+                    <label for="other-fw-svelte">
+                      SvelteKit
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend aria-describedby="libraries-desc">
+                  Do you have experience with any of the following UI Libraries?
+                </legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="libraries-desc">
+                  Not all UI libraries are represented here; they may also not fit with your interpretation of what a UI Library is. However, for the purpose of this survey, please choose any that apply.
+                </p>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="other-lib-glimmer" name="other-ui-libs" value="glimmer" />
+                    <label for="other-lib-glimmer">
+                      Glimmer
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-lib-preact" name="other-ui-libs" value="preact" />
+                    <label for="other-lib-preact">
+                      Preact
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-lib-react" name="other-ui-libs" value="react" />
+                    <label for="other-lib-react">
+                      React
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-lib-solid" name="other-ui-libs" value="solid" />
+                    <label for="other-lib-solid">
+                      Solid
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-lib-svelte" name="other-ui-libs" value="svelte" />
+                    <label for="other-lib-svelte">
+                      Svelte
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-lib-vue" name="other-ui-libs" value="vue" />
+                    <label for="other-lib-vue">
+                      Vue
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend aria-describedby="ssg-desc">
+                  Do you have experience with any of the following static site generators?
+                </legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="ssg-desc">
+                  Not all static site generators are represented here; please choose any that apply.
+                </p>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="other-ssg-11ty" name="other-ssg" value="11ty" />
+                    <label for="other-ssg-11ty">
+                      11ty
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-ssg-empress" name="other-ssg" value="empress" />
+                    <label for="other-ssg-empress">
+                      Empress
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-ssg-hugo" name="other-ssg" value="hugo" />
+                    <label for="other-ssg-hugo">
+                      Hugo
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-ssg-jekyll" name="other-ssg" value="jekyll" />
+                    <label for="other-ssg-jekyll">
+                      Jekyll
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="other-ssg-metalsmith" name="other-ssg" value="metalsmith" />
+                    <label for="other-ssg-metalsmith">
+                      Metalsmith
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+
+            <h3>
+              Rate your knowledge
+            </h3>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  HTML
+                </legend>
+                <input type="radio" id="html-none" name="know-html" />
+                <label for="html-none">
+                  None
+                </label>
+                <input type="radio" id="html-beginner" name="know-html" />
+                <label for="html-beginner">
+                  Beginner
+                </label>
+                <input type="radio" id="html-intermediate" name="know-html" />
+                <label for="html-intermediate">
+                  Intermediate
+                </label>
+                <input type="radio" id="html-advanced" name="know-html" />
+                <label for="html-advanced">
+                  Advanced
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Accessibility (WAI-ARIA)
+                </legend>
+                <input type="radio" id="aria-none" name="know-aria" />
+                <label for="aria-none">
+                  None
+                </label>
+                <input type="radio" id="aria-beginner" name="know-aria" />
+                <label for="aria-beginner">
+                  Beginner
+                </label>
+                <input type="radio" id="aria-intermediate" name="know-aria" />
+                <label for="aria-intermediate">
+                  Intermediate
+                </label>
+                <input type="radio" id="aria-advanced" name="know-aria" />
+                <label for="aria-advanced">
+                  Advanced
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Cascading Style Sheets (CSS)
+                </legend>
+                <input type="radio" id="css-none" name="know-css" />
+                <label for="css-none">
+                  None
+                </label>
+                <input type="radio" id="css-beginner" name="know-css" />
+                <label for="css-beginner">
+                  Beginner
+                </label>
+                <input type="radio" id="css-intermediate" name="know-css" />
+                <label for="css-intermediate">
+                  Intermediate
+                </label>
+                <input type="radio" id="css-advanced" name="know-css" />
+                <label for="css-advanced">
+                  Advanced
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  JavaScript
+                </legend>
+                <input type="radio" id="js-none" name="know-js" />
+                <label for="js-none">
+                  None
+                </label>
+                <input type="radio" id="js-beginner" name="know-js" />
+                <label for="js-beginner">
+                  Beginner
+                </label>
+                <input type="radio" id="js-intermediate" name="know-js" />
+                <label for="js-intermediate">
+                  Intermediate
+                </label>
+                <input type="radio" id="js-advanced" name="know-js" />
+                <label for="js-advanced">
+                  Advanced
+                </label>
+              </fieldset>
+            </div>
+          </div>
+        </div>

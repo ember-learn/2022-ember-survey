@@ -1,0 +1,92 @@
+
+        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+            <div>
+              <h2 id="closing">
+                <a href="#closing" class="text-ember-500 text-md">
+                  §
+                </a>
+                In Closing...
+              </h2>
+              {{!-- <p>
+                This section covers items that do not fit into the previous
+                sections.
+              </p> --}}
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend aria-describedby="survey-outreach-desc">
+                  How did you hear about this survey?
+                </legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="survey-outreach-desc">
+                  Please select any that apply.
+                </p>
+                <ul>
+                  <li><input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
+                    <label for="survey-email">
+                      Email
+                    </label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord" />
+                    <label for="survey-discord">
+                      Discord
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="survey-outreach" id="survey-social" value="social" />
+                    <label for="survey-social">
+                      Social Media
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="survey-outreach" id="survey-work" value="work" />
+                    <label for="survey-work">
+                      Announcement At Work
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="survey-outreach" id="survey-website" value="website" />
+                    <label for="survey-website">
+                      The Ember Website
+                    </label>
+                  </li>
+                </ul>
+
+              </fieldset>
+
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>Did you participate in other developer surveys in the past year?</legend>
+                <input type="radio" id="dev-survey-other-yes" name="dev-survey-other" value="yes"/><label for="dev-survey-other-yes">Yes</label>
+                <input type="radio" id="dev-survey-other-no" name="dev-survey-other" value="no"/><label for="dev-survey-other-no">No</label>
+              </fieldset>
+              
+            </div>
+            <div class="form-group">
+              If so, which ones?
+            </div>
+            <div class="form-group">
+              Do you have any general feedback about the experience of the
+              completing the community survey?
+            </div>
+            <div class="form-group">
+              <label for="global-loc">Where in the world do you live?</label>
+              <input type="text" name="global-loc" id="global-loc" />
+            </div>
+            <div class="form-group">
+              <label for="feedback-other">Is there anything else you would like to tell us?</label>
+              <textarea rows="4" id="feedback-other" />
+            </div>
+            <div class="pt-5">
+              <div class="flex justify-end">
+                <button type="submit"
+                  class="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-ember-500 hover:bg-ember-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-ember-600">
+                  Submit Survey
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>

@@ -1,0 +1,659 @@
+
+        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+            <div>
+              <h2 id="at-work">
+                <a href="#at-work" class="text-ember-500 text-md">
+                  §
+                </a>
+                Using Ember At Work
+              </h2>
+              <p>
+                This section relates to how you use Ember in at work.
+              </p>
+            </div>
+            {{! questions go here }}
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Do you currently use Ember at your place of work?
+                </legend>
+                <input type="radio" id="work-use-ember-yes" name="work-use-ember" />
+                <label for="work-use-ember-yes">
+                  Yes
+                </label>
+                <input type="radio" id="work-use-ember-no" name="work-use-ember" />
+                <label for="work-use-ember-no">
+                  No
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  In which industry or sector(s) does your employer operate?
+                </legend>
+                <div class="grid grid-cols-2">
+                  <div class="col-span-1">
+                    <div>
+                      <input type="checkbox" id="ws-agriculture" name="work-sector" value="agriculture" />
+                      <label for="ws-agriculture">
+                        Agriculture
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-advertising" name="work-sector" value="advertising" />
+                      <label for="ws-advertising">
+                        Advertising
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-arts-entertainment" name="work-sector" value="arts-entertainment" />
+                      <label for="ws-arts-entertainment">
+                        Arts & Entertainment
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-consulting" name="work-sector" value="consulting" />
+                      <label for="ws-consulting">
+                        Consulting
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-education" name="work-sector" value="education" />
+                      <label for="ws-education">
+                        Education
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-financial-services" name="work-sector" value="financial-services" />
+                      <label for="ws-financial-services">
+                        Financial Services
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-government" name="work-sector" value="government" />
+                      <label for="ws-government">
+                        Government
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-health-care" name="work-sector" value="health-care" />
+                      <label for="ws-health-care">
+                        Health Care
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-insurance" name="work-sector" value="insurance" />
+                      <label for="ws-insurance">
+                        Insurance
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-span-1">
+                    <div>
+                      <input type="checkbox" id="ws-manufacturing" name="work-sector" value="manufacturing" />
+                      <label for="ws-manufacturing">
+                        Manufacturing
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-real-estate" name="work-sector" value="real-estate" />
+                      <label for="ws-real-estate">
+                        Real Estate
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-retailers" name="work-sector" value="retailers" />
+                      <label for="ws-retailers">
+                        Retailers (Including Online)
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-technology" name="work-sector" value="technology" />
+                      <label for="ws-technology">
+                        Technology
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-utilities" name="work-sector" value="utilities" />
+                      <label for="ws-utilities">
+                        Utilities (Telecom/Energy)
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-transportation" name="work-sector" value="transportation" />
+                      <label for="ws-transportation">
+                        Transportation
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-hospitality" name="work-sector" value="hospitality" />
+                      <label for="ws-hospitality">
+                        Hospitality
+                      </label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="ws-other" name="work-sector" value="other" />
+                      <label for="ws-other">
+                        Other
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="work-all-size" class="input-label">How many people are there at your entire
+                company?</label>
+              <select name="work-all-size" id="work-all-size">
+                <option value="">--please select one--</option>
+                <option value="Between 1 - 10">1 - 10</option>
+                <option value="Between 11 - 20">11 - 20</option>
+                <option value="Between 21 - 50">21 - 50</option>
+                <option value="Between 51 - 100">51 - 100</option>
+                <option value="Between 101 - 1,000">101 - 1,000</option>
+                <option value="Greater than 1,000">More than 1,000</option>
+                <option value="I don't know">I don't know</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  How many developers at your company are responsible for writing
+                  front-end code?
+                </legend>
+                <input type="radio" id="work-company-devs-fe-none" name="work-company-devs-fe" value="None" />
+                <label for="work-company-devs-fe-none">
+                  None
+                </label>
+                <input type="radio" id="work-company-devs-fe-1-10" name="work-company-devs-fe" value="Between 1 - 10" />
+                <label for="work-company-devs-fe-1-10">
+                  Between 1 - 10
+                </label>
+                <input type="radio" id="work-company-devs-fe-11-20" name="work-company-devs-fe"
+                  value="Between 11 - 20" />
+                <label for="work-company-devs-fe-11-20">
+                  Between 11 - 20
+                </label>
+                <input type="radio" id="work-company-devs-fe-21-50" name="work-company-devs-fe"
+                  value="Between 21 - 50" />
+                <label for="work-company-devs-fe-21-50">
+                  Between 21 - 50
+                </label>
+                <input type="radio" id="work-company-devs-fe-51-100" name="work-company-devs-fe"
+                  value="Between 51 - 100" />
+                <label for="work-company-devs-fe-51-100">
+                  Between 51 - 100
+                </label>
+                <input type="radio" id="work-company-devs-fe-greater-than-100" name="work-company-devs-fe"
+                  value="Greater than 100" />
+                <label for="work-company-devs-fe-greater-than-100">
+                  Greater than 100
+                </label>
+                <input type="radio" id="work-company-devs-fe-idk" name="work-company-devs-fe" value="I don't know" />
+                <label for="work-company-devs-fe-idk">
+                  I don't know
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  How many developers at your company are responsible for writing
+                  code in Ember?
+                </legend>
+                <input type="radio" id="work-company-devs-ember-none" name="work-company-devs-ember" value="None" />
+                <label for="work-company-devs-ember-none">
+                  None
+                </label>
+                <input type="radio" id="work-company-devs-ember-1-10" name="work-company-devs-ember"
+                  value="Between 1 - 10" />
+                <label for="work-company-devs-ember-1-10">
+                  Between 1 - 10
+                </label>
+                <input type="radio" id="work-company-devs-ember-11-20" name="work-company-devs-ember"
+                  value="Between 11 - 20" />
+                <label for="work-company-devs-ember-11-20">
+                  Between 11 - 20
+                </label>
+                <input type="radio" id="work-company-devs-ember-21-50" name="work-company-devs-ember"
+                  value="Between 21 - 50" />
+                <label for="work-company-devs-ember-21-50">
+                  Between 21 - 50
+                </label>
+                <input type="radio" id="work-company-devs-ember-51-100" name="work-company-devs-ember"
+                  value="Between 51 - 100" />
+                <label for="work-company-devs-ember-51-100">
+                  Between 51 - 100
+                </label>
+                <input type="radio" id="work-company-devs-ember-greater-than-100" name="work-company-devs-ember"
+                  value="Greater than 100" />
+                <label for="work-company-devs-ember-greater-than-100">
+                  Greater than 100
+                </label>
+                <input type="radio" id="work-company-devs-ember-idk" name="work-company-devs-ember"
+                  value="I don't know" />
+                <label for="work-company-devs-ember-idk">
+                  I don't know
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  How often do you use Ember at work?
+                </legend>
+              </fieldset>
+              <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
+                name="work-company-ember-usage-frequency" value="All of the time" />
+              <label for="work-company-ember-usage-frequency-all-of-the-time">
+                All of the time
+              </label>
+              <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
+                name="work-company-ember-usage-frequency" value="Most of the time" />
+              <label for="work-company-ember-usage-frequency-most-of-the-time">
+                Most of the time
+              </label>
+              <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
+                name="work-company-ember-usage-frequency" value="Some of the time" />
+              <label for="work-company-ember-usage-frequency-some-of-the-time">
+                Some of the time
+              </label>
+              <input type="radio" id="work-company-ember-usage-frequency-never"
+                name="work-company-ember-usage-frequency" value="Never" />
+              <label for="work-company-ember-usage-frequency-never">
+                Never
+              </label>
+            </div>
+            <div class="form-group">
+              <legend>
+                Does your company intend to hire more Ember developers in the next
+                year?
+              </legend>
+              <input type="radio" id="work-company-ember-hiring-plan-yes" name="work-company-ember-hiring-plan"
+                value="Yes" />
+              <label for="work-company-ember-hiring-plan-yes">
+                Yes
+              </label>
+              <input type="radio" id="work-company-ember-hiring-plan-no" name="work-company-ember-hiring-plan"
+                value="No" />
+              <label for="work-company-ember-hiring-plan-no">
+                No
+              </label>
+              <input type="radio" id="work-company-ember-hiring-plan-idk" name="work-company-ember-hiring-plan"
+                value="I don't know" />
+              <label for="work-company-ember-hiring-plan-idk">
+                I don't know
+              </label>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  How many Ember apps does your company have?
+                </legend>
+                <input type="radio" id="work-company-apps-ember-none" name="work-company-apps-ember" value="None" />
+                <label for="work-company-apps-ember-none">
+                  None
+                </label>
+                <input type="radio" id="work-company-apps-ember-1-10" name="work-company-apps-ember"
+                  value="Between 1 - 10" />
+                <label for="work-company-apps-ember-1-10">
+                  Between 1 - 10
+                </label>
+                <input type="radio" id="work-company-apps-ember-11-20" name="work-company-apps-ember"
+                  value="Between 11 - 20" />
+                <label for="work-company-apps-ember-11-20">
+                  Between 11 - 20
+                </label>
+                <input type="radio" id="work-company-apps-ember-21-50" name="work-company-apps-ember"
+                  value="Between 21 - 50" />
+                <label for="work-company-apps-ember-21-50">
+                  Between 21 - 50
+                </label>
+                <input type="radio" id="work-company-apps-ember-51-100" name="work-company-apps-ember"
+                  value="Between 51 - 100" />
+                <label for="work-company-apps-ember-51-100">
+                  Between 51 - 100
+                </label>
+                <input type="radio" id="work-company-apps-ember-greater-than-100" name="work-company-apps-ember"
+                  value="Greater than 100" />
+                <label for="work-company-apps-ember-greater-than-100">
+                  Greater than 100
+                </label>
+                <input type="radio" id="work-company-apps-ember-idk" name="work-company-apps-ember"
+                  value="I don't know" />
+                <label for="work-company-apps-ember-idk">
+                  I don't know
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Which choice best describes the overall distribution of web
+                  applications at your company: of all of the web applications at
+                  my company, _______ of them are Ember apps.
+                </legend>
+
+                <input type="radio" id="work-company-apps-ember-proportion-all"
+                  name="work-company-apps-ember-proportion" value="All" />
+                <label for="work-company-apps-ember-proportion-all">
+                  All
+                </label>
+                <input type="radio" id="work-company-apps-ember-proportion-most"
+                  name="work-company-apps-ember-proportion" value="Most" />
+                <label for="work-company-apps-ember-proportion-most">
+                  Most
+                </label>
+                <input type="radio" id="work-company-apps-ember-proportion-half"
+                  name="work-company-apps-ember-proportion" value="Half" />
+                <label for="work-company-apps-ember-proportion-half">
+                  Half
+                </label>
+                <input type="radio" id="work-company-apps-ember-proportion-some"
+                  name="work-company-apps-ember-proportion" value="Some" />
+                <label for="work-company-apps-ember-proportion-some">
+                  Some
+                </label>
+                <input type="radio" id="work-company-apps-ember-proportion-none"
+                  name="work-company-apps-ember-proportion" value="None" />
+                <label for="work-company-apps-ember-proportion-none">
+                  None
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="select-work-ember-version" class="input-label">
+                If there is a version of Ember you primarily work with at your
+                job, what is it?
+              </label>
+              <select class="input-select" id="select-work-ember-version">
+                <option value="blank">--please select one--</option>
+                <option value="1.x">1.x</option>
+                <option value="2.x">2.x</option>
+                <option value="3.0 - 3.4">3.0 - 3.4</option>
+                <option value="3.5 - 3.8">3.5 - 3.8</option>
+                <option value="3.9 - 3.12">3.9 - 3.12</option>
+                <option value="3.13 - 3.16">3.13 - 3.16</option>
+                <option value="3.17 - 3.20">3.17 - 3.20</option>
+                <option value="3.21 - 3.24">3.21 - 3.24</option>
+                <option value="3.25 - 3.28">3.25 - 3.28</option>
+                <option value="4.x">4.x</option>
+                <option value="None">None</option>
+                <option value="I don't know">I don't know</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  What version(s) of Ember do you regularly work with at your job?
+                </legend>
+                <ul>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-1-x"
+                      name="work-company-apps-ember-versions-used" value="1.x" />
+                    <label for="work-company-apps-ember-versions-used-1-x">
+                      1.x
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-2-x"
+                      name="work-company-apps-ember-versions-used" value="2.x" />
+                    <label for="work-company-apps-ember-versions-used-2-x">
+                      2.x
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-0-3-4"
+                      name="work-company-apps-ember-versions-used" value="3.0 - 3.4" />
+                    <label for="work-company-apps-ember-versions-used-3-0-3-4">
+                      3.0 - 3.4
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-5-3-8"
+                      name="work-company-apps-ember-versions-used" value="3.5 - 3.8" />
+                    <label for="work-company-apps-ember-versions-used-3-5-3-8">
+                      3.5 - 3.8
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-9-3-12"
+                      name="work-company-apps-ember-versions-used" value="3.9 - 3.12" />
+                    <label for="work-company-apps-ember-versions-used-3-9-3-12">
+                      3.9 - 3.12
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-13-3-16"
+                      name="work-company-apps-ember-versions-used" value="3.13 - 3.16" />
+                    <label for="work-company-apps-ember-versions-used-3-13-3-16">
+                      3.13 - 3.16
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-17-3-20"
+                      name="work-company-apps-ember-versions-used" value="3.17 - 3.20" />
+                    <label for="work-company-apps-ember-versions-used-3-17-3-20">
+                      3.17 - 3.20
+                    </label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-21-3-24"
+                      name="work-company-apps-ember-versions-used" value="3.21 - 3.24" />
+                    <label for="work-company-apps-ember-versions-used-3-21-3-24">
+                      3.21 - 3.24
+                    </label>
+
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-3-25-3-28"
+                      name="work-company-apps-ember-versions-used" value="3.25 - 3.28" />
+                    <label for="work-company-apps-ember-versions-used-3-25-3-28">
+                      3.25 - 3.28
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-4-x"
+                      name="work-company-apps-ember-versions-used" value="4.x" />
+                    <label for="work-company-apps-ember-versions-used-4-x">
+                      4.x
+                    </label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="work-company-apps-ember-versions-used-idk"
+                      name="work-company-apps-ember-versions-used" value="I don't know" />
+                    <label for="work-company-apps-ember-versions-used-idk">
+                      I don't know
+                    </label>
+
+                  </li>
+                </ul>
+              </fieldset>
+
+
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  If you use Ember Data in your company's Ember apps, do you
+                  typically use the same version as the framework or do you
+                  manually change it to a different version number?
+                </legend>
+              </fieldset>
+              <input type="radio" id="work-company-apps-ember-data-version-same"
+                name="work-company-apps-ember-data-version" value="It stays the same" />
+              <label for="work-company-apps-ember-data-version-same">
+                It stays the same
+              </label>
+              <input type="radio" id="work-company-apps-ember-data-version-different"
+                name="work-company-apps-ember-data-version" value="We change it to something else" />
+              <label for="work-company-apps-ember-data-version-different">
+                We change it to something else
+              </label>
+              <input type="radio" id="work-company-apps-ember-data-version-none"
+                name="work-company-apps-ember-data-version" value="We don't use ember-data" />
+              <label for="work-company-apps-ember-data-version-none">
+                We don't use ember-data
+              </label>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  If you use Ember CLI in your company's Ember apps, do you
+                  typically use the same version as the framework or do you
+                  manually change it to a different version number?
+                </legend>
+
+                <input type="radio" id="work-company-apps-ember-cli-version-same"
+                  name="work-company-apps-ember-cli-version" value="It stays the same" />
+                <label for="work-company-apps-ember-cli-version-same">
+                  It stays the same
+                </label>
+                <input type="radio" id="work-company-apps-ember-cli-version-different"
+                  name="work-company-apps-ember-cli-version" value="We change it to something else" />
+                <label for="work-company-apps-ember-cli-version-different">
+                  We change it to something else
+                </label>
+                <input type="radio" id="work-company-apps-ember-cli-version-none"
+                  name="work-company-apps-ember-cli-version" value="We don't use ember-cli" />
+                <label for="work-company-apps-ember-cli-version-none">
+                  We don't use ember-cli
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  What testing framework do you use most frequently in the Ember
+                  apps you work on at your job?
+                </legend>
+                <ul>
+                  <li><input type="radio" id="work-company-apps-ember-testing-framework-primary-mocha"
+                      name="work-company-apps-ember-testing-framework-primary"
+                      value="Mocha (via ember-mocha or ember-cli-mocha)" />
+                    <label for="work-company-apps-ember-testing-framework-primary-mocha">
+                      Mocha (via ember-mocha or ember-cli-mocha)
+                    </label>
+
+                  </li>
+                  <li>
+                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-qunit"
+                      name="work-company-apps-ember-testing-framework-primary"
+                      value="QUnit (via ember-quinit or ember-cli-qunit)" />
+                    <label for="work-company-apps-ember-testing-framework-primary-qunit">
+                      QUnit (via ember-quinit or ember-cli-qunit)
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-none"
+                      name="work-company-apps-ember-testing-framework-primary" value="I dont write tests" />
+                    <label for="work-company-apps-ember-testing-framework-none">
+                      I don't write tests
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="work-company-apps-ember-testing-framework-primary-other"
+                      name="work-company-apps-ember-testing-framework-primary" value="Other" />
+                    <label for="work-company-apps-ember-testing-framework-primary-other">
+                      Other
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily
+                use in your Ember apps at work?</label>
+              <select name="server-side-framework-work" id="work-ssf" class="input-select">
+                <option value="">--please select one--</option>
+                <option value="rails">Rails</option>
+                <option value="express">Express</option>
+                <option value="Spring / Java">Spring / Java</option>
+                <option value="PHP">PHP</option>
+                <option value="Elixir">Elixir</option>
+                <option value="dotNET">.NET</option>
+                <option value="Django">Django</option>
+                <option value="Custom">custom internal framework</option>
+                <option value="None">None</option>
+                <option value="I dont know">I don't know</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="deploy-work" class="input-label">Where do you primarily deploy your apps?</label>
+              <select name="deploy-work" id="deploy-work" class="input-select">
+                <option value="">--please select one--</option>
+                <option value="aws">Amazon Web Services (AWS)</option>
+                <option value="azure">Azure</option>
+                <option value="digital-ocean">Digital Ocean</option>
+                <option value="github-pages">GitHub Pages</option>
+                <option value="heroku">Heroku</option>
+                <option value="netlify">Netlify</option>
+                <option value="self-host">Self-hosted</option>
+                <option value="vercel">Vercel</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  What are the target platform(s) for your company's Ember apps?
+                </legend>
+                <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
+                  name="work-company-apps-ember-target-platforms" value="Desktop only" />
+                <label for="work-company-apps-ember-target-platforms-desktop-only">
+                  Desktop only
+                </label>
+                <input type="radio" id="work-company-apps-ember-target-platforms-responsive"
+                  name="work-company-apps-ember-target-platforms" value="Fully responsive (desktop + devices)" />
+                <label for="work-company-apps-ember-target-platforms-responsive">
+                  Fully responsive (desktop + devices)
+                </label>
+                <input type="radio" id="work-company-apps-ember-target-platforms-mobile-only"
+                  name="work-company-apps-ember-target-platforms" value="Mobile device only" />
+                <label for="work-company-apps-ember-target-platforms-mobile-only">
+                  Mobile device only
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  Who are the target users of your company's Ember apps?
+                </legend>
+
+                <input type="radio" id="work-company-apps-ember-target-users-b2c"
+                  name="work-company-apps-ember-target-users" value="General public (B2C)" />
+                <label for="work-company-apps-ember-target-users-b2c">
+                  General public (B2C)
+                </label>
+                <input type="radio" id="work-company-apps-ember-target-users-internal"
+                  name="work-company-apps-ember-target-users" value="Internal users" />
+                <label for="work-company-apps-ember-target-users-internal">
+                  Internal users
+                </label>
+                <input type="radio" id="work-company-apps-ember-target-users-b2b"
+                  name="work-company-apps-ember-target-users" value="Business consumers (B2B)" />
+                <label for="work-company-apps-ember-target-users-b2b">
+                  Business consumers (B2B)
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="work-app-users" class="input-label">How many end users do your company's Ember apps
+                support?</label>
+              <select name="work-app-users" id="work-app-users" class="input-select">
+                <option value="">--please select one--</option>
+                <option value="Between 1 - 1,000">1 - 1,000</option>
+                <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
+                <option value="Between 10,001 - 100,000">10,001 - 100,000</option>
+                <option value="Between 100,001 - 1,000,000">100,001 - 1,000,000</option>
+                <option value="Greater than 1,000,000">More than 1,000,000</option>
+                <option value="I don't know">I don't know</option>
+              </select>
+            </div>
+          </div>
+        </div>

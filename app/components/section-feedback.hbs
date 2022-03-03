@@ -1,0 +1,217 @@
+
+        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+            <div>
+              <h2 id="feedback">
+                <a href="#feedback" class="text-ember-500 text-md">
+                  §
+                </a>
+                Feedback About Ember
+              </h2>
+              {{!-- <p>
+                This section contains questions that relate to the changes made to Ember.js in the past
+                year, changes that are planned for future releases, and your experience learning Ember.
+              </p> --}}
+            </div>
+
+            <div class="form-group">
+              <fieldset>
+                <legend aria-describedby="fb-new-feat-desc">Have you integrated any of the features released
+                  since Octane into your applications?</legend>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700">
+                  Please select any that apply.
+                  Not sure what they are?
+                  See the <a href="https://blog.emberjs.com/tag/releases" target="_blank"
+                    rel="noopener noreferrer external"
+                    class="text-ember-500 underline focus:border-ember-500 outline-ember-500">Release Blogs</a> (opens
+                  in a new window) for more information.
+                </p>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-in-ele" value="in-element-helper" />
+                    <label for="feat-in-ele">The <code>in-element</code> helper (v3.20)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-lang" value="lang-flag" />
+                    <label for="feat-lang">The <code>--lang</code> flag for new apps (v3.21)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-dest-api" value="destroyable-api" />
+                    <label for="feat-dest-api"><code>@ember/destroyable</code> API (v3.22)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-hman" value="helper-manager" />
+                    <label for="feat-hman">The helper manager (v3.23)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-invokeHelper" value="invokeHelper" />
+                    <label for="feat-invokeHelper"><code>invokeHelper</code> from JS Helper Invocation API
+                      (v3.23)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-page-title" value="page-title" />
+                    <label for="feat-page-title">`page-title` by default in templates (v.3.24)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-nblocks" value="named-blocks" />
+                    <label for="feat-nblocks">Named blocks (v.3.25)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-strict-mode" value="strict-mode" />
+                    <label for="feat-strict-mode">Template strict mode (v.3.25)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-embr-flag" value="embroider-flag" />
+                    <label for="feat-embr-flag">The <code>--embroider</code> flag for new apps (ember-cli
+                      v.3.27)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cont-help" value="contextual-helpers" />
+                    <label for="feat-cont-help">Contextual helpers and/or modifiers (v3.27)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-project-root" value="project-root" />
+                    <label for="feat-project-root">Ability run ember serve from outside of a project's root directory
+                      (ember-cli v.3.28)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cust-model" value="custom-model-class" />
+                    <label for="feat-cust-model">Ability to define a custom model class (ember-data v.3.28)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-cached-dec" value="cached-decorator" />
+                    <label for="feat-cached-dec">The <code>@cached</code> decorator for memoizing the result of a getter
+                      based on autotracking (v4.1)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-refresh-router" value="refresh-router" />
+                    <label for="feat-refresh-router">Method for refreshing all currently active routes (v4.1)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="fb-new-feat" id="feat-serv-exp" value="service-export" />
+                    <label for="feat-serv-exp"><code>@service</code> export (replacing <code>inject</code>)
+                      (v4.1)</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="fb-new-feat-impact" class="input-label">If yes, which had the most positive impact on your app
+                or development
+                experience?</label>
+              <select id="fb-new-feat-impact" name="fb-new-feat-impact" class="input-select">
+                <option value="">--please select one--</option>
+                <option value="in-ele-helper">The <code>in-element</code> helper (v3.20)</option>
+                <option value="lang-flag">The <code>--lang</code> flag for new apps (v3.21)</option>
+                <option value="destroyable-api"><code>@ember/destroyable</code> API (v3.22)</option>
+                <option value="helper-manager">The helper manager (v3.23)</option>
+                <option value="invokehelper-api"><code>invokeHelper</code> from JS Helper Invocation API (v3.23)
+                </option>
+                <option value="named-blocks">Named blocks (v.3.25)</option>
+                <option value="contextual-helpers">Contextual helpers and/or modifiers (v3.27)</option>
+                <option value="ember-serve">Ability run ember serve from outside of a project's root directory
+                  (ember-cli v.3.28)</option>
+                <option value="custom-model">Ability to define a custom model class (ember-data v.3.28)</option>
+                <option value="cached-decorator">The <code>@cached</code> decorator for memoizing the result of a getter
+                  based on autotracking (v4.1)</option>
+                <option value="refresh-all">Method for refreshing all currently active routes (v4.1)</option>
+                <option value="service-export"><code>@service</code> export (replacing <code>inject</code>) (v4.1)
+                </option>
+              </select>
+            </div>
+
+
+            {{!-- <div class="form-group">
+              <!-- TODO: Link to RFCs -->
+              Which of these Ember features planned for the next year do you think
+              will have the most positive impact on your experience developing
+              Ember apps? Why?
+            </div> --}}
+            {{!-- <div class="form-group">
+              If you have attended any virtual Ember events in the past year,
+              which talk was your favorite and why?
+            </div> --}}
+            <h3 id="feedback-learning">
+              <a href="#feedback-learning" class="text-ember-500">
+                §
+              </a>
+              Learning Ember
+            </h3>
+            <p>
+              This section is about your experiences using Ember, in general
+            </p>
+            <div class="form-group">
+              <label for="feedback-learning-start-most-difficult" class="block input-label">
+                When you were first learning Ember, what was the most difficult
+                thing to understand?
+              </label>
+              <textarea rows="4" id="feedback-learning-start-most-difficult"
+                name="feedback-learning-start-most-difficult" aria-describedby="feedback-learning-start-most-difficult">
+          </textarea>
+              <p class="input-desc" id="feedback-learning-start-most-difficult-desc">
+                Example responses:
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="feedback-learning-start-most-intuitive" class="block input-label">
+                When you were first learning Ember, what concept felt the most
+                intuitive to you?
+              </label>
+              <textarea rows="4" id="feedback-learning-start-most-intuitive"
+                name="feedback-learning-start-most-intuitive" aria-describedby="feedback-learning-start-most-intuitive">
+          </textarea>
+              <p class="input-desc" id="feedback-learning-start-most-intuitive-desc">
+                Example responses:
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="feedback-learning-upgrade-most-difficult" class="block input-label">
+                Think about the last time you upgraded an Ember app. What version
+                did you migrate from/to, and what was the hardest thing about it?
+              </label>
+              <textarea rows="4" id="feedback-learning-upgrade-most-difficult"
+                name="feedback-learning-upgrade-most-difficult"
+                aria-describedby="feedback-learning-upgrade-most-difficult">
+          </textarea>
+              <p class="input-desc" id="feedback-learning-upgrade-most-difficult-desc">
+                Example responses:
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="feedback-learning-upgrade-blocker" class="block input-label">
+                If you were not able to upgrade, what prevented you from upgrading?
+              </label>
+              <textarea rows="4" id="feedback-learning-upgrade-blocker" name="feedback-learning-upgrade-blocker"
+                aria-describedby="feedback-learning-upgrade-blocker">
+          </textarea>
+              <p class="input-desc" id="feedback-learning-upgrade-blocker-desc">
+                Example responses:
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="feedback-custom-defaults" class="block input-label">
+                Is there anything you immediately add or configure every time you
+                make a new Ember application (e.g. an addon, linting rules, etc.)
+              </label>
+              <textarea rows="4" id="feedback-custom-defaults" name="feedback-custom-defaults"
+                aria-describedby="feedback-custom-defaults">
+          </textarea>
+              <p class="input-desc" id="feedback-custom-defaults-desc">
+                Example responses:
+              </p>
+            </div>
+            <div class="form-group">
+              <label for="feedback-general-ember-experience" class="block input-label">
+                Is there anything you want to tell us about your experiences using
+                Ember?
+              </label>
+              <textarea rows="4" id="feedback-general-ember-experience" name="feedback-general-ember-experience"
+                aria-describedby="feedback-general-ember-experience">
+          </textarea>
+              <p class="input-desc" id="feedback-general-ember-experience-desc">
+                Example responses:
+              </p>
+            </div>
+
+          </div>
+        </div>

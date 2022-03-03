@@ -1,0 +1,97 @@
+        <div class="shadow sm:rounded-md sm:overflow-hidden mb-8">
+          <div class="bg-white py-6 px-4 space-y-6 sm:p-6">
+            <div>
+              <h2 id="env-pref">
+                <a href="#env-pref" class="text-ember-500 text-md">
+                  §
+                </a>
+                Development Preferences
+              </h2>
+              <p>
+                This section is about your development preferences, whether at
+                work or at home.
+              </p>
+            </div>
+            {{! questions go here }}
+            <div class="form-group">
+              <fieldset>
+                <legend>
+                  What operating system do you prefer?
+                </legend>
+                <input type="radio" id="os-pref-mac-os" name="os-pref" value="mac-os" />
+                <label for="os-pref-mac-os">
+                  macOS
+                </label>
+                <input type="radio" id="os-pref-linux-unix" name="os-pref" value="linux-unix" />
+                <label for="os-pref-linux-unix">
+                  Linux/Unix (other than macOS)
+                </label>
+                <input type="radio" id="os-pref-windows" name="os-pref" value="windows" />
+                <label for="os-pref-windows">
+                  Windows
+                </label>
+                <input type="radio" id="os-pref-other" name="os-pref" value="other" />
+                <label for="os-pref-other">
+                  Other
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="os-work" class="block input-label">
+                What operating system do you most frequently use at work?
+              </label>
+              <input type="text" id="os-work" name="os-work" />
+            </div>
+            <div class="form-group">
+              <label for="os-home" class="block input-label">
+                What operating system do you most frequently use at home?
+              </label>
+              <input type="text" id="os-home" name="os-home" />
+            </div>
+            <div class="form-group">
+              <fieldset>
+                <legend for="ide-pref" class="block input-label">
+                  What is your preferred text editor or development environment?
+                </legend>
+                <input type="radio" id="ide-pref-atom" name="ide-pref" value="atom" />
+                <label for="ide-pref-atom">
+                  Atom
+                </label>
+                <input type="radio" id="ide-pref-emacs" name="ide-pref" value="emacs" />
+                <label for="ide-pref-emacs">
+                  Emacs
+                </label>
+                <input type="radio" id="ide-pref-vim" name="ide-pref" value="vim" />
+                <label for="ide-pref-vim">
+                  Vim
+                </label>
+                <input type="radio" id="ide-pref-vs-code" name="ide-pref" value="vs-code" />
+                <label for="ide-pref-vs-code">
+                  Visual Studio Code
+                </label>
+                <input type="radio" id="ide-pref-sublime" name="ide-pref" value="sublime" />
+                <label for="ide-pref-sublime">
+                  Sublime Text
+                </label>
+                <input type="radio" id="ide-pref-jetbrains" name="ide-pref" value="jetbrains" />
+                <label for="ide-pref-jetbrains">
+                  Jetbrains IDEs
+                </label>
+                <input type="radio" id="ide-pref-other" name="ide-pref" value="other" />
+                <label for="ide-pref-other">
+                  Other
+                </label>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="ide-pref-why" class="block input-label">
+                Why do you prefer it?
+              </label>
+              <textarea rows="4" id="ide-pref-why" name="ide-pref-why" aria-describedby="ide-pref-why-desc"></textarea>
+              <p class="input-desc" id="ide-pref-why-desc">
+                Example responses:
+                "It has useful language support, syntax highlighting, and intelligent code completion"
+              </p>
+            </div>
+          </div>
+        </div>
