@@ -15,10 +15,13 @@
             {{! questions go here }}
             <div class="form-group">
               <fieldset>
-                <legend class="input-label">
-                  Does your workplace currently use Ember for any of its operations?
-                  Note: you do not have to personally use Ember at work to answer 'Yes' to this question.
+                <legend class="input-label" aria-describedby="work-use-desc">
+                  Does your workplace currently use Ember for any of its applications?
                 </legend>
+                <p id="work-use-desc" class="w-full mt-0 mb-2 text-sm text-slate-700">
+                  Note: you do not have to personally work on an Ember app
+                  at your workplace to answer 'Yes' to this question.
+                </p>
                 <input type="radio" id="work-use-ember-yes" name="work-use-ember" />
                 <label for="work-use-ember-yes">
                   Yes
@@ -242,7 +245,7 @@
               </fieldset>
             </div>
             <div class="form-group">
-              
+
               <label for="select-work-eapp-count" class="input-label">How many Ember apps does your company have?</label>
                <select id="select-work-eapp-count" name="select-work-ember-app-count">
                 <option value="">--please choose one--</option>
@@ -269,17 +272,17 @@
                   name="work-apps-proportion" value="All" />
                     <label for="work-apps-proportion-all">All</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-most"
                       name="work-apps-proportion" value="Most" />
                     <label for="work-apps-proportion-most">Most</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-half"
                       name="work-apps-proportion" value="Half" />
                     <label for="work-apps-proportion-half">Half</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-some"
                       name="work-apps-proportion" value="Some" />
                     <label for="work-apps-proportion-some">
