@@ -22,11 +22,11 @@
                   Please select any that apply.
                 </p>
                 <ul>
-                  <li><input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
+                  <li>
+                    <input type="checkbox" name="survey-outreach" id="survey-email" value="email" />
                     <label for="survey-email">
                       Email
                     </label>
-
                   </li>
                   <li>
                     <input type="checkbox" name="survey-outreach" id="survey-discord" value="discord" />
@@ -53,10 +53,9 @@
                     </label>
                   </li>
                 </ul>
-
               </fieldset>
-
             </div>
+
             <div class="form-group">
               <fieldset>
                 <legend>Did you participate in other developer surveys in the past year?</legend>
@@ -66,18 +65,22 @@
               
             </div>
             <div class="form-group">
-              If so, which ones?
+             <label for="feedback-survey-other" class="input-label">If so, which ones?</label>
+              <textarea rows="2" id="feedback-this-survey" />
             </div>
             <div class="form-group">
+              <label for="feedback-this-survey" class="input-label">
               Do you have any general feedback about the experience of the
               completing the community survey?
+              </label>
+              <textarea rows="4" id="feedback-this-survey" />
             </div>
             <div class="form-group">
-              <label for="global-loc">Where in the world do you live?</label>
+              <label for="global-loc" class="input-label">Where in the world do you live?</label>
               <input type="text" name="global-loc" id="global-loc" />
             </div>
             <div class="form-group">
-              <label for="feedback-other">Is there anything else you would like to tell us?</label>
+              <label for="feedback-other" class="input-label">Is there anything else you would like to tell us?</label>
               <textarea rows="4" id="feedback-other" />
             </div>
             <div class="pt-5">
