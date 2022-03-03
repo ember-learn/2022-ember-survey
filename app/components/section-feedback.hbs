@@ -6,10 +6,9 @@
                 <a href="#feedback" class="text-ember-500 text-md">§</a>
                 Ember Feedback
               </h2>
-              {{!-- <p>
-                This section contains questions that relate to the changes made to Ember.js in the past
-                year, changes that are planned for future releases, and your experience learning Ember.
-              </p> --}}
+              <p>
+                This section contains questions that relate Ember specifically. 
+              </p>
             </div>
 
             <div class="form-group">
@@ -121,9 +120,9 @@
 
             <div class="form-group">
               <fieldset>
-                <legend aria-describedby="future-feat-desc">Which of the future/planned Ember features do you think will have a positive impact on your development experience?</legend>
+                <legend aria-describedby="future-feat-desc">Which of these proposed new Ember features do you think will have a positive impact on your development experience?</legend>
                 <p id="future-feat-desc" class="w-full mt-0 mb-2 text-sm text-slate-700">
-                  Future plans for Ember are captured in <a href="https://github.com/emberjs/rfcs/pulls" target="_blank"
+                  Proposed new features for Ember are captured in <a href="https://github.com/emberjs/rfcs/pulls" target="_blank"
                     rel="noopener noreferrer external"
                     class="text-ember-500 underline focus:border-ember-500 outline-ember-500">RFC documents</a> (link opens in a new window). Not all RFCs are listed here, but please select any that apply.
                 </p>
@@ -134,10 +133,18 @@
                     <label for="ffeat-**">### (RFC #)</label>
                   </li>
                   --}}
-                  {{!-- <li>
+                  <li>
                     <input type="checkbox" id="ffeat-sp-args" name="ffeat-sp-args" />
                     <label for="ffeat-sp-args">Spreadable Arguments (RFC #593)</label>
-                  </li> --}}
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-stages" name="ffeat-stages" />
+                    <label for="ffeat-stages">RFC Stages (RFC #617)</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="ffeat-ee" name="ffeat-embroider" />
+                    <label for="ffeat-ee">Enable Embroider (RFC #746)</label>
+                  </li>
                   <li>
                     <input type="checkbox" id="ffeat-dc-api" name="ffeat-dc-api" />
                     <label for="ffeat-dc-api">Logging and Debugging Context API (RFC #753)</label>
