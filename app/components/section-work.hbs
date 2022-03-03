@@ -15,9 +15,13 @@
             {{! questions go here }}
             <div class="form-group">
               <fieldset>
-                <legend class="input-label">
-                  Do you currently use Ember at your place of work?
+                <legend class="input-label" aria-describedby="work-use-desc">
+                  Is Ember used at your place of work?
                 </legend>
+                <p id="work-use-desc" class="w-full mt-0 mb-2 text-sm text-slate-700">
+                  Note: you do not have to personally work on an Ember app
+                  at your workplace to answer 'Yes' to this question.
+                </p>
                 <input type="radio" id="work-use-ember-yes" name="work-use-ember" />
                 <label for="work-use-ember-yes">
                   Yes
@@ -25,6 +29,10 @@
                 <input type="radio" id="work-use-ember-no" name="work-use-ember" />
                 <label for="work-use-ember-no">
                   No
+                </label>
+                <input type="radio" id="work-use-ember-idk" name="work-use-ember" />
+                <label for="work-use-ember-idk">
+                  I don't know
                 </label>
               </fieldset>
             </div>
@@ -189,29 +197,29 @@
             <div class="form-group">
               <fieldset>
                 <legend class="input-label">
-                  How often do you use Ember at work?
+                  How often do you personally use Ember at work?
                 </legend>
+                <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
+                  name="work-company-ember-usage-frequency" value="All of the time" />
+                <label for="work-company-ember-usage-frequency-all-of-the-time">
+                  All of the time
+                </label>
+                <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
+                  name="work-company-ember-usage-frequency" value="Most of the time" />
+                <label for="work-company-ember-usage-frequency-most-of-the-time">
+                  Most of the time
+                </label>
+                <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
+                  name="work-company-ember-usage-frequency" value="Some of the time" />
+                <label for="work-company-ember-usage-frequency-some-of-the-time">
+                  Some of the time
+                </label>
+                <input type="radio" id="work-company-ember-usage-frequency-never"
+                  name="work-company-ember-usage-frequency" value="Never" />
+                <label for="work-company-ember-usage-frequency-never">
+                  Never / I do not personally use Ember at work
+                </label>
               </fieldset>
-              <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
-                name="work-company-ember-usage-frequency" value="All of the time" />
-              <label for="work-company-ember-usage-frequency-all-of-the-time">
-                All of the time
-              </label>
-              <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
-                name="work-company-ember-usage-frequency" value="Most of the time" />
-              <label for="work-company-ember-usage-frequency-most-of-the-time">
-                Most of the time
-              </label>
-              <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
-                name="work-company-ember-usage-frequency" value="Some of the time" />
-              <label for="work-company-ember-usage-frequency-some-of-the-time">
-                Some of the time
-              </label>
-              <input type="radio" id="work-company-ember-usage-frequency-never"
-                name="work-company-ember-usage-frequency" value="Never" />
-              <label for="work-company-ember-usage-frequency-never">
-                Never
-              </label>
             </div>
             <div class="form-group">
               <fieldset>
@@ -237,7 +245,7 @@
               </fieldset>
             </div>
             <div class="form-group">
-              
+
               <label for="select-work-eapp-count" class="input-label">How many Ember apps does your company have?</label>
                <select id="select-work-eapp-count" name="select-work-ember-app-count">
                 <option value="">--please choose one--</option>
@@ -264,17 +272,17 @@
                   name="work-apps-proportion" value="All" />
                     <label for="work-apps-proportion-all">All</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-most"
                       name="work-apps-proportion" value="Most" />
                     <label for="work-apps-proportion-most">Most</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-half"
                       name="work-apps-proportion" value="Half" />
                     <label for="work-apps-proportion-half">Half</label>
                   </li>
-                  <li>  
+                  <li>
                     <input type="radio" id="work-apps-proportion-some"
                       name="work-apps-proportion" value="Some" />
                     <label for="work-apps-proportion-some">
