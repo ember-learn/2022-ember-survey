@@ -237,45 +237,19 @@
               </fieldset>
             </div>
             <div class="form-group">
-              <fieldset>
-                <legend class="input-label">
-                  How many Ember apps does your company have?
-                </legend>
-                <input type="radio" id="work-company-apps-ember-none" name="work-company-apps-ember" value="None" />
-                <label for="work-company-apps-ember-none">
-                  None
-                </label>
-                <input type="radio" id="work-company-apps-ember-1-10" name="work-company-apps-ember"
-                  value="Between 1 - 10" />
-                <label for="work-company-apps-ember-1-10">
-                  Between 1 - 10
-                </label>
-                <input type="radio" id="work-company-apps-ember-11-20" name="work-company-apps-ember"
-                  value="Between 11 - 20" />
-                <label for="work-company-apps-ember-11-20">
-                  Between 11 - 20
-                </label>
-                <input type="radio" id="work-company-apps-ember-21-50" name="work-company-apps-ember"
-                  value="Between 21 - 50" />
-                <label for="work-company-apps-ember-21-50">
-                  Between 21 - 50
-                </label>
-                <input type="radio" id="work-company-apps-ember-51-100" name="work-company-apps-ember"
-                  value="Between 51 - 100" />
-                <label for="work-company-apps-ember-51-100">
-                  Between 51 - 100
-                </label>
-                <input type="radio" id="work-company-apps-ember-greater-than-100" name="work-company-apps-ember"
-                  value="Greater than 100" />
-                <label for="work-company-apps-ember-greater-than-100">
-                  Greater than 100
-                </label>
-                <input type="radio" id="work-company-apps-ember-idk" name="work-company-apps-ember"
-                  value="I don't know" />
-                <label for="work-company-apps-ember-idk">
-                  I don't know
-                </label>
-              </fieldset>
+              
+              <label for="select-work-eapp-count" class="input-label">How many Ember apps does your company have?</label>
+               <select id="select-work-eapp-count" name="select-work-ember-app-count">
+                <option value="">--please choose one--</option>
+                <option value="none">None</option>
+                <option value="one to ten">Between 1 - 10</option>
+                <option value="elevent to twenty">Between 11 - 20</option>
+                <option value="21 to fifty">Between 21 - 50</option>
+                <option value="fifty one to one hundred">Between 51 - 100</option>
+                <option value="more than 101">Greater than 100</option>
+                <option value="I do not know">I don't know</option>
+              </select>
+
             </div>
             <div class="form-group">
               <fieldset>
