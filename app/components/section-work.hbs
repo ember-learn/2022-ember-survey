@@ -6,7 +6,7 @@
                 <a href="#at-work" class="text-ember-500 text-md">
                   §
                 </a>
-                Using Ember At Work
+                Ember At Work
               </h2>
               <p>
                 This section relates to how you use Ember in at work.
@@ -158,86 +158,33 @@
               </select>
             </div>
             <div class="form-group">
-              <fieldset>
-                <legend class="input-label">
+              <label class="input-label" for="select-work-fe-dev">
                   How many developers at your company are responsible for writing
                   front-end code?
-                </legend>
-                <input type="radio" id="work-company-devs-fe-none" name="work-company-devs-fe" value="None" />
-                <label for="work-company-devs-fe-none">
-                  None
-                </label>
-                <input type="radio" id="work-company-devs-fe-1-10" name="work-company-devs-fe" value="Between 1 - 10" />
-                <label for="work-company-devs-fe-1-10">
-                  Between 1 - 10
-                </label>
-                <input type="radio" id="work-company-devs-fe-11-20" name="work-company-devs-fe"
-                  value="Between 11 - 20" />
-                <label for="work-company-devs-fe-11-20">
-                  Between 11 - 20
-                </label>
-                <input type="radio" id="work-company-devs-fe-21-50" name="work-company-devs-fe"
-                  value="Between 21 - 50" />
-                <label for="work-company-devs-fe-21-50">
-                  Between 21 - 50
-                </label>
-                <input type="radio" id="work-company-devs-fe-51-100" name="work-company-devs-fe"
-                  value="Between 51 - 100" />
-                <label for="work-company-devs-fe-51-100">
-                  Between 51 - 100
-                </label>
-                <input type="radio" id="work-company-devs-fe-greater-than-100" name="work-company-devs-fe"
-                  value="Greater than 100" />
-                <label for="work-company-devs-fe-greater-than-100">
-                  Greater than 100
-                </label>
-                <input type="radio" id="work-company-devs-fe-idk" name="work-company-devs-fe" value="I don't know" />
-                <label for="work-company-devs-fe-idk">
-                  I don't know
-                </label>
-              </fieldset>
+              </label>
+              <select id="select-work-fe-dev" name="select-work-fe-dev">
+                <option value="">--please choose one--</option>
+                <option value="none">None</option>
+                <option value="one to ten">Between 1 - 10</option>
+                <option value="elevent to twenty">Between 11 - 20</option>
+                <option value="21 to fifty">Between 21 - 50</option>
+                <option value="fifty one to one hundred">Between 51 - 100</option>
+                <option value="more than 101">Greater than 100</option>
+                <option value="I do not know">I don't know</option>
+              </select>
             </div>
             <div class="form-group">
-              <fieldset>
-                <legend class="input-label">
-                  How many developers at your company are responsible for writing
-                  code in Ember?
-                </legend>
-                <input type="radio" id="work-company-devs-ember-none" name="work-company-devs-ember" value="None" />
-                <label for="work-company-devs-ember-none">
-                  None
-                </label>
-                <input type="radio" id="work-company-devs-ember-1-10" name="work-company-devs-ember"
-                  value="Between 1 - 10" />
-                <label for="work-company-devs-ember-1-10">
-                  Between 1 - 10
-                </label>
-                <input type="radio" id="work-company-devs-ember-11-20" name="work-company-devs-ember"
-                  value="Between 11 - 20" />
-                <label for="work-company-devs-ember-11-20">
-                  Between 11 - 20
-                </label>
-                <input type="radio" id="work-company-devs-ember-21-50" name="work-company-devs-ember"
-                  value="Between 21 - 50" />
-                <label for="work-company-devs-ember-21-50">
-                  Between 21 - 50
-                </label>
-                <input type="radio" id="work-company-devs-ember-51-100" name="work-company-devs-ember"
-                  value="Between 51 - 100" />
-                <label for="work-company-devs-ember-51-100">
-                  Between 51 - 100
-                </label>
-                <input type="radio" id="work-company-devs-ember-greater-than-100" name="work-company-devs-ember"
-                  value="Greater than 100" />
-                <label for="work-company-devs-ember-greater-than-100">
-                  Greater than 100
-                </label>
-                <input type="radio" id="work-company-devs-ember-idk" name="work-company-devs-ember"
-                  value="I don't know" />
-                <label for="work-company-devs-ember-idk">
-                  I don't know
-                </label>
-              </fieldset>
+              <label for="select-work-fe-ember" class="input-label">How many developers at your company are responsible for writing code in Ember? </label>
+               <select id="select-work-fe-ember" name="select-work-fe-ember">
+                <option value="">--please choose one--</option>
+                <option value="none">None</option>
+                <option value="one to ten">Between 1 - 10</option>
+                <option value="elevent to twenty">Between 11 - 20</option>
+                <option value="21 to fifty">Between 21 - 50</option>
+                <option value="fifty one to one hundred">Between 51 - 100</option>
+                <option value="more than 101">Greater than 100</option>
+                <option value="I do not know">I don't know</option>
+              </select>
             </div>
             <div class="form-group">
               <fieldset>
@@ -337,32 +284,37 @@
                   applications at your company: of all of the web applications at
                   my company, _______ of them are Ember apps.
                 </legend>
-
-                <input type="radio" id="work-company-apps-ember-proportion-all"
-                  name="work-company-apps-ember-proportion" value="All" />
-                <label for="work-company-apps-ember-proportion-all">
-                  All
-                </label>
-                <input type="radio" id="work-company-apps-ember-proportion-most"
-                  name="work-company-apps-ember-proportion" value="Most" />
-                <label for="work-company-apps-ember-proportion-most">
-                  Most
-                </label>
-                <input type="radio" id="work-company-apps-ember-proportion-half"
-                  name="work-company-apps-ember-proportion" value="Half" />
-                <label for="work-company-apps-ember-proportion-half">
-                  Half
-                </label>
-                <input type="radio" id="work-company-apps-ember-proportion-some"
-                  name="work-company-apps-ember-proportion" value="Some" />
-                <label for="work-company-apps-ember-proportion-some">
-                  Some
-                </label>
-                <input type="radio" id="work-company-apps-ember-proportion-none"
-                  name="work-company-apps-ember-proportion" value="None" />
-                <label for="work-company-apps-ember-proportion-none">
-                  None
-                </label>
+                <ul>
+                  <li>
+                    <input type="radio" id="work-apps-proportion-all"
+                  name="work-apps-proportion" value="All" />
+                    <label for="work-apps-proportion-all">All</label>
+                  </li>
+                  <li>  
+                    <input type="radio" id="work-apps-proportion-most"
+                      name="work-apps-proportion" value="Most" />
+                    <label for="work-apps-proportion-most">Most</label>
+                  </li>
+                  <li>  
+                    <input type="radio" id="work-apps-proportion-half"
+                      name="work-apps-proportion" value="Half" />
+                    <label for="work-apps-proportion-half">Half</label>
+                  </li>
+                  <li>  
+                    <input type="radio" id="work-apps-proportion-some"
+                      name="work-apps-proportion" value="Some" />
+                    <label for="work-apps-proportion-some">
+                      Some
+                    </label>
+                  </li>
+                  <li>
+                    <input type="radio" id="work-apps-proportion-none"
+                      name="work-apps-proportion" value="None" />
+                    <label for="work-apps-proportion-none">
+                      None
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
             </div>
             <div class="form-group">
