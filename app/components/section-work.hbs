@@ -199,26 +199,36 @@
                 <legend class="input-label">
                   How often do you personally use Ember at work?
                 </legend>
-                <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
-                  name="work-company-ember-usage-frequency" value="All of the time" />
-                <label for="work-company-ember-usage-frequency-all-of-the-time">
-                  All of the time
-                </label>
-                <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
-                  name="work-company-ember-usage-frequency" value="Most of the time" />
-                <label for="work-company-ember-usage-frequency-most-of-the-time">
-                  Most of the time
-                </label>
-                <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
-                  name="work-company-ember-usage-frequency" value="Some of the time" />
-                <label for="work-company-ember-usage-frequency-some-of-the-time">
-                  Some of the time
-                </label>
-                <input type="radio" id="work-company-ember-usage-frequency-never"
-                  name="work-company-ember-usage-frequency" value="Never" />
-                <label for="work-company-ember-usage-frequency-never">
-                  Never / I do not personally use Ember at work
-                </label>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-ember-usage-frequency-all-of-the-time"
+                      name="work-company-ember-usage-frequency" value="All of the time" />
+                    <label for="work-company-ember-usage-frequency-all-of-the-time">
+                      All of the time
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-ember-usage-frequency-most-of-the-time"
+                      name="work-company-ember-usage-frequency" value="Most of the time" />
+                    <label for="work-company-ember-usage-frequency-most-of-the-time">
+                      Most of the time
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-ember-usage-frequency-some-of-the-time"
+                      name="work-company-ember-usage-frequency" value="Some of the time" />
+                    <label for="work-company-ember-usage-frequency-some-of-the-time">
+                      Some of the time
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-ember-usage-frequency-never"
+                      name="work-company-ember-usage-frequency" value="Never" />
+                    <label for="work-company-ember-usage-frequency-never">
+                      Never / I do not personally use Ember at work
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
             </div>
             <div class="form-group">
@@ -408,32 +418,42 @@
                   </li>
                 </ul>
               </fieldset>
-
-
             </div>
             <div class="form-group">
               <fieldset>
                 <legend class="input-label">
                   If you use Ember Data in your company's Ember apps, do you
-                  typically use the same version as the framework or do you
+                  typically use the same version as the framework, or do you
                   manually change it to a different version number?
                 </legend>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-apps-ember-data-version-same"
+                      name="work-company-apps-ember-data-version" value="It stays the same" />
+                    <label for="work-company-apps-ember-data-version-same">
+                      It stays the same
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-apps-ember-data-version-different"
+                      name="work-company-apps-ember-data-version" value="We change it to something else" />
+                    <label for="work-company-apps-ember-data-version-different">
+                      We change it to something else
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-company-apps-ember-data-version-none"
+                      name="work-company-apps-ember-data-version" value="We don't use ember-data" />
+                    <label for="work-company-apps-ember-data-version-none">
+                      We don't use Ember Data
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
-              <input type="radio" id="work-company-apps-ember-data-version-same"
-                name="work-company-apps-ember-data-version" value="It stays the same" />
-              <label for="work-company-apps-ember-data-version-same">
-                It stays the same
-              </label>
-              <input type="radio" id="work-company-apps-ember-data-version-different"
-                name="work-company-apps-ember-data-version" value="We change it to something else" />
-              <label for="work-company-apps-ember-data-version-different">
-                We change it to something else
-              </label>
-              <input type="radio" id="work-company-apps-ember-data-version-none"
-                name="work-company-apps-ember-data-version" value="We don't use ember-data" />
-              <label for="work-company-apps-ember-data-version-none">
-                We don't use ember-data
-              </label>
+            </div>
+            <div class="form-group">
+              <label for="work-ember-data-other-text" class="input-label">If you don't use Ember Data, what do you use?</label>
+              <input type="text" id="work-ember-data-other-text" name="work-ember-data-other-text" />
             </div>
             <div class="form-group">
               <fieldset>
@@ -442,22 +462,29 @@
                   typically use the same version as the framework or do you
                   manually change it to a different version number?
                 </legend>
-
-                <input type="radio" id="work-company-apps-ember-cli-version-same"
-                  name="work-company-apps-ember-cli-version" value="It stays the same" />
-                <label for="work-company-apps-ember-cli-version-same">
-                  It stays the same
-                </label>
-                <input type="radio" id="work-company-apps-ember-cli-version-different"
-                  name="work-company-apps-ember-cli-version" value="We change it to something else" />
-                <label for="work-company-apps-ember-cli-version-different">
-                  We change it to something else
-                </label>
-                <input type="radio" id="work-company-apps-ember-cli-version-none"
-                  name="work-company-apps-ember-cli-version" value="We don't use ember-cli" />
-                <label for="work-company-apps-ember-cli-version-none">
-                  We don't use ember-cli
-                </label>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-cli-ver-same"
+                      name="work-app-cli-ver" value="It stays the same" />
+                    <label for="work-app-cli-ver-same">
+                      It stays the same
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-cli-ver-different"
+                      name="work-app-cli-ver" value="We change it to something else" />
+                    <label for="work-app-cli-ver-different">
+                      We change it to something else
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-cli-ver-none"
+                      name="work-app-cli-ver" value="We don't use ember-cli" />
+                    <label for="work-app-cli-ver-none">
+                      We don't use Ember CLI
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
             </div>
             <div class="form-group">
@@ -467,7 +494,8 @@
                   apps you work on at your job?
                 </legend>
                 <ul>
-                  <li><input type="radio" id="work-test-fw-mocha"
+                  <li>
+                    <input type="radio" id="work-test-fw-mocha"
                       name="work-test-fw"
                       value="Mocha (via ember-mocha or ember-cli-mocha)" />
                     <label for="work-test-fw-mocha">
@@ -534,54 +562,73 @@
               </select>
             </div>
             <div class="form-group">
+              <label for="deploy-work-other-text" class="input-label">If you answered other, what do you use?</label>
+              <input type="text" id="deploy-work-other-text" name="deploy-work-other-text" />
+            </div>
+            <div class="form-group">
               <fieldset>
                 <legend class="input-label">
                   What are the target platform(s) for your company's Ember apps?
                 </legend>
-                <input type="radio" id="work-company-apps-ember-target-platforms-desktop-only"
-                  name="work-company-apps-ember-target-platforms" value="Desktop only" />
-                <label for="work-company-apps-ember-target-platforms-desktop-only">
-                  Desktop only
-                </label>
-                <input type="radio" id="work-company-apps-ember-target-platforms-responsive"
-                  name="work-company-apps-ember-target-platforms" value="Fully responsive (desktop + devices)" />
-                <label for="work-company-apps-ember-target-platforms-responsive">
-                  Fully responsive (desktop + devices)
-                </label>
-                <input type="radio" id="work-company-apps-ember-target-platforms-mobile-only"
-                  name="work-company-apps-ember-target-platforms" value="Mobile device only" />
-                <label for="work-company-apps-ember-target-platforms-mobile-only">
-                  Mobile device only
-                </label>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-plat-mobile-only"
+                      name="work-app-plat" value="Mobile device only" />
+                    <label for="work-app-plat-mobile-only">
+                      Mobile only
+                    </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                  <input type="radio" id="work-app-plat-desktop-only"
+                    name="work-app-plat" value="Desktop only" />
+                  <label for="work-app-plat--desktop-only">
+                    Desktop only
+                  </label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-plat-responsive"
+                      name="work-app-plat" value="Fully responsive (desktop + devices)" />
+                    <label for="work-app-plat-responsive">
+                      Both
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
             </div>
             <div class="form-group">
               <fieldset>
                 <legend class="input-label">
-                  Who are the target users of your company's Ember apps?
+                  Who are the primary target users of your company's Ember apps?
                 </legend>
-
-                <input type="radio" id="work-company-apps-ember-target-users-b2c"
-                  name="work-company-apps-ember-target-users" value="General public (B2C)" />
-                <label for="work-company-apps-ember-target-users-b2c">
-                  General public (B2C)
-                </label>
-                <input type="radio" id="work-company-apps-ember-target-users-internal"
-                  name="work-company-apps-ember-target-users" value="Internal users" />
-                <label for="work-company-apps-ember-target-users-internal">
-                  Internal users
-                </label>
-                <input type="radio" id="work-company-apps-ember-target-users-b2b"
-                  name="work-company-apps-ember-target-users" value="Business consumers (B2B)" />
-                <label for="work-company-apps-ember-target-users-b2b">
-                  Business consumers (B2B)
-                </label>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-users-b2c"
+                      name="work-app-users" value="General public (B2C)" />
+                    <label for="work-app-users-b2c">
+                      General public (B2C)
+                    </label>
+                   </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-users-internal"
+                      name="work-app-users" value="Internal users" />
+                    <label for="work-app-users-internal">
+                      Internal users
+                    </label>
+                   </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" id="work-app-users-b2b"
+                      name="work-app-users" value="Business consumers (B2B)" />
+                    <label for="work-app-users-b2b">
+                      Business consumers (B2B)
+                    </label>
+                  </li>
+                </ul>
               </fieldset>
             </div>
             <div class="form-group">
-              <label for="work-app-users" class="input-label">How many end users do your company's Ember apps
+              <label for="work-app-users-num" class="input-label">How many end users do your company's Ember apps
                 support?</label>
-              <select name="work-app-users" id="work-app-users" class="input-select">
+              <select name="work-app-users-num" id="work-app-users-num" class="input-select">
                 <option value="">--please select one--</option>
                 <option value="Between 1 - 1,000">1 - 1,000</option>
                 <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
