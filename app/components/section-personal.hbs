@@ -52,7 +52,7 @@
         <label for="papp-collabs-21-plus">
           More than 21
         </label>
-        
+
       </fieldset>
     </div>
     <div class="form-group">
@@ -140,36 +140,59 @@
         </label>
       </fieldset>
     </div>
+
     <div class="form-group">
       <fieldset>
         <legend class="input-label">
           If you use a Static Site Generator for personal projects, do you use any of these?
         </legend>
-        {{!-- 11ty, Jekyll, Metalsmith, Hugo, Empress --}}
-        <input type="radio" id="papp-ssg-eleventy" name="personal-apps-site-generators-used" value="Eleventy" />
-        <label for="papp-ssg-eleventy">
-          Eleventy
-        </label>
-        <input type="radio" id="papp-ssg-jekyll" name="personal-apps-site-generators-used" value="Jekyll" />
-        <label for="papp-ssg-jekyll">
-          Jekyll
-        </label>
-        <input type="radio" id="papp-ssg-metalsmith" name="personal-apps-site-generators-used"
-          value="Metalsmith" />
-        <label for="papp-ssg-metalsmith">
-          Metalsmith
-        </label>
-        <input type="radio" id="papp-ssg-empress" name="personal-apps-site-generators-used"
-          value="empress" />
-        <label for="papp-ssg-empress">
-          Empress
-        </label>
-        <input type="radio" id="papp-ssg-other" name="personal-apps-site-generators-used"
-          value="other" />
-        <label for="papp-ssg-other">
-          Other
-        </label>
+        <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="papp-ssg-desc">
+          Not all static site generators are represented here; please choose any that apply.
+        </p>
+        <ul>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-11ty" name="papp-other-ssg" value="11ty" />
+            <label for="papp-other-ssg-11ty">
+              11ty
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-empress" name="papp-other-ssg" value="empress" />
+            <label for="papp-other-ssg-empress">
+              Empress
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-hugo" name="papp-other-ssg" value="hugo" />
+            <label for="papp-other-ssg-hugo">
+              Hugo
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-jekyll" name="papp-other-ssg" value="jekyll" />
+            <label for="papp-other-ssg-jekyll">
+              Jekyll
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-metalsmith" name="papp-other-ssg" value="metalsmith" />
+            <label for="papp-other-ssg-metalsmith">
+              Metalsmith
+            </label>
+          </li>
+          <li>
+            <input type="checkbox" id="papp-other-ssg-other" name="papp-other-ssg" value="Other"/>
+            <label for="papp-other-ssg-other">
+              Other
+            </label>
+          </li>
+        </ul>
       </fieldset>
+    </div>
+
+    <div class="form-group">
+      <label class="input-label" for="papp-other-ssg-other-text">If you chose "other", please say more:</label>
+      <input type="text" id="papp-other-ssg-other-text" name="papp-other-ssg-other-text" />
     </div>
 
     {{!-- Who are the end users of your personal Ember apps? --}}
