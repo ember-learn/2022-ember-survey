@@ -12,7 +12,6 @@
                 This section relates to how you use Ember in at work.
               </p>
             </div>
-            {{! questions go here }}
             <div class="form-group">
               <fieldset>
                 <legend class="input-label" aria-describedby="work-use-desc">
@@ -44,55 +43,55 @@
                 <div class="grid grid-cols-2">
                   <div class="col-span-1">
                     <div>
-                      <input type="checkbox" id="ws-agriculture" name="work-sector" value="agriculture" />
+                      <input type="checkbox" id="ws-agriculture" name="work-sector-agriculture" />
                       <label for="ws-agriculture">
                         Agriculture
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-advertising" name="work-sector" value="advertising" />
+                      <input type="checkbox" id="ws-advertising" name="work-sector-advertising" />
                       <label for="ws-advertising">
                         Advertising
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-arts-entertainment" name="work-sector" value="arts-entertainment" />
+                      <input type="checkbox" id="ws-arts-entertainment" name="work-sector-arts-entertainment" />
                       <label for="ws-arts-entertainment">
                         Arts & Entertainment
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-consulting" name="work-sector" value="consulting" />
+                      <input type="checkbox" id="ws-consulting" name="work-sector-consulting" />
                       <label for="ws-consulting">
                         Consulting
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-education" name="work-sector" value="education" />
+                      <input type="checkbox" id="ws-education" name="work-sector-education" />
                       <label for="ws-education">
                         Education
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-financial-services" name="work-sector" value="financial-services" />
+                      <input type="checkbox" id="ws-financial-services" name="work-sector-financial-services" />
                       <label for="ws-financial-services">
                         Financial Services
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-government" name="work-sector" value="government" />
+                      <input type="checkbox" id="ws-government" name="work-sector-government" />
                       <label for="ws-government">
                         Government
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-health-care" name="work-sector" value="health-care" />
+                      <input type="checkbox" id="ws-health-care" name="work-sector-health-care" />
                       <label for="ws-health-care">
                         Health Care
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-insurance" name="work-sector" value="insurance" />
+                      <input type="checkbox" id="ws-insurance" name="work-sector-insurance" />
                       <label for="ws-insurance">
                         Insurance
                       </label>
@@ -100,49 +99,49 @@
                   </div>
                   <div class="col-span-1">
                     <div>
-                      <input type="checkbox" id="ws-manufacturing" name="work-sector" value="manufacturing" />
+                      <input type="checkbox" id="ws-manufacturing" name="work-sector-manufacturing" />
                       <label for="ws-manufacturing">
                         Manufacturing
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-real-estate" name="work-sector" value="real-estate" />
+                      <input type="checkbox" id="ws-real-estate" name="work-sector-real-estate" />
                       <label for="ws-real-estate">
                         Real Estate
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-retailers" name="work-sector" value="retailers" />
+                      <input type="checkbox" id="ws-retailers" name="work-sector-retailers" />
                       <label for="ws-retailers">
                         Retailers (Including Online)
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-technology" name="work-sector" value="technology" />
+                      <input type="checkbox" id="ws-technology" name="work-sector-technology" />
                       <label for="ws-technology">
                         Technology
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-utilities" name="work-sector" value="utilities" />
+                      <input type="checkbox" id="ws-utilities" name="work-sector-utilities" />
                       <label for="ws-utilities">
                         Utilities (Telecom/Energy)
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-transportation" name="work-sector" value="transportation" />
+                      <input type="checkbox" id="ws-transportation" name="work-sector-transportation" />
                       <label for="ws-transportation">
                         Transportation
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-hospitality" name="work-sector" value="hospitality" />
+                      <input type="checkbox" id="ws-hospitality" name="work-sector-hospitality" />
                       <label for="ws-hospitality">
                         Hospitality
                       </label>
                     </div>
                     <div>
-                      <input type="checkbox" id="ws-other" name="work-sector" value="other" />
+                      <input type="checkbox" id="ws-other" name="work-sector-other" />
                       <label for="ws-other">
                         Other
                       </label>
@@ -158,7 +157,7 @@
             <div class="form-group">
               <label for="work-all-size" class="input-label">How many people work at your company?</label>
               <select name="work-all-size" id="work-all-size">
-                <option value="">--please select one--</option>
+                <option value="empty">--please select one--</option>
                 <option value="Between 1 - 10">1 - 10</option>
                 <option value="Between 11 - 20">11 - 20</option>
                 <option value="Between 21 - 50">21 - 50</option>
@@ -174,7 +173,7 @@
                   front-end code?
               </label>
               <select id="select-work-fe-dev" name="select-work-fe-dev">
-                <option value="">--please choose one--</option>
+                <option value="empty">--please choose one--</option>
                 <option value="none">None</option>
                 <option value="one to ten">Between 1 - 10</option>
                 <option value="elevent to twenty">Between 11 - 20</option>
@@ -187,7 +186,7 @@
             <div class="form-group">
               <label for="select-work-fe-ember" class="input-label">How many developers at your company are responsible for writing code in Ember? </label>
                <select id="select-work-fe-ember" name="select-work-fe-ember">
-                <option value="">--please choose one--</option>
+                <option value="empty">--please choose one--</option>
                 <option value="none">None</option>
                 <option value="one to ten">Between 1 - 10</option>
                 <option value="elevent to twenty">Between 11 - 20</option>
@@ -261,7 +260,7 @@
 
               <label for="select-work-eapp-count" class="input-label">How many Ember apps does your company have?</label>
                <select id="select-work-eapp-count" name="select-work-ember-app-count">
-                <option value="">--please choose one--</option>
+                <option value="empty">--please choose one--</option>
                 <option value="none">None</option>
                 <option value="one to ten">Between 1 - 10</option>
                 <option value="elevent to twenty">Between 11 - 20</option>
@@ -341,49 +340,49 @@
                 <ul>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-1-x"
-                      name="work-company-apps-ember-versions-used" value="1.x" />
+                      name="work-company-apps-ember-versions-used-1.x" />
                     <label for="work-company-apps-ember-versions-used-1-x">
                       1.x
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-2-x"
-                      name="work-company-apps-ember-versions-used" value="2.x" />
+                      name="work-company-apps-ember-versions-used-2.x" />
                     <label for="work-company-apps-ember-versions-used-2-x">
                       2.x
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-0-3-4"
-                      name="work-company-apps-ember-versions-used" value="3.0 - 3.4" />
+                      name="work-company-apps-ember-versions-used-3-0-3-4" />
                     <label for="work-company-apps-ember-versions-used-3-0-3-4">
                       3.0 - 3.4
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-5-3-8"
-                      name="work-company-apps-ember-versions-used" value="3.5 - 3.8" />
+                      name="work-company-apps-ember-versions-used-3-5-3-8" />
                     <label for="work-company-apps-ember-versions-used-3-5-3-8">
                       3.5 - 3.8
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-9-3-12"
-                      name="work-company-apps-ember-versions-used" value="3.9 - 3.12" />
+                      name="work-company-apps-ember-versions-used-3-9-3-12" />
                     <label for="work-company-apps-ember-versions-used-3-9-3-12">
                       3.9 - 3.12
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-13-3-16"
-                      name="work-company-apps-ember-versions-used" value="3.13 - 3.16" />
+                      name="work-company-apps-ember-versions-used-3-13-3-16" />
                     <label for="work-company-apps-ember-versions-used-3-13-3-16">
                       3.13 - 3.16
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-17-3-20"
-                      name="work-company-apps-ember-versions-used" value="3.17 - 3.20" />
+                      name="work-company-apps-ember-versions-used-3-17-3-20" />
                     <label for="work-company-apps-ember-versions-used-3-17-3-20">
                       3.17 - 3.20
                     </label>
@@ -391,7 +390,7 @@
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-21-3-24"
-                      name="work-company-apps-ember-versions-used" value="3.21 - 3.24" />
+                      name="work-company-apps-ember-versions-used-3-21-3-24" />
                     <label for="work-company-apps-ember-versions-used-3-21-3-24">
                       3.21 - 3.24
                     </label>
@@ -399,21 +398,21 @@
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-3-25-3-28"
-                      name="work-company-apps-ember-versions-used" value="3.25 - 3.28" />
+                      name="work-company-apps-ember-versions-used-3-25-3-28" />
                     <label for="work-company-apps-ember-versions-used-3-25-3-28">
                       3.25 - 3.28
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-4-x"
-                      name="work-company-apps-ember-versions-used" value="4.x" />
+                      name="work-company-apps-ember-versions-used-4-x" />
                     <label for="work-company-apps-ember-versions-used-4-x">
                       4.x
                     </label>
                   </li>
                   <li>
                     <input type="checkbox" id="work-company-apps-ember-versions-used-idk"
-                      name="work-company-apps-ember-versions-used" value="I don't know" />
+                      name="work-company-apps-ember-versions-used-idk" />
                     <label for="work-company-apps-ember-versions-used-idk">
                       I don't know
                     </label>
@@ -539,7 +538,7 @@
               <label for="work-ssf" class="input-label">Which of these server-side frameworks do you primarily
                 use in your Ember apps at work?</label>
               <select name="server-side-framework-work" id="work-ssf" class="input-select">
-                <option value="">--please select one--</option>
+                <option value="empty">--please select one--</option>
                 <option value="rails">Rails</option>
                 <option value="express">Express</option>
                 <option value="Spring / Java">Spring / Java</option>
@@ -556,7 +555,7 @@
             <div class="form-group">
               <label for="deploy-work" class="input-label">Where do you primarily deploy your apps?</label>
               <select name="deploy-work" id="deploy-work" class="input-select">
-                <option value="">--please select one--</option>
+                <option value="empty">--please select one--</option>
                 <option value="aws">Amazon Web Services (AWS)</option>
                 <option value="azure">Azure</option>
                 <option value="digital-ocean">Digital Ocean</option>
@@ -636,7 +635,7 @@
               <label for="work-app-users-num" class="input-label">How many end users do your company's Ember apps
                 support?</label>
               <select name="work-app-users-num" id="work-app-users-num" class="input-select">
-                <option value="">--please select one--</option>
+                <option value="empty">--please select one--</option>
                 <option value="Between 1 - 1,000">1 - 1,000</option>
                 <option value="Between 1,001 - 10,000">1,001 - 10,000</option>
                 <option value="Between 10,001 - 100,000">10,001 - 100,000</option>
