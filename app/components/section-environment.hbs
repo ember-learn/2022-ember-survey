@@ -16,7 +16,7 @@
             <div class="form-group">
               <fieldset>
                 <legend class="input-label">
-                  What operating system do you prefer?
+                  Which of these operating systems do you prefer to use when writing code?
                 </legend>
                 <div class="space-y-2">
                 <div class="flex items-center gap-1">
@@ -44,13 +44,25 @@
               <label for="os-work" class="block input-label">
                 What operating system do you most frequently use at work?
               </label>
-              <input type="text" id="os-work" name="os-work" />
+              <select id="os-work" name="os-work">
+                <option value="">--please select one</option>
+                <option value="macOS">macOS</option>
+                <option value="linux">Linkux/Unix (other than macOS)</option>
+                <option value="windows">Windows</option>
+                <option value="other">Something else</option>
+              </select>
             </div>
             <div class="form-group">
               <label for="os-home" class="block input-label">
                 What operating system do you most frequently use at home?
               </label>
-              <input type="text" id="os-home" name="os-home" />
+              <select id="os-home" name="os-home">
+                <option value="">--please select one</option>
+                <option value="macOS">macOS</option>
+                <option value="linux">Linkux/Unix (other than macOS)</option>
+                <option value="windows">Windows</option>
+                <option value="other">Something else</option>
+              </select>
             </div>
             <div class="form-group">
               <fieldset>
@@ -89,7 +101,7 @@
                 <div class="flex items-center gap-1">
                   <input type="radio" id="ide-pref-jetbrains" name="ide-pref" value="jetbrains" class="focus:ring-ember-500 h-4 w-4 text-ember-600 border-slate-500" />
                   <label for="ide-pref-jetbrains">
-                    Jetbrains IDEs
+                    Jetbrains (brand) IDEs
                   </label>
                 </div>
                 <div class="flex items-center gap-1">
@@ -102,7 +114,7 @@
               </fieldset>
             </div>
             <div class="form-group">
-              <label for="env-other-text" class="input-field">If you answered "other", please explain: </label>
+              <label for="env-other-text" class="input-label">If you answered "other", what text editor or IDE do you use? </label>
               <input type="text" id="env-other-text" name="env-other-text" />
             </div>
             <div class="form-group">
