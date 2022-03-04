@@ -97,7 +97,12 @@ legend, .input-label {
 [type="checkbox"],
 [type="radio"] {
     @apply
-    accent-ember-500;
+    accent-ember-500
+    focus:ring-ember-500 
+    h-4 
+    w-4 
+    text-ember-600 
+    border-slate-500;
 }
 .input-desc {
     @apply
