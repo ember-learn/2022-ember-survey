@@ -7,7 +7,7 @@
                 Ember Feedback
               </h2>
               <p>
-                This section contains questions that relate Ember specifically. 
+                This section contains questions that relate Ember specifically.
               </p>
             </div>
             <div class="form-group">
@@ -16,25 +16,32 @@
                 <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="fb-octane-feat-desc">Not all Octane features may be listed here; please select any that apply.</p>
                 <ul>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-splatt" /><label for="fb-octane-"><code>...attributes</code></label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-splatt" value="splattributes" />
+                    <label for="fb-octane-splatt"><code>...attributes</code></label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-abrack" /><label for="fb-octane-">Angle Bracket Component Invocation Syntax</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-abrack" value="angle brackets" />
+                    <label for="fb-octane-abrack">Angle Bracket Component Invocation Syntax</label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-coloc" /><label for="fb-octane-coloc">Co-Located Components</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-coloc" value="colocated components"/>
+                    <label for="fb-octane-coloc">Co-Located Components</label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-glimmer" /><label for="fb-octane-glimmer">Glimmer Components</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-glimmer" value="glimmer components" />
+                    <label for="fb-octane-glimmer">Glimmer Components</label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-mod" /><label for="fb-octane-mod">Modifiers</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-mod" value="modifiers"/>
+                    <label for="fb-octane-mod">Modifiers</label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-class"><label for="fb-octane-class">Native Class Syntax</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-class" value="native class syntax">
+                    <label for="fb-octane-class">Native Class Syntax</label>    
                   </li>
                   <li>
-                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-tracked"><label for="fb-octane-tracked">Tracked Properties</label>    
+                    <input type="checkbox" name="fb-octane-feat" id="fb-octane-tracked" value="tracked properties">
+                    <label for="fb-octane-tracked">Tracked Properties</label>    
                   </li>
                 </ul>
               </fieldset>
@@ -88,7 +95,7 @@
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-embr-flag" value="embroider-flag" />
                     <label for="feat-embr-flag">The <code>--embroider</code> flag for new apps (ember-cli
-                      v.3.27)</label>
+                      v3.27)</label>
                   </li>
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-cont-help" value="contextual-helpers" />
@@ -97,11 +104,11 @@
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-project-root" value="project-root" />
                     <label for="feat-project-root">Ability run ember serve from outside of a project's root directory
-                      (ember-cli v.3.28)</label>
+                      (ember-cli v3.28)</label>
                   </li>
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-cust-model" value="custom-model-class" />
-                    <label for="feat-cust-model">Ability to define a custom model class (ember-data v.3.28)</label>
+                    <label for="feat-cust-model">Ability to define a custom model class (ember-data v3.28)</label>
                   </li>
                   <li>
                     <input type="checkbox" name="fb-new-feat" id="feat-cached-dec" value="cached-decorator" />
@@ -122,8 +129,7 @@
             </div>
             <div class="form-group">
               <label for="fb-new-feat-impact" class="input-label">If yes, which had the most positive impact on your app
-                or development
-                experience?</label>
+                or development experience?</label>
               <select id="fb-new-feat-impact" name="fb-new-feat-impact" class="input-select">
                 <option value="">--please select one--</option>
                 <option value="in-ele-helper">The <code>in-element</code> helper (v3.20)</option>
@@ -132,11 +138,15 @@
                 <option value="helper-manager">The helper manager (v3.23)</option>
                 <option value="invokehelper-api"><code>invokeHelper</code> from JS Helper Invocation API (v3.23)
                 </option>
+                <option value="page-title"><code>page-title</code> by default in templates (v.3.24)</option>
                 <option value="named-blocks">Named blocks (v.3.25)</option>
+                <option value="template-strict-mode">Template strict mode (v3.25)</option>
+                <option value="embroider-flag">The <code>--embroider</code> flag for new apps (ember-cli
+                      v3.27)</option>
                 <option value="contextual-helpers">Contextual helpers and/or modifiers (v3.27)</option>
                 <option value="ember-serve">Ability run ember serve from outside of a project's root directory
-                  (ember-cli v.3.28)</option>
-                <option value="custom-model">Ability to define a custom model class (ember-data v.3.28)</option>
+                  (ember-cli v3.28)</option>
+                <option value="custom-model">Ability to define a custom model class (ember-data v3.28)</option>
                 <option value="cached-decorator">The <code>@cached</code> decorator for memoizing the result of a getter
                   based on autotracking (v4.1)</option>
                 <option value="refresh-all">Method for refreshing all currently active routes (v4.1)</option>
