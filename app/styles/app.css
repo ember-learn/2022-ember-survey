@@ -40,7 +40,10 @@ aside nav a {
     @apply
     text-lg;
 }
-
+.prose.w-full {
+    max-width: 100% !important;
+    margin: 0 auto;
+}
 .prose p a {
     @apply
     decoration-2

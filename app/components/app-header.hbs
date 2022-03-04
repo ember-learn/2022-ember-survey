@@ -7,9 +7,15 @@
         <div class="flex-shrink-0">
           <img class="block h-8 w-auto" src="./assets/ember-logo.png" alt="" role="presentation" />
         </div>
-        <LinkTo @route="about"
+        <div>
+          <LinkTo @route="index"
           class="text-white text-sm font-medium p-4 focus:border-ember-500 outline-ember-500 uppercase tracking-wider">
-          About this survey</LinkTo>
+          Survey
+          </LinkTo>
+          <LinkTo @route="methodology"
+          class="text-white text-sm font-medium p-4 focus:border-ember-500 outline-ember-500 uppercase tracking-wider">
+          Methodology</LinkTo>
+        </div>
       </div>
     </div>
   </nav>
