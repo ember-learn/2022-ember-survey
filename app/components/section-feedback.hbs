@@ -13,35 +13,35 @@
             <div class="form-group">
               <fieldset>
                 <legend class="input-label" aria-describedby="fb-octane-feat-desc">Have you integrated any of these Octane features into any of your Ember apps?</legend>
-                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="fb-octane-feat-desc">Not all Octane features may be listed here; please select any that apply.</p>
+                <p class="w-full mt-0 mb-2 text-sm text-slate-700" id="fb-oct-feat-desc">Not all Octane features may be listed here; please select any that apply.</p>
                 <ul>
                   <li>
-                    <input type="checkbox" id="fb-octane-splatt" name="fb-octane-splatt-splattributes" />
-                    <label for="fb-octane-splatt"><code>...attributes</code></label>    
+                    <input type="checkbox" id="fb-oct-splatt" name="fb-octane-splatt-splattributes" />
+                    <label for="fb-oct-splatt"><code>...attributes</code></label>    
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-abrack" name="fb-octane-abrack-angle-brackets" />
-                    <label for="fb-octane-abrack">Angle Bracket Component Invocation Syntax</label>    
+                    <input type="checkbox" id="fb-oct-abrack" name="fb-octane-angle-bracket-comps" />
+                    <label for="fb-oct-abrack">Angle Bracket Component Invocation Syntax</label>    
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-coloc" name="fb-octane-coloc-colocated-components"/>
-                    <label for="fb-octane-coloc">Co-Located Components</label>    
+                    <input type="checkbox" id="fb-oct-coloc" name="fb-octane-coloc-comps"/>
+                    <label for="fb-oct-coloc">Co-Located Components</label>    
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-glimmer" name="fb-octane-glimmer-components" />
-                    <label for="fb-octane-glimmer">Glimmer Components</label>    
+                    <input type="checkbox" id="fb-oct-glimmer" name="fb-octane-glimmer-comps" />
+                    <label for="fb-oct-glimmer">Glimmer Components</label>    
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-mod" name="fb-octane-modifiers"/>
-                    <label for="fb-octane-mod">Modifiers</label>    
+                    <input type="checkbox" id="fb-oct-mod" name="fb-octane-modifiers"/>
+                    <label for="fb-oct-mod">Modifiers</label>    
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-class" name="fb-octane-class" />
-                    <label for="fb-octane-class">Native Class Syntax</label>   
+                    <input type="checkbox" id="fb-oct-class" name="fb-octane-class" />
+                    <label for="fb-oct-class">Native Class Syntax</label>   
                   </li>
                   <li>
-                    <input type="checkbox" id="fb-octane-tracked" name="fb-octane-tracked" />
-                    <label for="fb-octane-tracked">Tracked Properties</label>    
+                    <input type="checkbox" id="fb-oct-tracked" name="fb-octane-tracked" />
+                    <label for="fb-oct-tracked">Tracked Properties</label>    
                   </li>
                 </ul>
               </fieldset>
@@ -216,21 +216,21 @@
               <textarea rows="2" id="fb-ember-talks" name="fb-ember-talks" />
             </div>
             <div class="form-group">
-              <label for="fb-learn-start-diff" class="block input-label">
+              <label for="fb-learn-start-diff" class="input-label">
                 When you were first learning Ember, what was the most difficult
                 concept to understand?
               </label>
               <input type="text" id="fb-learn-start-diff" name="fb-learn-start-diff" />
             </div>
             <div class="form-group">
-              <label for="fb-learn-start-intuit" class="block input-label">
+              <label for="fb-learn-start-intuit" class="input-label">
                 When you were first learning Ember, what concept felt the most
                 intuitive to you?
               </label>
               <input type="text" id="fb-learn-start-intuit" name="fb-learn-start-intuit" />
             </div>
             <div class="form-group">
-              <label for="fb-upgrade-diff" class="block input-label">
+              <label for="fb-upgrade-diff" class="input-label">
                 Think about the last time you upgraded an Ember app. What version
                 did you migrate from/to? How easy/difficult was it? If it was difficult, what was difficult about it?
               </label>
@@ -238,25 +238,47 @@
                 name="fb-learn-upgrade-diff" />
             </div>
             <div class="form-group">
-              <label for="fb-upgrade-blocker" class="block input-label">
+              <label for="fb-upgrade-blocker" class="input-label">
                 If you were not able to upgrade, what prevented you from upgrading?
               </label>
               <textarea rows="2" id="fb-upgrade-blocker" name="fb-upgrade-blocker" />
             </div>
             <div class="form-group">
-              <label for="fb-cust-defaults" class="block input-label">
+              <label for="fb-cust-defaults" class="input-label">
                 Is there anything you immediately add or configure every time you
                 make a new Ember application (i.e. install a specific addon, add custom linting rules, etc.)
               </label>
               <textarea rows="2" id="fb-cust-defaults" name="fb-cust-defaults" />
             </div>
             <div class="form-group">
-              <label for="fb-gen-ember-exp" class="block input-label">
+              <label for="fb-gen-ember-exp" class="input-label">
                 Is there anything else you want to tell us about your experiences using
                 Ember?
               </label>
               <textarea rows="4" id="fb-gen-ember-exp" name="fb-gen-ember-exp" />
             </div>
-
+            <div class="form-group">
+              <fieldset>
+                <legend class="input-label">Are you a member of the Ember Discord server?</legend>
+                <ul>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" name="fb-discord-member" id="fb-discord" value="yes">
+                    <label for="fb-dm">Yes</label>
+                  </li>
+                  <li class="sm:block lg:inline-block">
+                    <input type="radio" name="fb-discord-member" id="fb-discord" value="no">
+                    <label for="fb-dm">No</label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
+            <div class="form-group">
+              <label for="fb-discord-why-not">If you are not a member of the Ember Discord server, can you tell us why?</label>
+              <textarea rows="2" id="fb-discord-why-not" name="fb-discord-why-not"/>
+            </div>
+            <div class="form-group">
+              <label for="fb-discord-why-yes">If you are a member of the Ember Discord server, are there any features that you find valuable?</label>
+              <textarea rows="4" id="fb-discord-why-yes" name="fb-discord-why-yes"/>
+            </div>
           </div>
         </div>
